@@ -3,7 +3,7 @@
 
 
 :root {
-	/*******************
+	/******************
 	**  MAIN COLORS  **
 	*******************/
 
@@ -90,48 +90,6 @@
 
 	--accent: var(--DEFAULT_ACCENT);
 	--accentHilight: var(--DEFAULT_ACCENT_HILIGHT);
-
-
-	/******************************
-	**  MAIN SIZES AND MARGINS  **
-	******************************/
-
-	--headerPaddingTop:          24px;
-	--headerPaddingLeft: calc(18px + 1vw);
-	--headerPaddingRight:              calc(18px + 1vw);
-	--headerPaddingBottom:     12px;
-
-	--pagePaddingTop:          24px;
-	--pagePaddingLeft: calc(18px + 1vw);
-	--pagePaddingRight:              calc(18px + 1vw);
-	--pagePaddingBottom:     36px;
-
-
-
-
-	--borderWidth: 0.5px;
-
-
-	--fontSize: 1rem;
-
-	--fontSizeH1: 2rem;
-	--fontSizeH2: 1.8rem;
-	--fontSizeH3: 1.6rem;
-	--fontSizeH4: 1.4rem;
-	--fontSizeH5: 1.3rem;
-	--fontSizeH6: 1.2rem;
-
-	--sansSerifFont: -apple-system, BlinkMacSystemFont, system-ui, menu, sans-serif;
-
-	--animationDuration: 0.3s;
-	--animationDurationSlide: 0.4s;
-	--animationDurationFade: 0.3s;
-
-	/* default:
-	--animationFunction: cubic-bezier(0.4,0, 0.4,1);*/
-	--animationFunction: cubic-bezier(0.4,-0.1, 0.4,1.2);
-
-	--backdropFilter: saturate(0.7) contrast(calc(1 / 0.7)) blur(20px);
 }
 
 
@@ -154,16 +112,6 @@ div.navbar {
 
 	--foreground: #fff;
 
-	--paddingTop:          0.2rem;
-	--paddingLeft: calc(24px + 1vw);
-	--paddingRight:              calc(24px + 1vw);
-	--paddingBottom:     0.2rem;
-
-	--borderBottom:   #fff;
-	--borderRight:    #f8f8f8;
-
-
-
 	--borderTop: #fff;
 	--borderLeft: #f8f8f8;
 	--borderRight: #f8f8f8;
@@ -183,11 +131,6 @@ div.navbar {
 	--borderBottom:        #eee;
 
 	--decoration: #0000;
-
-	--paddingTop:          0.15rem;
-	--paddingLeft: 0.5rem;
-	--paddingRight:              0.5rem;
-	--paddingBottom:     0.07rem;
 }
 
 
@@ -220,11 +163,6 @@ button {
 	--borderBottom:        #eee;
 
 	--decoration: #0000;
-
-	--paddingTop:          0.15rem;
-	--paddingLeft: 0.5rem;
-	--paddingRight:              0.5rem;
-	--paddingBottom:     0.07rem;
 }
 
 button:hover, button:focus {
@@ -582,12 +520,4 @@ button.danger:active {
 /* ## RESPONDING TO ACCESSIBILITY ####### */
 /* ###################################### */
 
-
-
-
-/* Dark mode, if known by the system */
-@media screen and (prefers-color-scheme: dark) {
-
-	/* Will @import a separate Dark Mode file instead */
-
-}
+/* Empty for now. */
