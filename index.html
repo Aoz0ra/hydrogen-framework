@@ -3,6 +3,19 @@
 	<title>Hydrogen Framework showcase by Aoz0ra</title>
 	
 	<link rel="stylesheet" href="hydrogen.css">
+	
+	
+	<script>
+function changeAccent(newColor) {
+	if (newColor == `DEFAULT_ACCENT`) {
+		document.documentElement.style.setProperty(`--accentHilight`, getComputedStyle(document.documentElement).getPropertyValue(`--${newColor}_HILIGHT`));
+	}
+	else {
+		document.documentElement.style.setProperty(`--accentHilight`, getComputedStyle(document.documentElement).getPropertyValue(`--${newColor}Hilight`));
+	}
+document.documentElement.style.setProperty(`--accent`, getComputedStyle(document.documentElement).getPropertyValue(`--${newColor}`)); 
+}
+	</script>
 </head>
 
 
