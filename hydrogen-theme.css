@@ -1,0 +1,593 @@
+/* HYDROGEN DEFAULTS */
+/* The default colors and stuff */
+
+
+:root {
+	/*******************
+	**  MAIN COLORS  **
+	*******************/
+
+	--background:        #ddd;
+	--backgroundHilight: #eee;
+	--backgroundFaint:   #ccc;
+
+	--foreground:        #444;
+	--foregroundHilight: #111;
+	--foregroundFaint:   #444c;
+
+
+	--border: #fefefe;
+	--borderTop:             #fff;
+	--borderLeft:  #fefefe;
+	--borderRight:                #fefefe;
+	--borderBottom:        #eee;
+
+
+	--borderRadius: 3px;
+
+
+
+
+	--red:       #c44;
+	--orange:    #ca4;
+	--yellow:    #cc4;
+	--lime:      #ac4;
+	--green:     #4c4;
+	--aquagreen: #4ca;
+	--cyan:      #4bc;
+	--skyblue:   #4ac;
+	--blue:      #44c;
+	--purple:    #a4c;
+	--pink:      #c4c;
+	--hotpink:   #c4a;
+
+	--redMuted:       #a66;
+	--orangeMuted:    #a86;
+	--yellowMuted:    #aa6;
+	--limeMuted:      #8a6;
+	--greenMuted:     #6a6;
+	--aquagreenMuted: #6a8;
+	--cyanMuted:      #68a;
+	--skyblueMuted:   #67a;
+	--blueMuted:      #66a;
+	--purpleMuted:    #86a;
+	--pinkMuted:      #a6a;
+	--hotpinkMuted:   #a68;
+
+	--redHilight:       #f22;
+	--orangeHilight:    #fc2;
+	--yellowHilight:    #ff2;
+	--limeHilight:      #bf2;
+	--greenHilight:     #2f2;
+	--aquagreenHilight: #2fb;
+	--cyanHilight:      #2ef;
+	--skyblueHilight:   #2bf;
+	--blueHilight:      #22f;
+	--purpleHilight:    #b2f;
+	--pinkHilight:      #f2f;
+	--hotpinkHilight:   #f2b;
+
+	--redFaint:       #c44a;
+	--orangeFaint:    #ca4a;
+	--yellowFaint:    #cc4a;
+	--limeFaint:      #ac4a;
+	--greenFaint:     #4c4a;
+	--aquagreenFaint: #4caa;
+	--cyanFaint:      #4bca;
+	--skyblueFaint:   #4aca;
+	--blueFaint:      #44ca;
+	--purpleFaint:    #a4ca;
+	--pinkFaint:      #c4ca;
+	--hotpinkFaint:   #c4aa;
+
+
+	--hilight: var(--skyblueHilight);
+	--hilightHilight: var(--cyan);
+	--hilightFaint: var(--skyblue);
+
+	--DEFAULT_ACCENT: var(--blue);
+	--DEFAULT_ACCENT_HILIGHT: var(--blueHilight);
+
+	--accent: var(--DEFAULT_ACCENT);
+	--accentHilight: var(--DEFAULT_ACCENT_HILIGHT);
+
+
+	/******************************
+	**  MAIN SIZES AND MARGINS  **
+	******************************/
+
+	--headerPaddingTop:          24px;
+	--headerPaddingLeft: calc(18px + 1vw);
+	--headerPaddingRight:              calc(18px + 1vw);
+	--headerPaddingBottom:     12px;
+
+	--pagePaddingTop:          24px;
+	--pagePaddingLeft: calc(18px + 1vw);
+	--pagePaddingRight:              calc(18px + 1vw);
+	--pagePaddingBottom:     36px;
+
+
+
+
+	--borderWidth: 0.5px;
+
+
+	--fontSize: 1rem;
+
+	--fontSizeH1: 2rem;
+	--fontSizeH2: 1.8rem;
+	--fontSizeH3: 1.6rem;
+	--fontSizeH4: 1.4rem;
+	--fontSizeH5: 1.3rem;
+	--fontSizeH6: 1.2rem;
+
+	--sansSerifFont: -apple-system, BlinkMacSystemFont, system-ui, menu, sans-serif;
+
+	--animationDuration: 0.3s;
+	--animationDurationSlide: 0.4s;
+	--animationDurationFade: 0.3s;
+
+	/* default:
+	--animationFunction: cubic-bezier(0.4,0, 0.4,1);*/
+	--animationFunction: cubic-bezier(0.4,-0.1, 0.4,1.2);
+
+	--backdropFilter: saturate(0.7) contrast(calc(1 / 0.7)) blur(20px);
+}
+
+
+/**********************************
+**********************************/
+
+
+
+
+/* NAVIGATION BAR */
+
+div.navbar {
+	/* 	--background:        #eee; */
+	/* 	--backgroundTop:     #fff; */
+	/* 	--backgroundBottom:  #e0e0e0; */
+
+	--background: #000c;
+	--backgroundTop: #000a;
+	--backgroundBottom: #000e;
+
+	--foreground: #fff;
+
+	--paddingTop:          0.2rem;
+	--paddingLeft: calc(24px + 1vw);
+	--paddingRight:              calc(24px + 1vw);
+	--paddingBottom:     0.2rem;
+
+	--borderBottom:   #fff;
+	--borderRight:    #f8f8f8;
+
+
+
+	--borderTop: #fff;
+	--borderLeft: #f8f8f8;
+	--borderRight: #f8f8f8;
+	--borderBottom: #eee;
+}
+
+.navbar .dropdown .dropdownbutton {
+	--background:              #222c;
+	--backgroundTop:           #444c;
+	--backgroundBottom:        #000c;
+
+	--foreground:        #eee;
+
+	--borderTop:             #fff;
+	--borderLeft:  #fefefe;
+	--borderRight:                #fefefe;
+	--borderBottom:        #eee;
+
+	--decoration: #0000;
+
+	--paddingTop:          0.15rem;
+	--paddingLeft: 0.5rem;
+	--paddingRight:              0.5rem;
+	--paddingBottom:     0.07rem;
+}
+
+
+
+
+div.drop-content div.item {
+	--background: #dddddd00;
+	--foreground: #eee;
+}
+
+
+
+div.item:hover {
+	--background: #dddddd33 !important;
+}
+
+
+
+
+button {
+	--background:              #dddc;
+	--backgroundTop:           #f8f8f8cc;
+	--backgroundBottom:        #cccc;
+
+	--foreground:        #444;
+
+	--borderTop:             #fff;
+	--borderLeft:  #fefefe;
+	--borderRight:                #fefefe;
+	--borderBottom:        #eee;
+
+	--decoration: #0000;
+
+	--paddingTop:          0.15rem;
+	--paddingLeft: 0.5rem;
+	--paddingRight:              0.5rem;
+	--paddingBottom:     0.07rem;
+}
+
+button:hover, button:focus {
+	--background:              #dddc;
+	--backgroundTop:           #f8f8f8cc;
+	--backgroundBottom:        #cccc;
+
+	--foreground:        #444;
+
+	--borderTop:             #fff;
+	--borderLeft:  #fefefe;
+	--borderRight:                #fefefe;
+	--borderBottom:        #eee;
+
+	--decoration: var(--hilight);
+}
+
+button:active, button.active {
+	--background:              #d8d8d8cc;
+	--backgroundFaint:         #d8d8d888;
+
+	--backgroundTop:        #cccc;
+	--backgroundTopFaint:   #ccc8;
+
+	--backgroundBottom:           #f8f8f8cc;
+
+
+	--foreground:        #444;
+
+
+	--borderTop:              #eee;
+	--borderLeft:   #fefefe;
+	--borderRight:                 #fefefe;
+	--borderBottom:         #fff;
+}
+
+
+
+button.hilight {
+	--background:       #ddd;
+	--backgroundTop:    #f8f8f8;
+	--backgroundBottom: #ccc;
+	--foreground: #111;
+	--borderTop:             #fff;
+	--borderLeft:  #fefefe;
+	--borderRight:                #fefefe;
+	--borderBottom:        #eee;
+}
+
+button.hilight:hover, button.hilight:focus {
+	--background:       #ddd;
+	--backgroundTop:    #f8f8f8;
+	--backgroundBottom: #ccc;
+	--foreground: #111;
+	--borderTop:             #fff;
+	--borderLeft:  #fefefe;
+	--borderRight:                #fefefe;
+	--borderBottom:        #eee;
+	--decoration: var(--hilightHilight);
+}
+
+button.hilight:active {
+	--background:       #ccc;
+	--backgroundTop: #ccc;
+	--backgroundBottom:    #f8f8f8;
+	--foreground: #111;
+	--borderTop:             #fff;
+	--borderLeft:  #fefefe;
+	--borderRight:                #fefefe;
+	--borderBottom:        #eee;
+}
+
+
+
+button.faint {
+	--background:         #ddd8;
+	--backgroundTop:      #f8f8f888;
+	--backgroundBottom:   #ccc8;
+	--foreground:   #444c;
+	--borderTop:             #fff8;
+	--borderLeft:  #fefefe88;
+	--borderRight:                #fefefe88;
+	--borderBottom:        #eee8;
+}
+
+button.faint:hover, button.faint:focus {
+	--background:         #ddd8;
+	--backgroundTop:      #f8f8f888;
+	--backgroundBottom:   #ccc8;
+	--foreground:   #444c;
+	--borderTop:             #fff8;
+	--borderLeft:  #fefefe88;
+	--borderRight:                #fefefe88;
+	--borderBottom:        #eee8;
+	--decoration: var(--hilightFaint);
+}
+
+button.faint:active {
+	--backgroundBottom:      #f8f8f888;
+	--foreground:   #444c;
+	--borderTop:              #eee8;
+	--borderLeft:   #fefefe88;
+	--borderRight:                 #fefefe88;
+	--borderBottom:         #fff8;
+}
+
+
+input[type="checkbox"] {
+	--background:              #dddc;
+	--backgroundTop:           #f8f8f8cc;
+	--backgroundBottom:        #cccc;
+
+	--foreground:        #444;
+
+	--borderTop:             #fff;
+	--borderLeft:  #fefefe;
+	--borderRight:                #fefefe;
+	--borderBottom:        #eee;
+
+	--decoration: #0000;
+}
+
+input[type="checkbox"]:hover {
+	--background:              #dddc;
+	--backgroundTop:           #f8f8f8cc;
+	--backgroundBottom:        #cccc;
+
+	--foreground:        #444;
+
+	--borderTop:             #fff;
+	--borderLeft:  #fefefe;
+	--borderRight:                #fefefe;
+	--borderBottom:        #eee;
+
+	--decoration: var(--hilight);
+}
+
+input[type="checkbox"]:active {
+	--background:              #d8d8d8cc;
+	--backgroundFaint:         #d8d8d888;
+
+	--backgroundTop:        #cccc;
+	--backgroundTopFaint:   #ccc8;
+
+	--backgroundBottom:           #f8f8f8cc;
+
+
+	--foreground:        #444;
+
+
+	--borderTop:              #eee;
+	--borderLeft:   #fefefe;
+	--borderRight:                 #fefefe;
+	--borderBottom:         #fff;
+}
+
+
+
+/* ##"""""""""""""##################### */
+/* ## BOOTSTRAP 3 ##################### */
+/* ##.............##################### */
+
+/* Buttons */
+
+button.default {
+	--borderTop:             #bdf;
+	--borderLeft:  #bedefe;
+	--borderRight:                #bedefe;
+	--borderBottom:        #ace;
+}
+
+button.primary {
+	--background:              var(--blue);
+	--backgroundTop:           var(--blueFaint);
+	--backgroundBottom:        var(--blue);
+
+	--foreground:        #eee;
+
+	--borderTop:             #fff;
+	--borderLeft:  #fefefe;
+	--borderRight:                #fefefe;
+	--borderBottom:        #eee;
+}
+button.primary:active {
+	--background:              var(--blue);
+	--backgroundBottom:        var(--blueFaint);
+	--backgroundTop:           var(--blue);
+}
+
+button.success {
+	--background:              var(--green);
+	--backgroundTop:           var(--greenFaint);
+	--backgroundBottom:        var(--green);
+
+	--foreground:        #eee;
+
+	--borderTop:             #fff;
+	--borderLeft:  #fefefe;
+	--borderRight:                #fefefe;
+	--borderBottom:        #eee;
+}
+button.success:active {
+	--background:              var(--green);
+	--backgroundBottom:        var(--greenFaint);
+	--backgroundTop:           var(--green);
+}
+
+
+button.info {
+	--background:              var(--skyblue);
+	--backgroundTop:           var(--cyanFaint);
+	--backgroundBottom:        var(--cyan);
+
+	--foreground:        #444;
+
+	--borderTop:             #fff;
+	--borderLeft:  #fefefe;
+	--borderRight:                #fefefe;
+	--borderBottom:        #eee;
+}
+button.info:active {
+	--background:              var(--cyan);
+	--backgroundBottom:        var(--cyanFaint);
+	--backgroundTop:           var(--cyan);
+}
+
+button.warning {
+	--background:              var(--yellow);
+	--backgroundTop:           var(--yellowFaint);
+	--backgroundBottom:        var(--yellow);
+
+	--foreground:        #444;
+
+	--borderTop:             #fff;
+	--borderLeft:  #fefefe;
+	--borderRight:                #fefefe;
+	--borderBottom:        #eee;
+}
+button.warning:active {
+	--background:              var(--yellow);
+	--backgroundBottom:        var(--yellowFaint);
+	--backgroundTop:           var(--yellow);
+}
+
+button.danger {
+	--background:              var(--red);
+	--backgroundTop:           var(--redFaint);
+	--backgroundBottom:        var(--red);
+
+	--foreground:        #eee;
+
+	--borderTop:             #fff;
+	--borderLeft:  #fefefe;
+	--borderRight:                #fefefe;
+	--borderBottom:        #eee;
+}
+button.danger:active {
+	--background:              var(--red);
+	--backgroundBottom:        var(--redFaint);
+	--backgroundTop:           var(--red);
+}
+
+
+
+/* ##"""""""""""""""""""############### */
+/* ## RESPONSIVE DESIGN ############### */
+/* ##...................############### */
+
+
+
+/* Mobile users */
+
+@media screen and (any-pointer: coarse) {
+	button {
+		--paddingTop: 0.4rem;
+		--paddingLeft: 0.7rem;
+		--paddingRight: 0.7rem;
+		--paddingBottom: 0.4rem;
+	}
+}
+
+
+
+
+
+
+/* eXtra Small screens */
+@media screen and (max-width: 600px) {
+	:root {--font-size: 90%;}
+}
+
+
+
+
+
+
+/* Small screens */
+@media screen and (min-width: 601px) and (max-width: 768px) {
+}
+
+
+
+
+
+
+/* Medium screens */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+}
+
+
+
+
+
+
+
+
+/* Large screens */
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+	:root {
+		--pagePaddingTop:          24px;
+		--pagePaddingLeft: calc(18px + 8vw);
+		--pagePaddingRight:              calc(18px + 8vw);
+		--pagePaddingBottom:     36px;
+	}
+}
+
+
+
+
+
+
+
+
+
+/* eXtra-Large screens */
+@media screen and (min-width: 1201px) {
+	:root {
+		--pagePaddingTop:          24px;
+		--pagePaddingLeft: calc(18px + 11vw);
+		--pagePaddingRight:              calc(18px + 11vw);
+		--pagePaddingBottom:     36px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+/* ###################################### */
+/* ## RESPONDING TO ACCESSIBILITY ####### */
+/* ###################################### */
+
+
+
+
+/* Dark mode, if known by the system */
+@media screen and (prefers-color-scheme: dark) {
+
+	/* Will @import a separate Dark Mode file instead */
+
+}
