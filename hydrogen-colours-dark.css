@@ -1,0 +1,65 @@
+	:root {
+
+		--background:        #333;
+		--backgroundHilight: #111;
+		--backgroundFaint:   #444;
+
+		--foreground:        #ccc;
+		--foregroundHilight: #eee;
+		--foregroundFaint:   #cccc;
+
+
+		--border: #ddd;
+		--borderTop:             #ddd;
+		--borderLeft:  #ddd;
+		--borderRight:                #ddd;
+		--borderBottom:        #ddd;
+
+
+
+
+		--red:       #d44;
+		--orange:    #ca4;
+		--yellow:    #cc4;
+		--lime:      #ac4;
+		--green:     #4c4;
+		--aquagreen: #4ca;
+		--cyan:      #4bc;
+		--skyblue:   #4ac;
+		--blue:      #44e;
+		--purple:    #a4c;
+		--pink:      #c4c;
+		--hotpink:   #c4a;
+
+		--redHilight:       #f44;
+		--orangeHilight:    #fc2;
+		--yellowHilight:    #ff2;
+		--limeHilight:      #bf2;
+		--greenHilight:     #2f2;
+		--aquagreenHilight: #2fb;
+		--cyanHilight:      #2ef;
+		--skyblueHilight:   #2bf;
+		--blueHilight:      #55f;
+		--purpleHilight:    #b2f;
+		--pinkHilight:      #f2f;
+		--hotpinkHilight:   #f2b;
+
+		--redFaint:       #d44c;
+		--orangeFaint:    #ca4c;
+		--yellowFaint:    #cc4c;
+		--limeFaint:      #ac4c;
+		--greenFaint:     #4c4c;
+		--aquagreenFaint: #4cac;
+		--cyanFaint:      #4bcc;
+		--skyblueFaint:   #4acc;
+		--blueFaint:      #44ec;
+		--purpleFaint:    #a4cc;
+		--pinkFaint:      #c4cc;
+		--hotpinkFaint:   #c4ac;
+
+
+		--hilight: var(--skyblueHilight);
+		--hilightHilight: var(--cyanHilight);
+		--hilightFaint: var(--skyblue);
+
+	}
