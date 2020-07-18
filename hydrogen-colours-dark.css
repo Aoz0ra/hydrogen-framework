@@ -78,9 +78,9 @@
 	--hotpinkFaint:   #c4aa;
 
 
-	--hilight: var(--skyblueHilight);
-	--hilightHilight: var(--cyan);
-	--hilightFaint: var(--skyblue);
+	--hilight: var(--blue);
+	--hilightHilight: var(--blueHilight);
+	--hilightFaint: var(--blueFaint);
 
 	--DEFAULT_ACCENT: var(--blue);
 	--DEFAULT_ACCENT_HILIGHT: var(--blueHilight);
