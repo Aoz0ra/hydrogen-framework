@@ -1,0 +1,523 @@
+/* HYDROGEN DEFAULTS */
+/* The default colors and stuff */
+
+
+:root {
+	/******************
+	**  MAIN COLORS  **
+	*******************/
+
+	--background:        #fff;
+	--backgroundHilight: #eee;
+	--backgroundFaint:   #f8f8f8;
+
+	--foreground:        #000;
+	--foregroundHilight: #004;
+	--foregroundFaint:   #000c;
+
+
+	--border: #888;
+	--borderTop:             #999;
+	--borderLeft:  #888;
+	--borderRight:                #888;
+	--borderBottom:        #777;
+
+
+	--borderRadius: 3px;
+
+
+
+
+	--red:       #f00;
+	--orange:    #ea0;
+	--yellow:    #cc0;
+	--lime:      #ae0;
+	--green:     #0e0;
+	--aquagreen: #0c9;
+	--cyan:      #0ba;
+	--skyblue:   #0ad;
+	--blue:      #00f;
+	--purple:    #a0f;
+	--pink:      #f0f;
+	--hotpink:   #f0a;
+
+	--redMuted:       #f22;
+	--orangeMuted:    #fc2;
+	--yellowMuted:    #ff2;
+	--limeMuted:      #bf2;
+	--greenMuted:     #2f2;
+	--aquagreenMuted: #2fb;
+	--cyanMuted:      #2ef;
+	--skyblueMuted:   #2bf;
+	--blueMuted:      #22f;
+	--purpleMuted:    #b2f;
+	--pinkMuted:      #f2f;
+	--hotpinkMuted:   #f2b;
+
+	--redHilight:       #f00;
+	--orangeHilight:    #fa0;
+	--yellowHilight:    #ff0;
+	--limeHilight:      #af0;
+	--greenHilight:     #0f0;
+	--aquagreenHilight: #0fa;
+	--cyanHilight:      #0ef;
+	--skyblueHilight:   #0af;
+	--blueHilight:      #00f;
+	--purpleHilight:    #a0f;
+	--pinkHilight:      #f0f;
+	--hotpinkHilight:   #f0a;
+
+	--redFaint:       #f00a;
+	--orangeFaint:    #ea0a;
+	--yellowFaint:    #cc0a;
+	--limeFaint:      #ae0a;
+	--greenFaint:     #0e0a;
+	--aquagreenFaint: #0c9a;
+	--cyanFaint:      #0baa;
+	--skyblueFaint:   #0ada;
+	--blueFaint:      #00fa;
+	--purpleFaint:    #a0fa;
+	--pinkFaint:      #f0fa;
+	--hotpinkFaint:   #f0aa;
+
+
+	--hilight: var(--skyblueHilight);
+	--hilightHilight: var(--cyan);
+	--hilightFaint: var(--skyblue);
+
+	--DEFAULT_ACCENT: var(--blue);
+	--DEFAULT_ACCENT_HILIGHT: var(--blueHilight);
+
+	--accent: var(--DEFAULT_ACCENT);
+	--accentHilight: var(--DEFAULT_ACCENT_HILIGHT);
+}
+
+
+/**********************************
+**********************************/
+
+
+
+
+/* NAVIGATION BAR */
+
+div.navbar {
+	/* 	--background:        #eee; */
+	/* 	--backgroundTop:     #fff; */
+	/* 	--backgroundBottom:  #e0e0e0; */
+
+	--background: #000c;
+	--backgroundTop: #000a;
+	--backgroundBottom: #000e;
+
+	--foreground: #fff;
+
+	--borderTop: #fff;
+	--borderLeft: #f8f8f8;
+	--borderRight: #f8f8f8;
+	--borderBottom: #eee;
+}
+
+.navbar .dropdown .dropdownbutton {
+	--background:              #222c;
+	--backgroundTop:           #444c;
+	--backgroundBottom:        #000c;
+
+	--foreground:        #eee;
+
+	--borderTop:             #fff;
+	--borderLeft:  #fefefe;
+	--borderRight:                #fefefe;
+	--borderBottom:        #eee;
+
+	--decoration: #0000;
+}
+
+
+
+
+div.drop-content div.item {
+	--background: #dddddd00;
+	--foreground: #eee;
+}
+
+
+
+div.item:hover {
+	--background: #dddddd33 !important;
+}
+
+
+
+
+button:not(.nohydrogen) {
+	--background:              #dddc;
+	--backgroundTop:           #f8f8f8cc;
+	--backgroundBottom:        #cccc;
+
+	--foreground:        #444;
+
+	--borderTop:             #fff;
+	--borderLeft:  #fefefe;
+	--borderRight:                #fefefe;
+	--borderBottom:        #eee;
+
+	--decoration: #0000;
+}
+
+button:not(.nohydrogen):hover, button:not(.nohydrogen):focus {
+	--background:              #dddc;
+	--backgroundTop:           #f8f8f8cc;
+	--backgroundBottom:        #cccc;
+
+	--foreground:        #444;
+
+	--borderTop:             #fff;
+	--borderLeft:  #fefefe;
+	--borderRight:                #fefefe;
+	--borderBottom:        #eee;
+
+	--decoration: var(--hilight);
+}
+
+button:not(.nohydrogen):active, button.active {
+	--background:              #d8d8d8cc;
+	--backgroundFaint:         #d8d8d888;
+
+	--backgroundTop:        #cccc;
+	--backgroundTopFaint:   #ccc8;
+
+	--backgroundBottom:           #f8f8f8cc;
+
+
+	--foreground:        #444;
+
+
+	--borderTop:              #eee;
+	--borderLeft:   #fefefe;
+	--borderRight:                 #fefefe;
+	--borderBottom:         #fff;
+}
+
+
+
+button:not(.nohydrogen).hilight {
+	--background:       #ddd;
+	--backgroundTop:    #f8f8f8;
+	--backgroundBottom: #ccc;
+	--foreground: #111;
+	--borderTop:             #fff;
+	--borderLeft:  #fefefe;
+	--borderRight:                #fefefe;
+	--borderBottom:        #eee;
+}
+
+button.hilight:not(.nohydrogen):hover, button.hilight:not(.nohydrogen):focus {
+	--background:       #ddd;
+	--backgroundTop:    #f8f8f8;
+	--backgroundBottom: #ccc;
+	--foreground: #111;
+	--borderTop:             #fff;
+	--borderLeft:  #fefefe;
+	--borderRight:                #fefefe;
+	--borderBottom:        #eee;
+	--decoration: var(--hilightHilight);
+}
+
+button.hilight:not(.nohydrogen):active, button.hilight.active {
+	--background:       #ccc;
+	--backgroundTop: #ccc;
+	--backgroundBottom:    #f8f8f8;
+	--foreground: #111;
+	--borderTop:             #fff;
+	--borderLeft:  #fefefe;
+	--borderRight:                #fefefe;
+	--borderBottom:        #eee;
+}
+
+
+
+button.faint:not(.nohydrogen) {
+	--background:         #ddd8;
+	--backgroundTop:      #f8f8f888;
+	--backgroundBottom:   #ccc8;
+	--foreground:   #444c;
+	--borderTop:             #fff8;
+	--borderLeft:  #fefefe88;
+	--borderRight:                #fefefe88;
+	--borderBottom:        #eee8;
+}
+
+button.faint:not(.nohydrogen):hover, button.faint:not(.nohydrogen):focus {
+	--background:         #ddd8;
+	--backgroundTop:      #f8f8f888;
+	--backgroundBottom:   #ccc8;
+	--foreground:   #444c;
+	--borderTop:             #fff8;
+	--borderLeft:  #fefefe88;
+	--borderRight:                #fefefe88;
+	--borderBottom:        #eee8;
+	--decoration: var(--hilightFaint);
+}
+
+button.faint:not(.nohydrogen):active, button.faint.active {
+	--backgroundBottom:      #f8f8f888;
+	--foreground:   #444c;
+	--borderTop:              #eee8;
+	--borderLeft:   #fefefe88;
+	--borderRight:                 #fefefe88;
+	--borderBottom:         #fff8;
+}
+
+
+input[type="checkbox"]:not(.nohydrogen) {
+	--background:              #dddc;
+	--backgroundTop:           #f8f8f8cc;
+	--backgroundBottom:        #cccc;
+
+	--foreground:        #444;
+
+	--borderTop:             #fff;
+	--borderLeft:  #fefefe;
+	--borderRight:                #fefefe;
+	--borderBottom:        #eee;
+
+	--decoration: #0000;
+}
+
+input[type="checkbox"]:not(.nohydrogen):hover {
+	--background:              #dddc;
+	--backgroundTop:           #f8f8f8cc;
+	--backgroundBottom:        #cccc;
+
+	--foreground:        #444;
+
+	--borderTop:             #fff;
+	--borderLeft:  #fefefe;
+	--borderRight:                #fefefe;
+	--borderBottom:        #eee;
+
+	--decoration: var(--hilight);
+}
+
+input[type="checkbox"]:not(.nohydrogen):active {
+	--background:              #d8d8d8cc;
+	--backgroundFaint:         #d8d8d888;
+
+	--backgroundTop:        #cccc;
+	--backgroundTopFaint:   #ccc8;
+
+	--backgroundBottom:           #f8f8f8cc;
+
+
+	--foreground:        #444;
+
+
+	--borderTop:              #eee;
+	--borderLeft:   #fefefe;
+	--borderRight:                 #fefefe;
+	--borderBottom:         #fff;
+}
+
+
+
+/* ##"""""""""""""##################### */
+/* ## BOOTSTRAP 3 ##################### */
+/* ##.............##################### */
+
+/* Buttons */
+
+button.default:not(.nohydrogen) {
+	--borderTop:             #bdf;
+	--borderLeft:  #bedefe;
+	--borderRight:                #bedefe;
+	--borderBottom:        #ace;
+}
+
+button.primary:not(.nohydrogen) {
+	--background:              var(--blue);
+	--backgroundTop:           var(--blueFaint);
+	--backgroundBottom:        var(--blue);
+
+	--foreground:        #eee;
+
+	--borderTop:             #fff;
+	--borderLeft:  #fefefe;
+	--borderRight:                #fefefe;
+	--borderBottom:        #eee;
+}
+button.primary:not(.nohydrogen):active {
+	--background:              var(--blue);
+	--backgroundBottom:        var(--blueFaint);
+	--backgroundTop:           var(--blue);
+}
+
+button.success:not(.nohydrogen) {
+	--background:              var(--green);
+	--backgroundTop:           var(--greenFaint);
+	--backgroundBottom:        var(--green);
+
+	--foreground:        #eee;
+
+	--borderTop:             #fff;
+	--borderLeft:  #fefefe;
+	--borderRight:                #fefefe;
+	--borderBottom:        #eee;
+}
+button.success:not(.nohydrogen):active {
+	--background:              var(--green);
+	--backgroundBottom:        var(--greenFaint);
+	--backgroundTop:           var(--green);
+}
+
+
+button.info:not(.nohydrogen) {
+	--background:              var(--skyblue);
+	--backgroundTop:           var(--cyanFaint);
+	--backgroundBottom:        var(--cyan);
+
+	--foreground:        #444;
+
+	--borderTop:             #fff;
+	--borderLeft:  #fefefe;
+	--borderRight:                #fefefe;
+	--borderBottom:        #eee;
+}
+button.info:not(.nohydrogen):active {
+	--background:              var(--cyan);
+	--backgroundBottom:        var(--cyanFaint);
+	--backgroundTop:           var(--cyan);
+}
+
+button.warning:not(.nohydrogen) {
+	--background:              var(--yellow);
+	--backgroundTop:           var(--yellowFaint);
+	--backgroundBottom:        var(--yellow);
+
+	--foreground:        #444;
+
+	--borderTop:             #fff;
+	--borderLeft:  #fefefe;
+	--borderRight:                #fefefe;
+	--borderBottom:        #eee;
+}
+button.warning:not(.nohydrogen):active {
+	--background:              var(--yellow);
+	--backgroundBottom:        var(--yellowFaint);
+	--backgroundTop:           var(--yellow);
+}
+
+button.danger:not(.nohydrogen) {
+	--background:              var(--red);
+	--backgroundTop:           var(--redFaint);
+	--backgroundBottom:        var(--red);
+
+	--foreground:        #eee;
+
+	--borderTop:             #fff;
+	--borderLeft:  #fefefe;
+	--borderRight:                #fefefe;
+	--borderBottom:        #eee;
+}
+button.danger:not(.nohydrogen):active {
+	--background:              var(--red);
+	--backgroundBottom:        var(--redFaint);
+	--backgroundTop:           var(--red);
+}
+
+
+
+/* ##"""""""""""""""""""############### */
+/* ## RESPONSIVE DESIGN ############### */
+/* ##...................############### */
+
+
+
+/* Mobile users */
+
+@media screen and (any-pointer: coarse) {
+	button:not(.nohydrogen) {
+		--paddingTop: 0.4rem;
+		--paddingLeft: 0.7rem;
+		--paddingRight: 0.7rem;
+		--paddingBottom: 0.4rem;
+	}
+}
+
+
+
+
+
+
+/* eXtra Small screens */
+@media screen and (max-width: 600px) {
+	:root {--font-size: 90%;}
+}
+
+
+
+
+
+
+/* Small screens */
+@media screen and (min-width: 601px) and (max-width: 768px) {
+}
+
+
+
+
+
+
+/* Medium screens */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+}
+
+
+
+
+
+
+
+
+/* Large screens */
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+	:root {
+		--pagePaddingTop:          24px;
+		--pagePaddingLeft: calc(18px + 8vw);
+		--pagePaddingRight:              calc(18px + 8vw);
+		--pagePaddingBottom:     36px;
+	}
+}
+
+
+
+
+
+
+
+
+
+/* eXtra-Large screens */
+@media screen and (min-width: 1201px) {
+	:root {
+		--pagePaddingTop:          24px;
+		--pagePaddingLeft: calc(18px + 11vw);
+		--pagePaddingRight:              calc(18px + 11vw);
+		--pagePaddingBottom:     36px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+/* ###################################### */
+/* ## RESPONDING TO ACCESSIBILITY ####### */
+/* ###################################### */
+
+/* Empty for now. */
