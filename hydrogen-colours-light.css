@@ -346,7 +346,7 @@ button.primary:not(.nohydrogen) {
 	--borderRight:                #fefefe;
 	--borderBottom:        #eee;
 }
-button.primary:active:not(.nohydrogen) {
+button.primary:not(.nohydrogen):active {
 	--background:              var(--blue);
 	--backgroundBottom:        var(--blueFaint);
 	--backgroundTop:           var(--blue);
@@ -364,7 +364,7 @@ button.success:not(.nohydrogen) {
 	--borderRight:                #fefefe;
 	--borderBottom:        #eee;
 }
-button.success:active:not(.nohydrogen) {
+button.success:not(.nohydrogen):active {
 	--background:              var(--green);
 	--backgroundBottom:        var(--greenFaint);
 	--backgroundTop:           var(--green);
@@ -383,7 +383,7 @@ button.info:not(.nohydrogen) {
 	--borderRight:                #fefefe;
 	--borderBottom:        #eee;
 }
-button.info:active:not(.nohydrogen) {
+button.info:not(.nohydrogen):active {
 	--background:              var(--cyan);
 	--backgroundBottom:        var(--cyanFaint);
 	--backgroundTop:           var(--cyan);
@@ -401,7 +401,7 @@ button.warning:not(.nohydrogen) {
 	--borderRight:                #fefefe;
 	--borderBottom:        #eee;
 }
-button.warning:active:not(.nohydrogen) {
+button.warning:not(.nohydrogen):active {
 	--background:              var(--yellow);
 	--backgroundBottom:        var(--yellowFaint);
 	--backgroundTop:           var(--yellow);
@@ -419,7 +419,7 @@ button.danger:not(.nohydrogen) {
 	--borderRight:                #fefefe;
 	--borderBottom:        #eee;
 }
-button.danger:active:not(.nohydrogen) {
+button.danger:not(.nohydrogen):active {
 	--background:              var(--red);
 	--backgroundBottom:        var(--redFaint);
 	--backgroundTop:           var(--red);
