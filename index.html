@@ -10,12 +10,13 @@
 	<script>
 function changeAccent(newColor) {
 	if (newColor == `DEFAULT_ACCENT`) {
-		document.documentElement.style.setProperty(`--accentHilight`, getComputedStyle(document.documentElement).getPropertyValue(`--${newColor}_HILIGHT`));
+		document.documentElement.style.setProperty(`--accentHilight`, `var(--DEFAULT_ACCENT_HILIGHT)`);
 	}
 	else {
-		document.documentElement.style.setProperty(`--accentHilight`, getComputedStyle(document.documentElement).getPropertyValue(`--${newColor}Hilight`));
+		document.documentElement.style.setProperty(`--accentHilight`, `var(--${newColor}Hilight)`);
 	}
-document.documentElement.style.setProperty(`--accent`, getComputedStyle(document.documentElement).getPropertyValue(`--${newColor}`)); 
+document.documentElement.style.setProperty(`--accent`, `var(--${newColor})`);
+document.documentElement.style.setPeoperty(`--hilight`, `var(--${newColor})`);
 }
 	</script>
 </head>
