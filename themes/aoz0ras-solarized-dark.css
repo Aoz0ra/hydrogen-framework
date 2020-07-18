@@ -1,0 +1,10 @@
+:root {
+	--base03: #002b36; /* dark - background */
+	--base02: #073642; /* dark - bg emphasis */
+	--base01: #586e75; /* dark - comment // light - text emphasis */
+	--base00: #657b83; /* light - text */
+	--base0: #839496;  /* dark - text */
+	--base1: #93a1a1;  /* dark - text emphasis // light - comment */
+	--base2: #eee8d5;  /* light - bg emphasis */
+	--base3: #fdf6e3;  /* light - background */
+}
