@@ -706,7 +706,7 @@ div.fullscreen-round {
 
 
 /* eXtra Small screens */
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
 	h1.title:not(.nohydrogen) {font-size: var(--fontSizeH1)}
 	div.navbar {padding: calc(0.3vh + 0.3vw) calc(0.5vh + 0.5vw)}
 	div.dropdown {position: relative;display: inline-block;}
@@ -764,7 +764,7 @@ div.fullscreen-round {
 
 
 /* Small screens */
-@media screen and (min-width: 601px) and (max-width: 768px) {
+@media (min-width: 601px) and (max-width: 768px) {
 
 	div.float-left-xs, div.float-left-s {float: left;}
 	div.float-right-xs, div.float-right-s {float: right;}
@@ -835,7 +835,7 @@ div.fullscreen-round {
 
 
 /* Medium screens */
-@media screen and (min-width: 769px) and (max-width: 992px) {
+@media (min-width: 769px) and (max-width: 992px) {
 
 	div.float-left-xs, div.float-left-s, div.float-left-m {float: left;}
 	div.float-right-xs, div.float-right-s, div.float-right-m {float: right;}
@@ -922,7 +922,7 @@ div.fullscreen-round {
 
 
 /* Large screens */
-@media screen and (min-width: 993px) and (max-width: 1200px) {
+@media (min-width: 993px) and (max-width: 1200px) {
 	div.float-left-xs, div.float-left-s, div.float-left-m, div.float-left-l {float: left;}
 	div.float-right-xs,div.float-right-s,div.float-right-m,div.float-right-l{float: right;}
 
@@ -1039,7 +1039,7 @@ div.fullscreen-round {
 
 
 /* eXtra-Large screens */
-@media screen and (min-width: 1201px) {
+@media (min-width: 1201px) {
 	div.drop-content.drop-navbar {
 		display: flex;
 		transition: none;
@@ -1233,7 +1233,7 @@ div.fullscreen-round {
 
 /* Reduced Motion - The user prefers
    cross-fades over slides 'n stuff  */
-@media screen and (prefers-reduced-motion: reduce) {
+@media (prefers-reduced-motion: reduce) {
 	div.drop-content {
 		transition: height var(--animationDuration) steps(1,end),
 			padding var(--animationDuration) steps(1,end),
@@ -1252,7 +1252,7 @@ div.fullscreen-round {
 
 
 /* Browsers displaying in fullscreen */
-@media screen and (display-mode: fullscreen) {
+@media (display-mode: fullscreen) {
 	div.navbar {
 		position: fixed;
 	}
