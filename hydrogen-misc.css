@@ -74,7 +74,7 @@ div.navbar {
 
 
 
-button {
+button:not(.nohydrogen) {
 	--paddingTop:          0.15rem;
 	--paddingLeft: 0.5rem;
 	--paddingRight:              0.5rem;
@@ -93,7 +93,7 @@ button {
 /* Mobile users */
 
 @media screen and (any-pointer: coarse) {
-	button {
+	button:not(.nohydrogen) {
 		--paddingTop: 0.4rem;
 		--paddingLeft: 0.7rem;
 		--paddingRight: 0.7rem;
