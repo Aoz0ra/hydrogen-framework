@@ -1,6 +1,8 @@
 @import 'hydrogen-colours-light.css' screen and (prefers-color-scheme: light);
 @import 'hydrogen-colours-dark.css' screen and (prefers-color-scheme: dark);
+@import 'hydrogen-colours-print.css' print;
 
 @import 'hydrogen-misc.css';
 
-@import 'hydrogen-styles.css';
+@import 'hydrogen-styles.css' screen;
+@import 'hydrogen-styles-print.css' print;
