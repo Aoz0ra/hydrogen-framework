@@ -360,7 +360,7 @@ div.header {
 
 
 
-p:not(.nohydrogen) {
+p {
 	font-size: var(--fontSize, 1rem);
 }
 
@@ -368,7 +368,7 @@ p:not(.nohydrogen) {
 
 
 
-button:not(.nohydrogen) {
+button {
 
 	transition: var(--animationDurationFade, 0.3s) var(--animationFunction, ease) !important;
 	/* 	transition: var(--animationDurationFade, 0.3s) linear !important; */
@@ -393,11 +393,11 @@ button:not(.nohydrogen) {
 ::-moz-focus-inner {border:0;}
 
 
-button:hover:not(.nohydrogen), button:focus:not(.nohydrogen) {
+button:hover, button:focus {
 	box-shadow: 0px 0px 1px 1px var(--decoration), 0px 1px 2px 0px #0000, 0px 2px 2px -2px #0000;
 }
 
-button:active:not(.nohydrogen), button.active {
+button:active, button.active {
 	transition-duration: 0;
 
 	background: #77e;
@@ -407,7 +407,7 @@ button:active:not(.nohydrogen), button.active {
 
 
 
-input[type="checkbox"]:not(.nohydrogen) {
+input[type="checkbox"] {
 
 	transition: var(--animationDurationFade, 0.3s) var(--animationFunction, ease) !important;
 	
@@ -430,13 +430,13 @@ input[type="checkbox"]:not(.nohydrogen) {
 	margin: 0;
 }
 
-input[type="checkbox"]:hover:not(.nohydrogen) {
+input[type="checkbox"]:hover {
 
 	box-shadow: 0px 0px 1px 1px var(--decoration), 0px 1px 2px 0px #0000, 0px 2px 2px -2px #0000;
 	
 }
 
-input[type="checkbox"]:active:not(.nohydrogen) {
+input[type="checkbox"]:active {
 	transition-duration: 0;
 
 	background: #77e;
@@ -445,7 +445,7 @@ input[type="checkbox"]:active:not(.nohydrogen) {
 	white-space: pre-wrap;
 }
 
-input[type="checkbox"]:before:not(.nohydrogen) {
+input[type="checkbox"]:before {
 	white-space: pre-wrap;
 	position: relative;
 	content: " ";
@@ -461,7 +461,7 @@ input[type="checkbox"]:before:not(.nohydrogen) {
   border-width: 0 3px 2px 0;
 }
 
-input[type="checkbox"]:checked:before:not(.nohydrogen) {
+input[type="checkbox"]:checked:before {
 	opacity: 100%;
 }
 
@@ -474,7 +474,7 @@ input[type="checkbox"]:checked:before:not(.nohydrogen) {
 
 /*  TABLES                            */
 
-table:not(.nohydrogen), th:not(.nohydrogen), td:not(.nohydrogen) {
+table, th, td {
 	border: var(--borderWidth) solid var(--border);
 	border-color: var(--borderTop) var(--borderLeft) var(--borderBottom) var(--borderRight);
 	border-spacing: 0px;
@@ -482,13 +482,13 @@ table:not(.nohydrogen), th:not(.nohydrogen), td:not(.nohydrogen) {
 }
 
 
-h1.title:not(.nohydrogen) {
+h1.title {
 	font-size: var(--fontSizeTitle, calc(2rem + 1vmax));
 	text-align: center;
 	font-weight: 200;
 	letter-spacing: -0.1rem;
 }
-p.subtitle:not(.nohydrogen) {
+p.subtitle {
 	text-align: center;
 	letter-spacing: 0.1rem;
 }
