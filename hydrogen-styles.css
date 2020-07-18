@@ -360,7 +360,7 @@ div.header {
 
 
 
-p {
+p:not(.nohydrogen) {
 	font-size: var(--fontSize, 1rem);
 }
 
@@ -368,7 +368,7 @@ p {
 
 
 
-button {
+button:not(.nohydrogen) {
 
 	transition: var(--animationDurationFade, 0.3s) var(--animationFunction, ease) !important;
 	/* 	transition: var(--animationDurationFade, 0.3s) linear !important; */
@@ -393,11 +393,11 @@ button {
 ::-moz-focus-inner {border:0;}
 
 
-button:hover, button:focus {
+button:not(.nohydrogen):hover, button:not(.nohydrogen):focus {
 	box-shadow: 0px 0px 1px 1px var(--decoration), 0px 1px 2px 0px #0000, 0px 2px 2px -2px #0000;
 }
 
-button:active, button.active {
+button:not(.nohydrogen):active, button.active {
 	transition-duration: 0;
 
 	background: #77e;
@@ -407,7 +407,7 @@ button:active, button.active {
 
 
 
-input[type="checkbox"] {
+input[type="checkbox"]:not(.nohydrogen) {
 
 	transition: var(--animationDurationFade, 0.3s) var(--animationFunction, ease) !important;
 	
@@ -430,13 +430,13 @@ input[type="checkbox"] {
 	margin: 0;
 }
 
-input[type="checkbox"]:hover {
+input[type="checkbox"]:not(.nohydrogen):hover {
 
 	box-shadow: 0px 0px 1px 1px var(--decoration), 0px 1px 2px 0px #0000, 0px 2px 2px -2px #0000;
 	
 }
 
-input[type="checkbox"]:active {
+input[type="checkbox"]:not(.nohydrogen):active {
 	transition-duration: 0;
 
 	background: #77e;
@@ -445,7 +445,7 @@ input[type="checkbox"]:active {
 	white-space: pre-wrap;
 }
 
-input[type="checkbox"]:before {
+input[type="checkbox"]:not(.nohydrogen):before {
 	white-space: pre-wrap;
 	position: relative;
 	content: " ";
@@ -461,20 +461,20 @@ input[type="checkbox"]:before {
   border-width: 0 3px 2px 0;
 }
 
-input[type="checkbox"]:checked:before {
+input[type="checkbox"]:not(.nohydrogen):checked:before {
 	opacity: 100%;
 }
 
 
 
-*:focus {
+*:not(.nohydrogen):focus {
 	outline: none;
 }
 
 
 /*  TABLES                            */
 
-table, th, td {
+table:not(.nohydrogen), th:not(.nohydrogen), td:not(.nohydrogen) {
 	border: var(--borderWidth) solid var(--border);
 	border-color: var(--borderTop) var(--borderLeft) var(--borderBottom) var(--borderRight);
 	border-spacing: 0px;
@@ -482,13 +482,13 @@ table, th, td {
 }
 
 
-h1.title {
+h1.title:not(.nohydrogen) {
 	font-size: var(--fontSizeTitle, calc(2rem + 1vmax));
 	text-align: center;
 	font-weight: 200;
 	letter-spacing: -0.1rem;
 }
-p.subtitle {
+p.subtitle:not(.nohydrogen) {
 	text-align: center;
 	letter-spacing: 0.1rem;
 }
@@ -546,61 +546,66 @@ p.subtitle {
 
 /* Text and typography */
 
-h1 small,h2 small,h3 small,h4 small,h5 small,h6 small {
+h1 small:not(.nohydrogen),
+h2 small:not(.nohydrogen),
+h3 small:not(.nohydrogen),
+h4 small:not(.nohydrogen),
+h5 small:not(.nohydrogen),
+h6 small:not(.nohydrogen) {
 	font-size: 0.75em;
 	color: var(--foregroundFaint)
 }
 
 
-.small {
+.small:not(.nohydrogen) {
 	font-size: 0.85em;
 }
 
-.lead {
+.lead:not(.nohydrogen) {
 	font-size: 1.2em;
 }
 
-abbr {
+abbr:not(.nohydrogen) {
 	text-decoration: underline dotted var(--foregroundFaint);
 	cursor: help;
 }
 
-abbr.initialism {
+abbr.initialism:not(.nohydrogen) {
 	font-size: 0.9em;
 }
 
-blockquote {
+blockquote:not(.nohydrogen) {
 	border-left: var(--borderWidth) var(--borderLeft) solid;
 	margin: 0;
 	padding: 1em;
 }
-blockquote footer {
+blockquote footer:not(.nohydrogen) {
 	font-size: 0.9em;
 	color: var(--foregroundFaint)
 }
 
-blockquote.blockquote-reverse {
+blockquote.blockquote-reverse:not(.nohydrogen) {
 	border-left: none;
 	border-right: var(--borderWidth) var(--borderRight) solid;
 	text-align: right;
 }
 
-var {
+var:not(.nohydrogen) {
 	font-style: italic;
 }
 
-code, pre {
+code:not(.nohydrogen), pre:not(.nohydrogen) {
 	background: var(--backgroundHilight);
 	padding: 0.5em 1em;
 	border-radius: var(--borderRadius);
 }
 
-pre.pre-scrollable {
+pre.pre-scrollable:not(.nohydrogen) {
 	max-height: 350px;
 	overflow-y: scroll;
 }
 
-kbd {
+kbd:not(.nohydrogen) {
 	background: var(--foregroundHilight);
 	color: var(--background);
 	padding: 0.25em 0.6em;
@@ -619,7 +624,7 @@ kbd {
 
 
 
-.block {
+.block:not(.nohydrogen) {
 	display: block;
 	width: 100%;
 	margin-left: 2px;
@@ -630,19 +635,19 @@ kbd {
 
 
 
-.btn-group button {
+.btn-group button:not(.nohydrogen) {
 	border-radius: 0;
 	margin-left: -1px;
 	margin-right: -1px;
 }
 
-.btn-group button:first-of-type {
+.btn-group button:not(.nohydrogen):first-of-type {
 	border-top-left-radius: var(--borderRadius);
 	border-bottom-left-radius: var(--borderRadius);
 	margin-left: 2px;
 }
 
-.btn-group button:last-of-type {
+.btn-group button:not(.nohydrogen):last-of-type {
 	border-top-right-radius: var(--borderRadius);
 	border-bottom-right-radius: var(--borderRadius);
 	margin-right: 2px;
@@ -650,12 +655,12 @@ kbd {
 
 
 
-.btn-group.btn-group-justified {
+.btn-group.btn-group-justified:not(.nohydrogen) {
 	display: flex;
 	justify-content: space-between;
 }
 
-.btn-group.btn-group-justified button {
+.btn-group.btn-group-justified button:not(.nohydrogen) {
 	flex-grow: 1;
 	flex-basis: 0;
 	border-radius: 0;
@@ -663,13 +668,13 @@ kbd {
 	margin-right: 1px;
 }
 
-.btn-group.btn-group-justified button:first-of-type {
+.btn-group.btn-group-justified button:not(.nohydrogen):first-of-type {
 	border-top-left-radius: var(--borderRadius);
 	border-bottom-left-radius: var(--borderRadius);
 	margin-left: 2px;
 }
 
-.btn-group.btn-group-justified button:last-of-type {
+.btn-group.btn-group-justified button:not(.nohydrogen):last-of-type {
 	border-top-right-radius: var(--borderRadius);
 	border-bottom-right-radius: var(--borderRadius);
 	margin-right: -1px;
@@ -702,8 +707,7 @@ div.fullscreen-round {
 
 /* eXtra Small screens */
 @media screen and (max-width: 600px) {
-	html {font-size: 90%}
-	h1.title {font-size: var(--fontSizeH1)}
+	h1.title:not(.nohydrogen) {font-size: var(--fontSizeH1)}
 	div.navbar {padding: calc(0.3vh + 0.3vw) calc(0.5vh + 0.5vw)}
 	div.dropdown {position: relative;display: inline-block;}
 	div.drop-content {
@@ -1249,11 +1253,11 @@ div.fullscreen-round {
 
 /* Browsers displaying in fullscreen */
 @media screen and (display-mode: fullscreen) {
-	div.navbar{
+	div.navbar {
 		position: fixed;
 	}
 	
-	body{
+	body {
 		margin-top: calc(2em);
 	}
 }
