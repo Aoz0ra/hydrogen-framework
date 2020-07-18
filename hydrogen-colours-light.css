@@ -165,7 +165,7 @@ button:not(.nohydrogen) {
 	--decoration: #0000;
 }
 
-button:hover:not(.nohydrogen), button:focus:not(.nohydrogen) {
+button:not(.nohydrogen):hover, button:not(.nohydrogen):focus {
 	--background:              #dddc;
 	--backgroundTop:           #f8f8f8cc;
 	--backgroundBottom:        #cccc;
@@ -180,7 +180,7 @@ button:hover:not(.nohydrogen), button:focus:not(.nohydrogen) {
 	--decoration: var(--hilight);
 }
 
-button:active:not(.nohydrogen), button.active {
+button:not(.nohydrogen):active, button.active {
 	--background:              #d8d8d8cc;
 	--backgroundFaint:         #d8d8d888;
 
@@ -201,7 +201,7 @@ button:active:not(.nohydrogen), button.active {
 
 
 
-button.hilight:not(.nohydrogen) {
+button:not(.nohydrogen).hilight {
 	--background:       #ddd;
 	--backgroundTop:    #f8f8f8;
 	--backgroundBottom: #ccc;
@@ -212,7 +212,7 @@ button.hilight:not(.nohydrogen) {
 	--borderBottom:        #eee;
 }
 
-button.hilight:hover:not(.nohydrogen), button.hilight:focus:not(.nohydrogen) {
+button.hilight:not(.nohydrogen):hover, button.hilight:not(.nohydrogen):focus {
 	--background:       #ddd;
 	--backgroundTop:    #f8f8f8;
 	--backgroundBottom: #ccc;
@@ -224,7 +224,7 @@ button.hilight:hover:not(.nohydrogen), button.hilight:focus:not(.nohydrogen) {
 	--decoration: var(--hilightHilight);
 }
 
-button.hilight:active:not(.nohydrogen), button.hilight.active {
+button.hilight:not(.nohydrogen):active, button.hilight.active {
 	--background:       #ccc;
 	--backgroundTop: #ccc;
 	--backgroundBottom:    #f8f8f8;
@@ -248,7 +248,7 @@ button.faint:not(.nohydrogen) {
 	--borderBottom:        #eee8;
 }
 
-button.faint:hover:not(.nohydrogen), button.faint:focus:not(.nohydrogen) {
+button.faint:not(.nohydrogen):hover, button.faint:not(.nohydrogen):focus {
 	--background:         #ddd8;
 	--backgroundTop:      #f8f8f888;
 	--backgroundBottom:   #ccc8;
@@ -260,7 +260,7 @@ button.faint:hover:not(.nohydrogen), button.faint:focus:not(.nohydrogen) {
 	--decoration: var(--hilightFaint);
 }
 
-button.faint:active:not(.nohydrogen), button.faint.active {
+button.faint:not(.nohydrogen):active, button.faint.active {
 	--backgroundBottom:      #f8f8f888;
 	--foreground:   #444c;
 	--borderTop:              #eee8;
@@ -285,7 +285,7 @@ input[type="checkbox"]:not(.nohydrogen) {
 	--decoration: #0000;
 }
 
-input[type="checkbox"]:hover:not(.nohydrogen) {
+input[type="checkbox"]:not(.nohydrogen):hover {
 	--background:              #dddc;
 	--backgroundTop:           #f8f8f8cc;
 	--backgroundBottom:        #cccc;
@@ -300,7 +300,7 @@ input[type="checkbox"]:hover:not(.nohydrogen) {
 	--decoration: var(--hilight);
 }
 
-input[type="checkbox"]:active:not(.nohydrogen) {
+input[type="checkbox"]:not(.nohydrogen):active {
 	--background:              #d8d8d8cc;
 	--backgroundFaint:         #d8d8d888;
 
