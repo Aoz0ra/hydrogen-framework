@@ -355,7 +355,6 @@ div.header {
 	padding: var(--headerPaddingTop) var(--headerPaddingLeft) var(--headerPaddingBottom) var(--headerPaddingRight);
 	background: var(--backgroundHilight);
 	background: linear-gradient(to bottom, var(--backgroundHilight) 0%, var(--background) 100%);
-
 }
 
 
