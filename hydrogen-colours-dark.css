@@ -93,7 +93,24 @@
 /**********************************
 **********************************/
 
+a:link {
+  --foreground: var(--blue);
+}
 
+/* visited link */
+a:visited {
+  --foreground: var(--hotpink);
+}
+
+/* mouse over link */
+a:hover, a:focus {
+  --foreground: var(--blueHilight);
+}
+
+/* selected link */
+a:active {
+  --foreground: var(--skyblue);
+}
 
 
 /* NAVIGATION BAR */
@@ -113,6 +130,10 @@ div.navbar {
 	--borderLeft: #eee;
 	--borderRight: #eee;
 	--borderBottom: #ddd;
+}
+
+.navbar a:link {
+	--foreground: var(--skyBlue);
 }
 
 .navbar .dropdown .dropdownbutton {
