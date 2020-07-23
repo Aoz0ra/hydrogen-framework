@@ -116,9 +116,10 @@ div.navbar {
 	height: 2rem;
 }
 
-span.website-title {
+.website-title {
 	position: relative;
 	left: 1rem;
+	display: inline;
 }
 
 .navbar .dropdown .dropdownbutton {
