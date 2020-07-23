@@ -19,10 +19,12 @@
 *******************************************************************************/
 
 
-/* Why is this not standard?!
-Internet Explorer was the only one to do this. */
-* {
+*:not(.nohydrogen) {
+	/* Why is this not standard?!  Internet Explorer was the only one to do this. */
 	box-sizing: border-box;
+	
+	/* Allow for instant customization of foreground colors */
+	color: var(--foreground);
 }
 
 /* override the spacing normally set by browsers */
@@ -111,7 +113,6 @@ div.navbar {
 
 	border-bottom: var(--borderWidth) var(--borderBottom) solid;
 
-	color: var(--foreground);
 	height: 2rem;
 }
 
@@ -138,7 +139,6 @@ span.website-title {
 
 	padding: var(--paddingTop) var(--paddingLeft) var(--paddingBottom) var(--paddingLeft);
 
-	color: var(--foreground);
 }
 
 
@@ -213,7 +213,6 @@ div.drop-content div.item {
 
 
 	background: var(--background);
-	color: var(--foreground);
 	padding: var(--paddingMenuTop, 0.1rem) var(--paddingMenuLeft, 0.4rem) var(--paddingMenuBottom, 0.1rem) var(--paddingMenuRight, 0.4rem);
 	margin: 0.2rem;
 
@@ -343,7 +342,6 @@ body {
 	background: var(--background);
 	font-family: var(--sansSerifFont);
 	font-size: var(--fontSize, 1rem);
-	color: var(--foreground);
 	line-height: 1.5rem;
 
 }
@@ -386,8 +384,6 @@ button:not(.nohydrogen) {
 	box-shadow: 0px 0px 10px 1px var(--decoration), 0px 1px 2px 0px #0005, 0px 2px 2px -2px #0003;
 
 	padding: var(--paddingTop) var(--paddingLeft) var(--paddingBottom) var(--paddingLeft);
-
-	color: var(--foreground);
 }
 ::-moz-focus-inner {border:0;}
 
