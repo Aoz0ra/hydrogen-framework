@@ -164,174 +164,202 @@ div.navbar {
 
 div.drop-content div.item {
 	--background: #dddddd00;
-	--foreground: #eee;
+	--foreground: var(--base0);
 }
 
 
 
 div.item:hover {
-	--background: #dddddd33 !important;
+	--background: var(--base01) !important;
 }
 
 
 
 
 button:not(.nohydrogen) {
-	--background:              #222c;
-	--backgroundTop:           #444c;
-	--backgroundBottom:        #000c;
+	--background:              var(--base03);
+	--backgroundTop:           var(--base02);
+	--backgroundBottom:        var(--base03);
 
-	--foreground:        #eee;
+	--foreground:        var(--base0);
 
-	--borderTop:             #fff;
-	--borderLeft:  #eee;
-	--borderRight:                #eee;
-	--borderBottom:        #ddd;
+	--border: var(--base02);
+	--borderTop:             var(--base02);
+	--borderLeft:  var(--base02);
+	--borderRight:                var(--base02);
+	--borderBottom:        var(--base02);
 
 
 	--decoration: #0000;
 }
 
 button:not(.nohydrogen):hover, button:not(.nohydrogen):focus {
-	--background:              #222c;
-	--backgroundTop:           #444c;
-	--backgroundBottom:        #000c;
+	--background:              var(--base03);
+	--backgroundTop:           var(--base02);
+	--backgroundBottom:        var(--base03);
 
-	--foreground:        #eee;
+	--foreground:        var(--base0);
 
-	--borderTop:             #fff;
-	--borderLeft:  #eee;
-	--borderRight:                #eee;
-	--borderBottom:        #ddd;
+	--border: var(--hilight);
+	--borderTop:             var(--hilight);
+	--borderLeft:  var(--hilight);
+	--borderRight:                var(--hilight);
+	--borderBottom:        var(--hilight);
 
-	--decoration: var(--hilight);
+	--decoration: var(--base02);
 }
 
 button:not(.nohydrogen):active, button.active {
-	--background:              #222c;
-	--backgroundBottom:           #444c;
-	--backgroundTop:        #000c;
+	--background:              var(--base02);
+	--backgroundTop:           var(--base03);
+	--backgroundBottom:        var(--base02);
 
-	--foreground:        #eee;
+	--foreground:        var(--base0);
 
-	--borderBottom:             #fff;
-	--borderLeft:  #eee;
-	--borderRight:                #eee;
-	--borderTop:        #ddd;
+	--border: var(--base02);
+	--borderTop:             var(--base02);
+	--borderLeft:  var(--base02);
+	--borderRight:                var(--base02);
+	--borderBottom:        var(--base02);
 }
 
 
 
 button.hilight:not(.nohydrogen) {
-	--background:       #ddd;
-	--backgroundTop:    #f8f8f8;
-	--backgroundBottom: #ccc;
-	--foreground: #111;
-	--borderTop:             #fff;
-	--borderLeft:  #fefefe;
-	--borderRight:                #fefefe;
-	--borderBottom:        #eee;
+	--background:              var(--base02);
+	--backgroundTop:           var(--base02);
+	--backgroundBottom:        var(--base03);
+
+	--foreground:        var(--base1);
+
+	--border: var(--base01);
+	--borderTop:             var(--base01);
+	--borderLeft:  var(--base01);
+	--borderRight:                var(--base01);
+	--borderBottom:        var(--base01);
 }
 
 button.hilight:not(.nohydrogen):hover, button.hilight:not(.nohydrogen):focus {
-	--background:       #ddd;
-	--backgroundTop:    #f8f8f8;
-	--backgroundBottom: #ccc;
-	--foreground: #111;
-	--borderTop:             #fff;
-	--borderLeft:  #fefefe;
-	--borderRight:                #fefefe;
-	--borderBottom:        #eee;
-	--decoration: var(--hilightHilight);
+	--background:              var(--base02);
+	--backgroundTop:           var(--base02);
+	--backgroundBottom:        var(--base03);
+
+	--foreground:        var(--base1);
+
+	--border: var(--hilightHilight);
+	--borderTop:             var(--hilightHilight);
+	--borderLeft:  var(--hilightHilight);
+	--borderRight:                var(--hilightHilight);
+	--borderBottom:        var(--hilightHilight);
+	
+	--decoration: var(--base02);
 }
 
 button.hilight:not(.nohydrogen):active, button.hilight.active {
-	--background:       #ccc;
-	--backgroundTop: #ccc;
-	--backgroundBottom:    #f8f8f8;
-	--foreground: #111;
-	--borderTop:             #fff;
-	--borderLeft:  #fefefe;
-	--borderRight:                #fefefe;
-	--borderBottom:        #eee;
+	--background:              var(--base03);
+	--backgroundTop:           var(--base03);
+	--backgroundBottom:        var(--base02);
+
+	--foreground:        var(--base!);
+
+	--border: var(--base01);
+	--borderTop:             var(--base01);
+	--borderLeft:  var(--base01);
+	--borderRight:                var(--base01);
+	--borderBottom:        var(--base01);
 }
 
 
 
 button.faint:not(.nohydrogen) {
-	--background:         #ddd8;
-	--backgroundTop:      #f8f8f888;
-	--backgroundBottom:   #ccc8;
-	--foreground:   #444c;
-	--borderTop:             #fff8;
-	--borderLeft:  #fefefe88;
-	--borderRight:                #fefefe88;
-	--borderBottom:        #eee8;
+	--background:              var(--base03);
+	--backgroundTop:           var(--base03);
+	--backgroundBottom:        var(--base03);
+
+	--foreground:        var(--base01);
+
+	--border: var(--base02);
+	--borderTop:             var(--base02);
+	--borderLeft:  var(--base02);
+	--borderRight:                var(--base02);
+	--borderBottom:        var(--base02);
 }
 
 button.faint:not(.nohydrogen):hover, button.faint:not(.nohydrogen):focus {
-	--background:         #ddd8;
-	--backgroundTop:      #f8f8f888;
-	--backgroundBottom:   #ccc8;
-	--foreground:   #444c;
-	--borderTop:             #fff8;
-	--borderLeft:  #fefefe88;
-	--borderRight:                #fefefe88;
-	--borderBottom:        #eee8;
-	--decoration: var(--hilightFaint);
+	--background:              var(--base03);
+	--backgroundTop:           var(--base02);
+	--backgroundBottom:        var(--base03);
+
+	--foreground:        var(--base0);
+
+	--border: var(--hilightFaint);
+	--borderTop:             var(--hilightFaint);
+	--borderLeft:  var(--hilightFaint);
+	--borderRight:                var(--hilightFaint);
+	--borderBottom:        var(--hilightFaint);
+	
+	--decoration: #0000;
 }
 
 button.faint:not(.nohydrogen):active, button.faint.active {
-	--backgroundBottom:      #f8f8f888;
-	--foreground:   #444c;
-	--borderTop:              #eee8;
-	--borderLeft:   #fefefe88;
-	--borderRight:                 #fefefe88;
-	--borderBottom:         #fff8;
+	--background:              var(--base03);
+	--backgroundTop:           var(--base03);
+	--backgroundBottom:        var(--base02);
+
+	--foreground:        var(--base01);
+
+	--border: var(--base02);
+	--borderTop:             var(--base02);
+	--borderLeft:  var(--base02);
+	--borderRight:                var(--base02);
+	--borderBottom:        var(--base02);
 }
 
 
 input[type="checkbox"]:not(.nohydrogen) {
-	--background:              #222c;
-	--backgroundTop:           #444c;
-	--backgroundBottom:        #000c;
+	--background:              var(--base03);
+	--backgroundTop:           var(--base02);
+	--backgroundBottom:        var(--base03);
 
-	--foreground:        #eee;
+	--foreground:        var(--base0);
 
-	--borderTop:             #fff;
-	--borderLeft:  #eee;
-	--borderRight:                #eee;
-	--borderBottom:        #ddd;
+	--border: var(--base02);
+	--borderTop:             var(--base02);
+	--borderLeft:  var(--base02);
+	--borderRight:                var(--base02);
+	--borderBottom:        var(--base02);
 
 	--decoration: #0000;
 }
 
 input[type="checkbox"]:not(.nohydrogen):hover {
-	--background:              #222c;
-	--backgroundTop:           #444c;
-	--backgroundBottom:        #000c;
+	--background:              var(--base03);
+	--backgroundTop:           var(--base02);
+	--backgroundBottom:        var(--base03);
 
-	--foreground:        #eee;
+	--foreground:        var(--base0);
 
-	--borderTop:             #fff;
-	--borderLeft:  #eee;
-	--borderRight:                #eee;
-	--borderBottom:        #ddd;
+	--border: var(--hilight);
+	--borderTop:             var(--hilight);
+	--borderLeft:  var(--hilight);
+	--borderRight:                var(--hilight);
+	--borderBottom:        var(--hilight);
 
-	--decoration: var(--hilight);
+	--decoration: var(--base02);
 }
 
 input[type="checkbox"]:not(.nohydrogen):active {
-	--background:              #222c;
-	--backgroundBottom:           #444c;
-	--backgroundTop:        #000c;
+	--background:              var(--base02);
+	--backgroundTop:           var(--base03);
+	--backgroundBottom:        var(--base02);
 
-	--foreground:        #eee;
+	--foreground:        var(--base0);
 
-	--borderBottom:             #fff;
-	--borderLeft:  #eee;
-	--borderRight:                #eee;
-	--borderTop:        #ddd;
+	--border: var(--base02);
+	--borderTop:             var(--base02);
+	--borderLeft:  var(--base02);
+	--borderRight:                var(--base02);
+	--borderBottom:        var(--base02);
 
 }
 
@@ -344,10 +372,11 @@ input[type="checkbox"]:not(.nohydrogen):active {
 /* Buttons */
 
 button.default:not(.nohydrogen) {
-	--borderTop:             #bdf;
-	--borderLeft:  #bedefe;
-	--borderRight:                #bedefe;
-	--borderBottom:        #ace;
+	--border: var(--base01);
+	--borderTop:             var(--base02);
+	--borderLeft:  var(--base02);
+	--borderRight:                var(--base02);
+	--borderBottom:        var(--base00);
 }
 
 button.primary:not(.nohydrogen) {
