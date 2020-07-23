@@ -448,7 +448,6 @@ button.danger:not(.nohydrogen):active {
 
 /* eXtra Small screens */
 @media screen and (max-width: 600px) {
-	:root {--font-size: 90%;}
 }
 
 
