@@ -7,4 +7,509 @@
 	--base1: #93a1a1;  /* dark - text emphasis // light - comment */
 	--base2: #eee8d5;  /* light - bg emphasis */
 	--base3: #fdf6e3;  /* light - background */
+	
+	
+	/******************
+	**  MAIN COLORS  **
+	*******************/
+
+	--background:        var(--base03);
+	--backgroundHilight: var(--base02);
+	--backgroundFaint:   var(--base03);
+
+	--foreground:        var(--base0);
+	--foregroundHilight: var(--base1);
+	--foregroundFaint:   var(--base01);
+
+
+	--border: var(--base02);
+	--borderTop:             var(--base02);
+	--borderLeft:  var(--base02);
+	--borderRight:                var(--base02);
+	--borderBottom:        var(--base02);
+
+
+
+
+	--red:       #dc322f;
+	--orange:    #cb4b16;
+	--yellow:    #b58900;
+	--lime:      #9D9100;
+	--green:     #859900;
+	--aquagreen: #568a61;
+	--cyan:      #2aa198;
+	--skyblue:   #1896a5;
+	--blue:      #268bd2;
+	--purple:    #6c71c4;
+	--pink:      #d33682;
+	--hotpink:   #D13C62;
+
+	--redMuted:       #a66;
+	--orangeMuted:    #a86;
+	--yellowMuted:    #aa6;
+	--limeMuted:      #8a6;
+	--greenMuted:     #6a6;
+	--aquagreenMuted: #6a8;
+	--cyanMuted:      #68a;
+	--skyblueMuted:   #67a;
+	--blueMuted:      #66a;
+	--purpleMuted:    #86a;
+	--pinkMuted:      #a6a;
+	--hotpinkMuted:   #a68;
+
+	--redHilight:       #f55;
+	--orangeHilight:    #fc2;
+	--yellowHilight:    #ff2;
+	--limeHilight:      #bf2;
+	--greenHilight:     #2f2;
+	--aquagreenHilight: #2fb;
+	--cyanHilight:      #2ef;
+	--skyblueHilight:   #2bf;
+	--blueHilight:      #22f;
+	--purpleHilight:    #b2f;
+	--pinkHilight:      #f2f;
+	--hotpinkHilight:   #f2b;
+
+	--redFaint:       #dc322faa;
+	--orangeFaint:    #cb4b16aa;
+	--yellowFaint:    #b58900aa;
+	--limeFaint:      #9D9100aa;
+	--greenFaint:     #859900aa;
+	--aquagreenFaint: #568a61aa;
+	--cyanFaint:      #2aa198aa;
+	--skyblueFaint:   #1896a5aa;
+	--blueFaint:      #268bd2aa;
+	--purpleFaint:    #6c71c4aa;
+	--pinkFaint:      #d33682aa;
+	--hotpinkFaint:   #D13C62aa;
+
+
+	--hilight: var(--blue);
+	--hilightHilight: var(--blueHilight);
+	--hilightFaint: var(--blueFaint);
+
+	--DEFAULT_ACCENT: var(--blue);
+	--DEFAULT_ACCENT_HILIGHT: var(--blueHilight);
+
+	--accent: var(--DEFAULT_ACCENT);
+	--accentHilight: var(--DEFAULT_ACCENT_HILIGHT);
 }
+
+
+/**********************************
+**********************************/
+
+a:link {
+  --foreground: var(--blue);
+}
+
+/* visited link */
+a:visited {
+  --foreground: var(--hotpink);
+}
+
+/* mouse over link */
+a:hover, a:focus {
+  --foreground: var(--skyblue);
+}
+
+/* selected link */
+a:active {
+  --foreground: var(--blue);
+}
+
+
+/* NAVIGATION BAR */
+
+div.navbar {
+	/* 	--background:        #eee; */
+	/* 	--backgroundTop:     #fff; */
+	/* 	--backgroundBottom:  #e0e0e0; */
+
+	--background: var(--base03);
+	--backgroundTop: var(--base02);
+	--backgroundBottom: var(--base03);
+
+	--foreground: var(--base1);
+
+	--border: var(--base02);
+	--borderTop:             var(--base02);
+	--borderLeft:  var(--base02);
+	--borderRight:                var(--base02);
+	--borderBottom:        var(--base02);
+}
+
+.navbar a:link {
+	--foreground: var(--blue);
+}
+
+.navbar .dropdown .dropdownbutton {
+	--background:              var(--base03);
+	--backgroundTop:           var(--base02);
+	--backgroundBottom:        var(--base03);
+
+	--foreground:        var(--base0);
+
+	--border: var(--base02);
+	--borderTop:             var(--base02);
+	--borderLeft:  var(--base02);
+	--borderRight:                var(--base02);
+	--borderBottom:        var(--base02);
+
+	--decoration: #0000;
+}
+
+
+
+
+div.drop-content div.item {
+	--background: #dddddd00;
+	--foreground: #eee;
+}
+
+
+
+div.item:hover {
+	--background: #dddddd33 !important;
+}
+
+
+
+
+button:not(.nohydrogen) {
+	--background:              #222c;
+	--backgroundTop:           #444c;
+	--backgroundBottom:        #000c;
+
+	--foreground:        #eee;
+
+	--borderTop:             #fff;
+	--borderLeft:  #eee;
+	--borderRight:                #eee;
+	--borderBottom:        #ddd;
+
+
+	--decoration: #0000;
+}
+
+button:not(.nohydrogen):hover, button:not(.nohydrogen):focus {
+	--background:              #222c;
+	--backgroundTop:           #444c;
+	--backgroundBottom:        #000c;
+
+	--foreground:        #eee;
+
+	--borderTop:             #fff;
+	--borderLeft:  #eee;
+	--borderRight:                #eee;
+	--borderBottom:        #ddd;
+
+	--decoration: var(--hilight);
+}
+
+button:not(.nohydrogen):active, button.active {
+	--background:              #222c;
+	--backgroundBottom:           #444c;
+	--backgroundTop:        #000c;
+
+	--foreground:        #eee;
+
+	--borderBottom:             #fff;
+	--borderLeft:  #eee;
+	--borderRight:                #eee;
+	--borderTop:        #ddd;
+}
+
+
+
+button.hilight:not(.nohydrogen) {
+	--background:       #ddd;
+	--backgroundTop:    #f8f8f8;
+	--backgroundBottom: #ccc;
+	--foreground: #111;
+	--borderTop:             #fff;
+	--borderLeft:  #fefefe;
+	--borderRight:                #fefefe;
+	--borderBottom:        #eee;
+}
+
+button.hilight:not(.nohydrogen):hover, button.hilight:not(.nohydrogen):focus {
+	--background:       #ddd;
+	--backgroundTop:    #f8f8f8;
+	--backgroundBottom: #ccc;
+	--foreground: #111;
+	--borderTop:             #fff;
+	--borderLeft:  #fefefe;
+	--borderRight:                #fefefe;
+	--borderBottom:        #eee;
+	--decoration: var(--hilightHilight);
+}
+
+button.hilight:not(.nohydrogen):active, button.hilight.active {
+	--background:       #ccc;
+	--backgroundTop: #ccc;
+	--backgroundBottom:    #f8f8f8;
+	--foreground: #111;
+	--borderTop:             #fff;
+	--borderLeft:  #fefefe;
+	--borderRight:                #fefefe;
+	--borderBottom:        #eee;
+}
+
+
+
+button.faint:not(.nohydrogen) {
+	--background:         #ddd8;
+	--backgroundTop:      #f8f8f888;
+	--backgroundBottom:   #ccc8;
+	--foreground:   #444c;
+	--borderTop:             #fff8;
+	--borderLeft:  #fefefe88;
+	--borderRight:                #fefefe88;
+	--borderBottom:        #eee8;
+}
+
+button.faint:not(.nohydrogen):hover, button.faint:not(.nohydrogen):focus {
+	--background:         #ddd8;
+	--backgroundTop:      #f8f8f888;
+	--backgroundBottom:   #ccc8;
+	--foreground:   #444c;
+	--borderTop:             #fff8;
+	--borderLeft:  #fefefe88;
+	--borderRight:                #fefefe88;
+	--borderBottom:        #eee8;
+	--decoration: var(--hilightFaint);
+}
+
+button.faint:not(.nohydrogen):active, button.faint.active {
+	--backgroundBottom:      #f8f8f888;
+	--foreground:   #444c;
+	--borderTop:              #eee8;
+	--borderLeft:   #fefefe88;
+	--borderRight:                 #fefefe88;
+	--borderBottom:         #fff8;
+}
+
+
+input[type="checkbox"]:not(.nohydrogen) {
+	--background:              #222c;
+	--backgroundTop:           #444c;
+	--backgroundBottom:        #000c;
+
+	--foreground:        #eee;
+
+	--borderTop:             #fff;
+	--borderLeft:  #eee;
+	--borderRight:                #eee;
+	--borderBottom:        #ddd;
+
+	--decoration: #0000;
+}
+
+input[type="checkbox"]:not(.nohydrogen):hover {
+	--background:              #222c;
+	--backgroundTop:           #444c;
+	--backgroundBottom:        #000c;
+
+	--foreground:        #eee;
+
+	--borderTop:             #fff;
+	--borderLeft:  #eee;
+	--borderRight:                #eee;
+	--borderBottom:        #ddd;
+
+	--decoration: var(--hilight);
+}
+
+input[type="checkbox"]:not(.nohydrogen):active {
+	--background:              #222c;
+	--backgroundBottom:           #444c;
+	--backgroundTop:        #000c;
+
+	--foreground:        #eee;
+
+	--borderBottom:             #fff;
+	--borderLeft:  #eee;
+	--borderRight:                #eee;
+	--borderTop:        #ddd;
+
+}
+
+
+
+/* ##"""""""""""""##################### */
+/* ## BOOTSTRAP 3 ##################### */
+/* ##.............##################### */
+
+/* Buttons */
+
+button.default:not(.nohydrogen) {
+	--borderTop:             #bdf;
+	--borderLeft:  #bedefe;
+	--borderRight:                #bedefe;
+	--borderBottom:        #ace;
+}
+
+button.primary:not(.nohydrogen) {
+	--background:              var(--blue);
+	--backgroundTop:           var(--blueFaint);
+	--backgroundBottom:        var(--blue);
+
+	--foreground:        #eee;
+
+	--borderTop:             #fff;
+	--borderLeft:  #fefefe;
+	--borderRight:                #fefefe;
+	--borderBottom:        #eee;
+}
+button.primary:not(.nohydrogen):active {
+	--background:              var(--blue);
+	--backgroundBottom:        var(--blueFaint);
+	--backgroundTop:           var(--blue);
+}
+
+button.success:not(.nohydrogen) {
+	--background:              var(--green);
+	--backgroundTop:           var(--greenFaint);
+	--backgroundBottom:        var(--green);
+
+	--foreground:        #eee;
+
+	--borderTop:             #fff;
+	--borderLeft:  #fefefe;
+	--borderRight:                #fefefe;
+	--borderBottom:        #eee;
+}
+button.success:not(.nohydrogen):active {
+	--background:              var(--green);
+	--backgroundBottom:        var(--greenFaint);
+	--backgroundTop:           var(--green);
+}
+
+
+button.info:not(.nohydrogen) {
+	--background:              var(--skyblue);
+	--backgroundTop:           var(--cyanFaint);
+	--backgroundBottom:        var(--cyan);
+
+	--foreground:        #444;
+
+	--borderTop:             #fff;
+	--borderLeft:  #fefefe;
+	--borderRight:                #fefefe;
+	--borderBottom:        #eee;
+}
+button.info:not(.nohydrogen):active {
+	--background:              var(--cyan);
+	--backgroundBottom:        var(--cyanFaint);
+	--backgroundTop:           var(--cyan);
+}
+
+button.warning:not(.nohydrogen) {
+	--background:              var(--yellow);
+	--backgroundTop:           var(--yellowFaint);
+	--backgroundBottom:        var(--yellow);
+
+	--foreground:        #444;
+
+	--borderTop:             #fff;
+	--borderLeft:  #fefefe;
+	--borderRight:                #fefefe;
+	--borderBottom:        #eee;
+}
+button.warning:not(.nohydrogen):active {
+	--background:              var(--yellow);
+	--backgroundBottom:        var(--yellowFaint);
+	--backgroundTop:           var(--yellow);
+}
+
+button.danger:not(.nohydrogen) {
+	--background:              var(--red);
+	--backgroundTop:           var(--redFaint);
+	--backgroundBottom:        var(--red);
+
+	--foreground:        #eee;
+
+	--borderTop:             #fff;
+	--borderLeft:  #fefefe;
+	--borderRight:                #fefefe;
+	--borderBottom:        #eee;
+}
+button.danger:not(.nohydrogen):active {
+	--background:              var(--red);
+	--backgroundBottom:        var(--redFaint);
+	--backgroundTop:           var(--red);
+}
+
+
+
+/* ##"""""""""""""""""""############### */
+/* ## RESPONSIVE DESIGN ############### */
+/* ##...................############### */
+
+
+
+
+
+
+
+
+/* eXtra Small screens */
+@media screen and (max-width: 600px) {
+}
+
+
+
+
+
+
+/* Small screens */
+@media screen and (min-width: 601px) and (max-width: 768px) {
+}
+
+
+
+
+
+
+/* Medium screens */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+}
+
+
+
+
+
+
+
+
+/* Large screens */
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+}
+
+
+
+
+
+
+
+
+
+/* eXtra-Large screens */
+@media screen and (min-width: 1201px) {
+}
+
+
+
+
+
+
+
+
+
+
+/* ###################################### */
+/* ## RESPONDING TO ACCESSIBILITY ####### */
+/* ###################################### */
+
+/* Empty for now. */
