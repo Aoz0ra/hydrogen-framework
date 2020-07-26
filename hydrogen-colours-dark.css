@@ -1,5 +1,5 @@
 /* HYDROGEN - DARK MODE COLOURS */
-/* [insert comment here] */
+/* The Dark Side approves of this */
 
 
 :root {
@@ -24,7 +24,7 @@
 
 
 
-
+  --gray:      #aaa;
 	--red:       #f44;
 	--orange:    #b84;
 	--yellow:    #aa4;
@@ -38,6 +38,7 @@
 	--pink:      #c4c;
 	--hotpink:   #c4a;
 
+  --grayMuted:      #999;
 	--redMuted:       #a66;
 	--orangeMuted:    #a86;
 	--yellowMuted:    #aa6;
@@ -51,6 +52,7 @@
 	--pinkMuted:      #a6a;
 	--hotpinkMuted:   #a68;
 
+  --grayHilight:      #ccc;
 	--redHilight:       #f55;
 	--orangeHilight:    #fc2;
 	--yellowHilight:    #ff2;
@@ -64,6 +66,7 @@
 	--pinkHilight:      #f2f;
 	--hotpinkHilight:   #f2b;
 
+  --grayFaint:      #aaaa;
 	--redFaint:       #c44a;
 	--orangeFaint:    #ca4a;
 	--yellowFaint:    #cc4a;
