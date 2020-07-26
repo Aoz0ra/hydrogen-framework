@@ -1,5 +1,5 @@
-/* HYDROGEN DEFAULTS */
-/* The default colors and stuff */
+/* HYDROGEN COLORS - PRINT */
+/* intentionally more vivid, as printers tend to output somewhat desaturated colors */
 
 
 :root {
@@ -27,7 +27,7 @@
 
 
 
-
+  --gray:      #999;
 	--red:       #f00;
 	--orange:    #ea0;
 	--yellow:    #cc0;
@@ -41,6 +41,7 @@
 	--pink:      #f0f;
 	--hotpink:   #f0a;
 
+  
 	--redMuted:       #f22;
 	--orangeMuted:    #fc2;
 	--yellowMuted:    #ff2;
