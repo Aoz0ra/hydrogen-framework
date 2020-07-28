@@ -41,7 +41,7 @@
 	--pink:      #f0f;
 	--hotpink:   #f0a;
 
-  
+  --grayMuted:      #aaa;
 	--redMuted:       #f22;
 	--orangeMuted:    #fc2;
 	--yellowMuted:    #ff2;
@@ -55,6 +55,7 @@
 	--pinkMuted:      #f2f;
 	--hotpinkMuted:   #f2b;
 
+  --grayHilight:      #888;
 	--redHilight:       #f00;
 	--orangeHilight:    #fa0;
 	--yellowHilight:    #ff0;
@@ -68,6 +69,7 @@
 	--pinkHilight:      #f0f;
 	--hotpinkHilight:   #f0a;
 
+  --grayFaint:      #999a;
 	--redFaint:       #f00a;
 	--orangeFaint:    #ea0a;
 	--yellowFaint:    #cc0a;
