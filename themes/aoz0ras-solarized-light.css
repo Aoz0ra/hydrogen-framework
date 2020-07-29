@@ -1,0 +1,544 @@
+:root {
+	--base03: #002b36; /* dark - background */
+	--base02: #073642; /* dark - bg emphasis */
+	--base01: #586e75; /* dark - comment // light - text emphasis */
+	--base00: #657b83; /* light - text */
+	--base0: #839496;  /* dark - text */
+	--base1: #93a1a1;  /* dark - text emphasis // light - comment */
+	--base2: #eee8d5;  /* light - bg emphasis */
+	--base3: #fdf6e3;  /* light - background */
+	
+	
+	/******************
+	**  MAIN COLORS  **
+	*******************/
+
+	--background:        var(--base3);
+	--backgroundHilight: var(--base2);
+	--backgroundFaint:   var(--base3);
+
+	--foreground:        var(--base00);
+	--foregroundHilight: var(--base01);
+	--foregroundFaint:   var(--base1);
+
+
+	--border: var(--base2);
+	--borderTop:             var(--base2);
+	--borderLeft:  var(--base2);
+	--borderRight:                var(--base2);
+	--borderBottom:        var(--base2);
+
+
+
+
+	--red:       #dc322f;
+	--orange:    #cb4b16;
+	--yellow:    #b58900;
+	--lime:      #9D9100;
+	--green:     #859900;
+	--aquagreen: #568a61;
+	--cyan:      #2aa198;
+	--skyblue:   #1896a5;
+	--blue:      #268bd2;
+	--purple:    #6c71c4;
+	--pink:      #d33682;
+	--hotpink:   #D13C62;
+
+	--redMuted:       #a66;
+	--orangeMuted:    #a86;
+	--yellowMuted:    #aa6;
+	--limeMuted:      #8a6;
+	--greenMuted:     #6a6;
+	--aquagreenMuted: #6a8;
+	--cyanMuted:      #68a;
+	--skyblueMuted:   #67a;
+	--blueMuted:      #66a;
+	--purpleMuted:    #86a;
+	--pinkMuted:      #a6a;
+	--hotpinkMuted:   #a68;
+
+	--redHilight:       #f55;
+	--orangeHilight:    #fc2;
+	--yellowHilight:    #ff2;
+	--limeHilight:      #bf2;
+	--greenHilight:     #2f2;
+	--aquagreenHilight: #2fb;
+	--cyanHilight:      #2ef;
+	--skyblueHilight:   #2bf;
+	--blueHilight:      #22f;
+	--purpleHilight:    #b2f;
+	--pinkHilight:      #f2f;
+	--hotpinkHilight:   #f2b;
+
+	--redFaint:       #dc322faa;
+	--orangeFaint:    #cb4b16aa;
+	--yellowFaint:    #b58900aa;
+	--limeFaint:      #9D9100aa;
+	--greenFaint:     #859900aa;
+	--aquagreenFaint: #568a61aa;
+	--cyanFaint:      #2aa198aa;
+	--skyblueFaint:   #1896a5aa;
+	--blueFaint:      #268bd2aa;
+	--purpleFaint:    #6c71c4aa;
+	--pinkFaint:      #d33682aa;
+	--hotpinkFaint:   #D13C62aa;
+
+
+	--hilight: var(--blue);
+	--hilightHilight: var(--blueHilight);
+	--hilightFaint: var(--blueFaint);
+
+	--DEFAULT_ACCENT: var(--blue);
+	--DEFAULT_ACCENT_HILIGHT: var(--blueHilight);
+
+	--accent: var(--DEFAULT_ACCENT);
+	--accentHilight: var(--DEFAULT_ACCENT_HILIGHT);
+}
+
+
+/**********************************
+**********************************/
+
+a:link {
+  --foreground: var(--blue);
+}
+
+/* visited link */
+a:visited {
+  --foreground: var(--hotpink);
+}
+
+/* mouse over link */
+a:hover, a:focus {
+  --foreground: var(--skyblue);
+}
+
+/* selected link */
+a:active {
+  --foreground: var(--blue);
+}
+
+
+/* NAVIGATION BAR */
+
+div.navbar {
+	/* 	--background:        #eee; */
+	/* 	--backgroundTop:     #fff; */
+	/* 	--backgroundBottom:  #e0e0e0; */
+
+	--background: var(--base3);
+	--backgroundTop: var(--base3);
+	--backgroundBottom: var(--base2);
+
+	--foreground: var(--base01);
+
+	--border: var(--base2);
+	--borderTop:             var(--base2);
+	--borderLeft:  var(--base2);
+	--borderRight:                var(--base2);
+	--borderBottom:        var(--base2);
+}
+
+.navbar a:link {
+	--foreground: var(--blue);
+}
+
+.navbar .dropdown .dropdownbutton {
+	--background:              var(--base3);
+	--backgroundTop:           var(--base2);
+	--backgroundBottom:        var(--base3);
+
+	--foreground:        var(--base00);
+
+	--border: var(--base2);
+	--borderTop:             var(--base2);
+	--borderLeft:  var(--base2);
+	--borderRight:                var(--base2);
+	--borderBottom:        var(--base2);
+
+	--decoration: #0000;
+}
+
+
+
+
+div.drop-content div.item {
+	--background: #dddddd00;
+	--foreground: var(--base00);
+}
+
+
+
+div.item:hover {
+	--background: var(--base1) !important;
+}
+
+
+
+
+button:not(.nohydrogen) {
+	--background:              var(--base3);
+	--backgroundTop:           var(--base3);
+	--backgroundBottom:        var(--base2);
+
+	--foreground:        var(--base00);
+
+	--border: var(--base2);
+	--borderTop:             var(--base2);
+	--borderLeft:  var(--base2);
+	--borderRight:                var(--base2);
+	--borderBottom:        var(--base2);
+
+
+	--decoration: #0000;
+}
+
+button:not(.nohydrogen):hover, button:not(.nohydrogen):focus {
+	--background:              var(--base3);
+	--backgroundTop:           var(--base3);
+	--backgroundBottom:        var(--base2);
+
+	--foreground:        var(--base00);
+
+	--border: var(--hilight);
+	--borderTop:             var(--hilight);
+	--borderLeft:  var(--hilight);
+	--borderRight:                var(--hilight);
+	--borderBottom:        var(--hilight);
+
+	--decoration: var(--base2);
+}
+
+button:not(.nohydrogen):active, button.active {
+	--background:              var(--base2);
+	--backgroundTop:           var(--base2);
+	--backgroundBottom:        var(--base3);
+
+	--foreground:        var(--base00);
+
+	--border: var(--base2);
+	--borderTop:             var(--base2);
+	--borderLeft:  var(--base2);
+	--borderRight:                var(--base2);
+	--borderBottom:        var(--base2);
+}
+
+
+
+button.hilight:not(.nohydrogen) {
+	--background:              var(--base2);
+	--backgroundTop:           var(--base3);
+	--backgroundBottom:        var(--base2);
+
+	--foreground:        var(--base01);
+
+	--border: var(--base1);
+	--borderTop:             var(--base1);
+	--borderLeft:  var(--base1);
+	--borderRight:                var(--base1);
+	--borderBottom:        var(--base1);
+}
+
+button.hilight:not(.nohydrogen):hover, button.hilight:not(.nohydrogen):focus {
+	--background:              var(--base2);
+	--backgroundTop:           var(--base3);
+	--backgroundBottom:        var(--base2);
+
+	--foreground:        var(--base01);
+
+	--border: var(--hilightHilight);
+	--borderTop:             var(--hilightHilight);
+	--borderLeft:  var(--hilightHilight);
+	--borderRight:                var(--hilightHilight);
+	--borderBottom:        var(--hilightHilight);
+	
+	--decoration: var(--base2);
+}
+
+button.hilight:not(.nohydrogen):active, button.hilight.active {
+	--background:              var(--base3);
+	--backgroundTop:           var(--base2);
+	--backgroundBottom:        var(--base3);
+
+	--foreground:        var(--base01);
+
+	--border: var(--base1);
+	--borderTop:             var(--base1);
+	--borderLeft:  var(--base1);
+	--borderRight:                var(--base1);
+	--borderBottom:        var(--base1);
+}
+
+
+
+button.faint:not(.nohydrogen) {
+	--background:              var(--base3);
+	--backgroundTop:           var(--base3);
+	--backgroundBottom:        var(--base3);
+
+	--foreground:        var(--base1);
+
+	--border: var(--base2);
+	--borderTop:             var(--base2);
+	--borderLeft:  var(--base2);
+	--borderRight:                var(--base2);
+	--borderBottom:        var(--base2);
+}
+
+button.faint:not(.nohydrogen):hover, button.faint:not(.nohydrogen):focus {
+	--background:              var(--base3);
+	--backgroundTop:           var(--base3);
+	--backgroundBottom:        var(--base3);
+
+	--foreground:        var(--base00);
+
+	--border: var(--hilightFaint);
+	--borderTop:             var(--hilightFaint);
+	--borderLeft:  var(--hilightFaint);
+	--borderRight:                var(--hilightFaint);
+	--borderBottom:        var(--hilightFaint);
+	
+	--decoration: #0000;
+}
+
+button.faint:not(.nohydrogen):active, button.faint.active {
+	--background:              var(--base3);
+	--backgroundTop:           var(--base2);
+	--backgroundBottom:        var(--base3);
+
+	--foreground:        var(--base1);
+
+	--border: var(--base2);
+	--borderTop:             var(--base2);
+	--borderLeft:  var(--base2);
+	--borderRight:                var(--base2);
+	--borderBottom:        var(--base2);
+}
+
+
+input[type="checkbox"]:not(.nohydrogen) {
+	--background:              var(--base3);
+	--backgroundTop:           var(--base3);
+	--backgroundBottom:        var(--base2);
+
+	--foreground:        var(--base00);
+
+	--border: var(--base2);
+	--borderTop:             var(--base2);
+	--borderLeft:  var(--base2);
+	--borderRight:                var(--base2);
+	--borderBottom:        var(--base2);
+
+	--decoration: #0000;
+}
+
+input[type="checkbox"]:not(.nohydrogen):hover {
+	--background:              var(--base3);
+	--backgroundTop:           var(--base3);
+	--backgroundBottom:        var(--base2);
+
+	--foreground:        var(--base00);
+
+	--border: var(--hilight);
+	--borderTop:             var(--hilight);
+	--borderLeft:  var(--hilight);
+	--borderRight:                var(--hilight);
+	--borderBottom:        var(--hilight);
+
+	--decoration: var(--base2);
+}
+
+input[type="checkbox"]:not(.nohydrogen):active {
+	--background:              var(--base2);
+	--backgroundTop:           var(--base2);
+	--backgroundBottom:        var(--base3);
+
+	--foreground:        var(--base00);
+
+	--border: var(--base2);
+	--borderTop:             var(--base2);
+	--borderLeft:  var(--base2);
+	--borderRight:                var(--base2);
+	--borderBottom:        var(--base2);
+
+}
+
+
+
+/* ##"""""""""""""##################### */
+/* ## BOOTSTRAP 3 ##################### */
+/* ##.............##################### */
+
+/* Buttons */
+
+button.default:not(.nohydrogen) {
+	--border: var(--base1);
+	--borderTop:             var(--base2);
+	--borderLeft:  var(--base2);
+	--borderRight:                var(--base2);
+	--borderBottom:        var(--base0);
+}
+
+button.primary:not(.nohydrogen) {
+	--background:              var(--blue);
+	--backgroundTop:           var(--blueFaint);
+	--backgroundBottom:        var(--blue);
+
+	--foreground:        #eee;
+
+	--borderTop:             #fff;
+	--borderLeft:  #fefefe;
+	--borderRight:                #fefefe;
+	--borderBottom:        #eee;
+}
+button.primary:not(.nohydrogen):active {
+	--background:              var(--blue);
+	--backgroundBottom:        var(--blueFaint);
+	--backgroundTop:           var(--blue);
+}
+
+button.success:not(.nohydrogen) {
+	--background:              var(--green);
+	--backgroundTop:           var(--greenFaint);
+	--backgroundBottom:        var(--green);
+
+	--foreground:        #eee;
+
+	--borderTop:             #fff;
+	--borderLeft:  #fefefe;
+	--borderRight:                #fefefe;
+	--borderBottom:        #eee;
+}
+button.success:not(.nohydrogen):active {
+	--background:              var(--green);
+	--backgroundBottom:        var(--greenFaint);
+	--backgroundTop:           var(--green);
+}
+
+
+button.info:not(.nohydrogen) {
+	--background:              var(--skyblue);
+	--backgroundTop:           var(--cyanFaint);
+	--backgroundBottom:        var(--cyan);
+
+	--foreground:        #444;
+
+	--borderTop:             #fff;
+	--borderLeft:  #fefefe;
+	--borderRight:                #fefefe;
+	--borderBottom:        #eee;
+}
+button.info:not(.nohydrogen):active {
+	--background:              var(--cyan);
+	--backgroundBottom:        var(--cyanFaint);
+	--backgroundTop:           var(--cyan);
+}
+
+button.warning:not(.nohydrogen) {
+	--background:              var(--yellow);
+	--backgroundTop:           var(--yellowFaint);
+	--backgroundBottom:        var(--yellow);
+
+	--foreground:        #444;
+
+	--borderTop:             #fff;
+	--borderLeft:  #fefefe;
+	--borderRight:                #fefefe;
+	--borderBottom:        #eee;
+}
+button.warning:not(.nohydrogen):active {
+	--background:              var(--yellow);
+	--backgroundBottom:        var(--yellowFaint);
+	--backgroundTop:           var(--yellow);
+}
+
+button.danger:not(.nohydrogen) {
+	--background:              var(--red);
+	--backgroundTop:           var(--redFaint);
+	--backgroundBottom:        var(--red);
+
+	--foreground:        #eee;
+
+	--borderTop:             #fff;
+	--borderLeft:  #fefefe;
+	--borderRight:                #fefefe;
+	--borderBottom:        #eee;
+}
+button.danger:not(.nohydrogen):active {
+	--background:              var(--red);
+	--backgroundBottom:        var(--redFaint);
+	--backgroundTop:           var(--red);
+}
+
+
+
+/* ##"""""""""""""""""""############### */
+/* ## RESPONSIVE DESIGN ############### */
+/* ##...................############### */
+
+
+
+
+
+
+
+
+/* eXtra Small screens */
+@media screen and (max-width: 600px) {
+}
+
+
+
+
+
+
+/* Small screens */
+@media screen and (min-width: 601px) and (max-width: 768px) {
+}
+
+
+
+
+
+
+/* Medium screens */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+}
+
+
+
+
+
+
+
+
+/* Large screens */
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+}
+
+
+
+
+
+
+
+
+
+/* eXtra-Large screens */
+@media screen and (min-width: 1201px) {
+}
+
+
+
+
+
+
+
+
+
+
+/* ###################################### */
+/* ## RESPONDING TO ACCESSIBILITY ####### */
+/* ###################################### */
+
+/* Empty for now. */
