@@ -366,7 +366,7 @@ p:not(.nohydrogen) {
 
 
 
-button:not(.nohydrogen) {
+button:not(.nohydrogen), input[type=color]:not(.nohydrogen) {
 
 	transition: var(--animationDurationFade, 0.3s) var(--animationFunction, ease) !important;
 	/* 	transition: var(--animationDurationFade, 0.3s) linear !important; */
@@ -389,11 +389,13 @@ button:not(.nohydrogen) {
 ::-moz-focus-inner {border:0;}
 
 
-button:not(.nohydrogen):hover, button:not(.nohydrogen):focus {
+button:not(.nohydrogen):hover, button:not(.nohydrogen):focus,
+input[type=color]:not(.nohydrogen):hover, input[type=color]:not(.nohydrogen):focus {
 	box-shadow: 0px 0px 1px 1px var(--decoration), 0px 1px 2px 0px #0000, 0px 2px 2px -2px #0000;
 }
 
-button:not(.nohydrogen):active, button.active {
+button:not(.nohydrogen):active, button.active,
+input[type=color]:not(.nohydrogen):active {
 	transition-duration: 0;
 
 	background: #77e;
@@ -631,19 +633,22 @@ kbd:not(.nohydrogen) {
 
 
 
-.btn-group button:not(.nohydrogen) {
+.btn-group button:not(.nohydrogen),
+.btn-group input[type=color]:not(.nohydrogen) {
 	border-radius: 0;
 	margin-left: -1px;
 	margin-right: -1px;
 }
 
-.btn-group button:not(.nohydrogen):first-of-type {
+.btn-group button:not(.nohydrogen):first-of-type,
+.btn-group input[type=color]:not(.nohydrogen):first-of-type {
 	border-top-left-radius: var(--borderRadius);
 	border-bottom-left-radius: var(--borderRadius);
 	margin-left: 2px;
 }
 
-.btn-group button:not(.nohydrogen):last-of-type {
+.btn-group button:not(.nohydrogen):last-of-type,
+.btn-group input[type=color]:not(.nohydrogen):last-of-type {
 	border-top-right-radius: var(--borderRadius);
 	border-bottom-right-radius: var(--borderRadius);
 	margin-right: 2px;
@@ -656,7 +661,8 @@ kbd:not(.nohydrogen) {
 	justify-content: space-between;
 }
 
-.btn-group.btn-group-justified button:not(.nohydrogen) {
+.btn-group.btn-group-justified button:not(.nohydrogen),
+.btn-group.btn-group-justified input[type=color]:not(.nohydrogen) {
 	flex-grow: 1;
 	flex-basis: 0;
 	border-radius: 0;
@@ -664,13 +670,15 @@ kbd:not(.nohydrogen) {
 	margin-right: 1px;
 }
 
-.btn-group.btn-group-justified button:not(.nohydrogen):first-of-type {
+.btn-group.btn-group-justified button:not(.nohydrogen):first-of-type,
+.btn-group.btn-group-justified input[type=color]:not(.nohydrogen):first-of-type {
 	border-top-left-radius: var(--borderRadius);
 	border-bottom-left-radius: var(--borderRadius);
 	margin-left: 2px;
 }
 
-.btn-group.btn-group-justified button:not(.nohydrogen):last-of-type {
+.btn-group.btn-group-justified button:not(.nohydrogen):last-of-type,
+.btn-group.btn-group-justified input[type=color]:not(.nohydrogen):last-of-type {
 	border-top-right-radius: var(--borderRadius);
 	border-bottom-right-radius: var(--borderRadius);
 	margin-right: -1px;
