@@ -171,7 +171,7 @@ div.item:hover {
 
 
 
-button:not(.nohydrogen) {
+button:not(.nohydrogen), input[type=color]:not(.nohydrogen) {
 	--background:              #222c;
 	--backgroundTop:           #444c;
 	--backgroundBottom:        #000c;
@@ -187,7 +187,8 @@ button:not(.nohydrogen) {
 	--decoration: #0000;
 }
 
-button:not(.nohydrogen):hover, button:not(.nohydrogen):focus {
+button:not(.nohydrogen):hover, button:not(.nohydrogen):focus,
+input[type=color]:not(.nohydrogen):hover, input[type=color]:not(.nohydrogen):focus {
 	--background:              #222c;
 	--backgroundTop:           #444c;
 	--backgroundBottom:        #000c;
@@ -202,7 +203,8 @@ button:not(.nohydrogen):hover, button:not(.nohydrogen):focus {
 	--decoration: var(--hilight);
 }
 
-button:not(.nohydrogen):active, button.active {
+button:not(.nohydrogen):active, button.active,
+input[type=color]:not(.nohydrogen):active {
 	--background:              #222c;
 	--backgroundBottom:           #444c;
 	--backgroundTop:        #000c;
@@ -218,71 +220,73 @@ button:not(.nohydrogen):active, button.active {
 
 
 button.hilight:not(.nohydrogen) {
-	--background:       #ddd;
-	--backgroundTop:    #f8f8f8;
-	--backgroundBottom: #ccc;
-	--foreground: #111;
+	--background:       #222;
+	--backgroundTop:    #444;
+	--backgroundBottom: #000;
+	--foreground: #fff;
 	--borderTop:             #fff;
-	--borderLeft:  #fefefe;
-	--borderRight:                #fefefe;
+	--borderLeft:  #f8f8f8;
+	--borderRight:                #f8f8f8;
 	--borderBottom:        #eee;
 }
 
 button.hilight:not(.nohydrogen):hover, button.hilight:not(.nohydrogen):focus {
-	--background:       #ddd;
-	--backgroundTop:    #f8f8f8;
-	--backgroundBottom: #ccc;
-	--foreground: #111;
+	--background:       #222;
+	--backgroundTop:    #444;
+	--backgroundBottom: #000;
+	--foreground: #fff;
 	--borderTop:             #fff;
-	--borderLeft:  #fefefe;
-	--borderRight:                #fefefe;
+	--borderLeft:  #f8f8f8;
+	--borderRight:                #f8f8f8;
 	--borderBottom:        #eee;
 	--decoration: var(--hilightHilight);
 }
 
 button.hilight:not(.nohydrogen):active, button.hilight.active {
-	--background:       #ccc;
-	--backgroundTop: #ccc;
-	--backgroundBottom:    #f8f8f8;
-	--foreground: #111;
-	--borderTop:             #fff;
-	--borderLeft:  #fefefe;
-	--borderRight:                #fefefe;
+	--background:       #111;
+	--backgroundTop:    #000;
+	--backgroundBottom: #444;
+	--foreground: #eee;
+	--borderTop:             #eee;
+	--borderLeft:  #f8f8f8;
+	--borderRight:                #f8f8f8;
 	--borderBottom:        #eee;
 }
 
 
 
 button.faint:not(.nohydrogen) {
-	--background:         #ddd8;
-	--backgroundTop:      #f8f8f888;
-	--backgroundBottom:   #ccc8;
-	--foreground:   #444c;
+	--background:         #2228;
+	--backgroundTop:      #4448;
+	--backgroundBottom:   #0008;
+	--foreground:   #eeec;
 	--borderTop:             #fff8;
-	--borderLeft:  #fefefe88;
-	--borderRight:                #fefefe88;
-	--borderBottom:        #eee8;
+	--borderLeft:  #eee8;
+	--borderRight:                #eee8;
+	--borderBottom:        #ddd8;
 }
 
 button.faint:not(.nohydrogen):hover, button.faint:not(.nohydrogen):focus {
-	--background:         #ddd8;
-	--backgroundTop:      #f8f8f888;
-	--backgroundBottom:   #ccc8;
-	--foreground:   #444c;
+	--background:         #2228;
+	--backgroundTop:      #4448;
+	--backgroundBottom:   #0008;
+	--foreground:   #eeec;
 	--borderTop:             #fff8;
-	--borderLeft:  #fefefe88;
-	--borderRight:                #fefefe88;
-	--borderBottom:        #eee8;
+	--borderLeft:  #eee8;
+	--borderRight:                #eee8;
+	--borderBottom:        #ddd8;
 	--decoration: var(--hilightFaint);
 }
 
 button.faint:not(.nohydrogen):active, button.faint.active {
-	--backgroundBottom:      #f8f8f888;
-	--foreground:   #444c;
-	--borderTop:              #eee8;
-	--borderLeft:   #fefefe88;
-	--borderRight:                 #fefefe88;
-	--borderBottom:         #fff8;
+	--background:         #1118;
+	--backgroundTop:      #0008;
+	--backgroundBottom:   #4448;
+	--foreground:   #eeec;
+	--borderTop:             #fff8;
+	--borderLeft:  #eee8;
+	--borderRight:                #eee8;
+	--borderBottom:        #ddd8;
 }
 
 
