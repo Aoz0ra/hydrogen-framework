@@ -1054,7 +1054,7 @@ div.fullscreen-round {
 		position: absolute;
 		top: 0;
 		right: var(--pagePaddingRight);
-		width: 200px;
+		width: auto;
 		overflow: hidden;
 		border: 0 var(--border) solid;
 		border-color: var(--borderTop) var(--borderLeft) var(--borderBottom) var(--borderRight);
