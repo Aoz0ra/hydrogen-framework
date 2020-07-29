@@ -260,7 +260,7 @@ button.hilight:not(.nohydrogen):active, button.hilight.active {
 	--backgroundTop:           var(--base03);
 	--backgroundBottom:        var(--base02);
 
-	--foreground:        var(--base!);
+	--foreground:        var(--base1);
 
 	--border: var(--base01);
 	--borderTop:             var(--base01);
