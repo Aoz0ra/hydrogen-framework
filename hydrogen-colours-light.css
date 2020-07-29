@@ -174,7 +174,7 @@ div.item:hover {
 
 
 
-button:not(.nohydrogen) {
+button:not(.nohydrogen), input[type=color]:not(.nohydrogen) {
 	--background:              #dddc;
 	--backgroundTop:           #f8f8f8cc;
 	--backgroundBottom:        #cccc;
@@ -189,7 +189,8 @@ button:not(.nohydrogen) {
 	--decoration: #0000;
 }
 
-button:not(.nohydrogen):hover, button:not(.nohydrogen):focus {
+button:not(.nohydrogen):hover, button:not(.nohydrogen):focus,
+input[type=color]:not(.nohydrogen):hover, input[type=color]:not(.nohydrogen):focus{
 	--background:              #dddc;
 	--backgroundTop:           #f8f8f8cc;
 	--backgroundBottom:        #cccc;
@@ -204,7 +205,8 @@ button:not(.nohydrogen):hover, button:not(.nohydrogen):focus {
 	--decoration: var(--hilight);
 }
 
-button:not(.nohydrogen):active, button.active {
+button:not(.nohydrogen):active, button.active,
+input[type=color]:not(.nohydrogen):active {
 	--background:              #d8d8d8cc;
 	--backgroundFaint:         #d8d8d888;
 
@@ -285,10 +287,19 @@ button.faint:not(.nohydrogen):hover, button.faint:not(.nohydrogen):focus {
 }
 
 button.faint:not(.nohydrogen):active, button.faint.active {
-	--backgroundBottom:      #f8f8f888;
+	/*--backgroundBottom:      #f8f8f888;
 	--foreground:   #444c;
 	--borderTop:              #eee8;
 	--borderLeft:   #fefefe88;
+	--borderRight:                 #fefefe88;
+	--borderBottom:         #fff8;*/
+	
+	--background:         #ccc8;
+	--backgroundTop:      #ccc8;
+	--backgroundBottom:   #f8f8f888;
+	--foreground:   #444c;
+	--borderTop:             #eee8;
+	--borderLeft:  #fefefe88;
 	--borderRight:                 #fefefe88;
 	--borderBottom:         #fff8;
 }
