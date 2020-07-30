@@ -1,0 +1,49 @@
+div.navbar {
+	/* 	--background:        #eee; */
+	/* 	--backgroundTop:     #fff; */
+	/* 	--backgroundBottom:  #e0e0e0; */
+
+	--background:              #595754;
+	--backgroundTop:           #595754;
+	--backgroundBottom:        #494744;
+
+	--foreground:        #dcc;
+
+	--borderTop:             #898784;
+	--borderLeft:  #898784;
+	--borderRight:                #898784;
+	--borderBottom:        #898784;
+}
+
+div.navbar a:link {
+	--foreground: var(--orange);
+}
+
+.navbar .dropdown .dropdownbutton {
+	--background:              #595754;
+	--backgroundTop:           #595754;
+	--backgroundBottom:        #494744;
+
+	--foreground:        #dcc;
+
+	--borderTop:             #898784;
+	--borderLeft:  #898784;
+	--borderRight:                #898784;
+	--borderBottom:        #898784;
+}
+
+
+
+
+div.drop-content div.item {
+	--background: #dddddd00;
+	--foreground: #eee;
+}
+
+
+
+div.item:hover {
+	--background: #dddddd33 !important;
+}
+
+
