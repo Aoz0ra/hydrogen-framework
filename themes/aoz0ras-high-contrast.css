@@ -84,9 +84,9 @@
 	--DEFAULT_ACCENT: var(--blue);
 	--DEFAULT_ACCENT_HILIGHT: var(--blueHilight);
     
-    --DEFAULT_HILIGHT: var(--blue);
-	--DEFAULT_HILIGHT_HILIGHT: var(--blueHilight);
-    --DEFAULT_HILIGHT_FAINT: var(--blueFaint);
+    --DEFAULT_HILIGHT: var(--yellow);
+	--DEFAULT_HILIGHT_HILIGHT: var(--yellowHilight);
+    --DEFAULT_HILIGHT_FAINT: var(--yellowFaint);
     
     --DEFAULT_SELECTION_BG: var(--orange);
     
@@ -100,6 +100,7 @@
 	--hilightFaint: var(--DEFAULT_HILIGHT_FAINT);
     
     --selectionBackground: var(--DEFAULT_SELECTION_BACKGROUND);
+	--selectionForeground: var(--foreground);
 }
 
 
