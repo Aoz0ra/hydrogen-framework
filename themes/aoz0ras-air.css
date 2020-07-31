@@ -182,7 +182,7 @@ div.item:hover {
 
 
 
-button:not(.nohydrogen) {
+button:not(.nohydrogen), input[type=color]:not(.nohydrogen) {
 	--background:              #fffc;
 	--backgroundTop:           #fffc;
 	--backgroundBottom:        #eeec;
@@ -197,7 +197,8 @@ button:not(.nohydrogen) {
 	--decoration: #0000;
 }
 
-button:not(.nohydrogen):hover, button:not(.nohydrogen):focus {
+button:not(.nohydrogen):hover, button:not(.nohydrogen):focus,
+input[type=color]:not(.nohydrogen):hover, input[type=color]:not(.nohydrogen):focus{
 	--background:              #fffc;
 	--backgroundTop:           #fffc;
 	--backgroundBottom:        #eeec;
@@ -212,7 +213,8 @@ button:not(.nohydrogen):hover, button:not(.nohydrogen):focus {
 	--decoration: var(--hilight);
 }
 
-button:not(.nohydrogen):active, button.active {
+button:not(.nohydrogen):active, button.active,
+input[type=color]:not(.nohydrogen):active{
 	--background:              #eeec;
 	--backgroundTop:        #eeec;
 	--backgroundBottom:           #fffc;
