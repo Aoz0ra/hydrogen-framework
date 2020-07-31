@@ -1058,11 +1058,11 @@ div.fullscreen-round {
 		display: flex;
 		transition: none;
 		box-sizing: border-box;
-		height: 32px;
+		height: auto;
 		opacity: 1;
 		background: none;
 		position: absolute;
-		top: 0;
+		top: -1px;
 		right: var(--pagePaddingRight);
 		width: auto;
 		overflow: hidden;
@@ -1077,7 +1077,7 @@ div.fullscreen-round {
 
 	div.dropdown:hover div.drop-content.drop-navbar {
 		transition: none;
-		height: 32px;
+		height: auto;
 		opacity: 1;
 		border-width: 0;
 		padding: 0;
@@ -1274,3 +1274,4 @@ div.fullscreen-round {
 		margin-top: calc(2em);
 	}
 }
+
