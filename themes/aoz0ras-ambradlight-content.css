@@ -131,7 +131,7 @@ a:active {
 
 
 
-button:not(.nohydrogen) {
+button:not(.nohydrogen), input[type=color]:not(.nohydrogen) {
 	--background:              #f9f7f4;
 	--backgroundTop:           #f9f7f4;
 	--backgroundBottom:        #e9e7e4;
@@ -146,7 +146,8 @@ button:not(.nohydrogen) {
 	--decoration: #0000;
 }
 
-button:not(.nohydrogen):hover, button:not(.nohydrogen):focus {
+button:not(.nohydrogen):hover, button:not(.nohydrogen):focus,
+input[type=color]:not(.nohydrogen):hover, input[type=color]:not(.nohydrogen):focus{
 	--background:              #f9f7f4;
 	--backgroundTop:           #f9f7f4;
 	--backgroundBottom:        #e9e7e4;
@@ -161,7 +162,8 @@ button:not(.nohydrogen):hover, button:not(.nohydrogen):focus {
 	--decoration: var(--hilight);
 }
 
-button:not(.nohydrogen):active, button.active {
+button:not(.nohydrogen):active, button.active,
+input[type=color]:not(.nohydrogen):active{
 	--background:              #d9d7d4;
 	--backgroundTop:           #d9d7d4;
 	--backgroundBottom:        #e9e7e4;
