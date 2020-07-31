@@ -72,8 +72,14 @@ div.row {
 }
 
 
-::-moz-selection, ::selection { 
-	background: var(--selectionBackground); color: var(--selectionForeground);
+::-moz-selection {
+	background: var(--selectionBackground);
+	color: var(--selectionForeground);
+}
+
+::selection { 
+	background: var(--selectionBackground);
+	color: var(--selectionForeground);
 }
 
 
