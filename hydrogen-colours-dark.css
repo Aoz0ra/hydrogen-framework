@@ -139,11 +139,6 @@ div.navbar {
 	--backgroundBottom: #000e;
 
 	--foreground: #eee;
-
-	--borderTop: #fff;
-	--borderLeft: #eee;
-	--borderRight: #eee;
-	--borderBottom: #ddd;
 }
 
 .navbar a:link {
@@ -155,13 +150,6 @@ div.navbar {
 	--backgroundTop:           #444c;
 	--backgroundBottom:        #000c;
 
-	--foreground:        #eee;
-
-	--borderTop:             #fff;
-	--borderLeft:  #eee;
-	--borderRight:                #eee;
-	--borderBottom:        #ddd;
-
 	--decoration: #0000;
 }
 
@@ -170,7 +158,6 @@ div.navbar {
 
 div.drop-content div.item {
 	--background: #dddddd00;
-	--foreground: #eee;
 }
 
 
@@ -182,50 +169,32 @@ div.item:hover {
 
 
 
-button:not(.nohydrogen), input[type=color]:not(.nohydrogen) {
+button:not(.nohydrogen), input[type=color]:not(.nohydrogen),
+input[type="checkbox"]:not(.nohydrogen) {
 	--background:              #222c;
 	--backgroundTop:           #444c;
 	--backgroundBottom:        #000c;
-
-	--foreground:        #eee;
-
-	--borderTop:             #fff;
-	--borderLeft:  #eee;
-	--borderRight:                #eee;
-	--borderBottom:        #ddd;
-
 
 	--decoration: #0000;
 }
 
 button:not(.nohydrogen):hover, button:not(.nohydrogen):focus,
-input[type=color]:not(.nohydrogen):hover, input[type=color]:not(.nohydrogen):focus {
-	--background:              #222c;
-	--backgroundTop:           #444c;
-	--backgroundBottom:        #000c;
-
-	--foreground:        #eee;
-
-	--borderTop:             #fff;
-	--borderLeft:  #eee;
-	--borderRight:                #eee;
-	--borderBottom:        #ddd;
-
+input[type=color]:not(.nohydrogen):hover, input[type=color]:not(.nohydrogen):focus,
+input[type="checkbox"]:not(.nohydrogen):hover, input[type="checkbox"]:not(.nohydrogen):focus {
 	--decoration: var(--hilight);
 }
 
 button:not(.nohydrogen):active, button.active,
-input[type=color]:not(.nohydrogen):active {
+input[type=color]:not(.nohydrogen):active,
+input[type="checkbox"]:not(.nohydrogen):active {
 	--background:              #222c;
-	--backgroundBottom:           #444c;
-	--backgroundTop:        #000c;
+	--backgroundBottom:        #444c;
+	--backgroundTop:           #000c;
 
-	--foreground:        #eee;
-
-	--borderBottom:             #fff;
+	--borderBottom:        #fff;
 	--borderLeft:  #eee;
 	--borderRight:                #eee;
-	--borderTop:        #ddd;
+	--borderTop:          #ddd;
 }
 
 
@@ -242,14 +211,6 @@ button.hilight:not(.nohydrogen) {
 }
 
 button.hilight:not(.nohydrogen):hover, button.hilight:not(.nohydrogen):focus {
-	--background:       #222;
-	--backgroundTop:    #444;
-	--backgroundBottom: #000;
-	--foreground: #fff;
-	--borderTop:             #fff;
-	--borderLeft:  #f8f8f8;
-	--borderRight:                #f8f8f8;
-	--borderBottom:        #eee;
 	--decoration: var(--hilightHilight);
 }
 
@@ -257,11 +218,10 @@ button.hilight:not(.nohydrogen):active, button.hilight.active {
 	--background:       #111;
 	--backgroundTop:    #000;
 	--backgroundBottom: #444;
-	--foreground: #eee;
 	--borderTop:             #eee;
 	--borderLeft:  #f8f8f8;
 	--borderRight:                #f8f8f8;
-	--borderBottom:        #eee;
+	--borderBottom:        #fff;
 }
 
 
@@ -278,14 +238,6 @@ button.faint:not(.nohydrogen) {
 }
 
 button.faint:not(.nohydrogen):hover, button.faint:not(.nohydrogen):focus {
-	--background:         #2228;
-	--backgroundTop:      #4448;
-	--backgroundBottom:   #0008;
-	--foreground:   #eeec;
-	--borderTop:             #fff8;
-	--borderLeft:  #eee8;
-	--borderRight:                #eee8;
-	--borderBottom:        #ddd8;
 	--decoration: var(--hilightFaint);
 }
 
@@ -294,55 +246,10 @@ button.faint:not(.nohydrogen):active, button.faint.active {
 	--backgroundTop:      #0008;
 	--backgroundBottom:   #4448;
 	--foreground:   #eeec;
-	--borderTop:             #fff8;
+	--borderTop:             #eee8;
 	--borderLeft:  #eee8;
 	--borderRight:                #eee8;
-	--borderBottom:        #ddd8;
-}
-
-
-input[type="checkbox"]:not(.nohydrogen) {
-	--background:              #222c;
-	--backgroundTop:           #444c;
-	--backgroundBottom:        #000c;
-
-	--foreground:        #eee;
-
-	--borderTop:             #fff;
-	--borderLeft:  #eee;
-	--borderRight:                #eee;
-	--borderBottom:        #ddd;
-
-	--decoration: #0000;
-}
-
-input[type="checkbox"]:not(.nohydrogen):hover {
-	--background:              #222c;
-	--backgroundTop:           #444c;
-	--backgroundBottom:        #000c;
-
-	--foreground:        #eee;
-
-	--borderTop:             #fff;
-	--borderLeft:  #eee;
-	--borderRight:                #eee;
-	--borderBottom:        #ddd;
-
-	--decoration: var(--hilight);
-}
-
-input[type="checkbox"]:not(.nohydrogen):active {
-	--background:              #222c;
-	--backgroundBottom:           #444c;
-	--backgroundTop:        #000c;
-
-	--foreground:        #eee;
-
-	--borderBottom:             #fff;
-	--borderLeft:  #eee;
-	--borderRight:                #eee;
-	--borderTop:        #ddd;
-
+	--borderBottom:        #fff8;
 }
 
 
@@ -366,11 +273,6 @@ button.primary:not(.nohydrogen) {
 	--backgroundBottom:        var(--blue);
 
 	--foreground:        #eee;
-
-	--borderTop:             #fff;
-	--borderLeft:  #fefefe;
-	--borderRight:                #fefefe;
-	--borderBottom:        #eee;
 }
 button.primary:not(.nohydrogen):active {
 	--background:              var(--blue);
@@ -384,11 +286,6 @@ button.success:not(.nohydrogen) {
 	--backgroundBottom:        var(--green);
 
 	--foreground:        #eee;
-
-	--borderTop:             #fff;
-	--borderLeft:  #fefefe;
-	--borderRight:                #fefefe;
-	--borderBottom:        #eee;
 }
 button.success:not(.nohydrogen):active {
 	--background:              var(--green);
@@ -403,11 +300,6 @@ button.info:not(.nohydrogen) {
 	--backgroundBottom:        var(--cyan);
 
 	--foreground:        #444;
-
-	--borderTop:             #fff;
-	--borderLeft:  #fefefe;
-	--borderRight:                #fefefe;
-	--borderBottom:        #eee;
 }
 button.info:not(.nohydrogen):active {
 	--background:              var(--cyan);
@@ -421,11 +313,6 @@ button.warning:not(.nohydrogen) {
 	--backgroundBottom:        var(--yellow);
 
 	--foreground:        #444;
-
-	--borderTop:             #fff;
-	--borderLeft:  #fefefe;
-	--borderRight:                #fefefe;
-	--borderBottom:        #eee;
 }
 button.warning:not(.nohydrogen):active {
 	--background:              var(--yellow);
@@ -439,11 +326,6 @@ button.danger:not(.nohydrogen) {
 	--backgroundBottom:        var(--red);
 
 	--foreground:        #eee;
-
-	--borderTop:             #fff;
-	--borderLeft:  #fefefe;
-	--borderRight:                #fefefe;
-	--borderBottom:        #eee;
 }
 button.danger:not(.nohydrogen):active {
 	--background:              var(--red);
