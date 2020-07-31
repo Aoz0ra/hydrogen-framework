@@ -182,7 +182,7 @@ div.item:hover {
 
 
 
-button:not(.nohydrogen) {
+button:not(.nohydrogen), input[type=color]:not(.nohydrogen) {
 	--background:              #00f;
 	--backgroundTop:           #00f;
 	--backgroundBottom:        #00f;
@@ -197,7 +197,8 @@ button:not(.nohydrogen) {
 	--decoration: #0000;
 }
 
-button:not(.nohydrogen):hover, button:not(.nohydrogen):focus {
+button:not(.nohydrogen):hover, button:not(.nohydrogen):focus,
+input[type=color]:not(.nohydrogen):hover, input[type=color]:not(.nohydrogen):focus{
 	--background:              #00c;
 	--backgroundTop:           #00c;
 	--backgroundBottom:        #00c;
