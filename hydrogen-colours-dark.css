@@ -81,15 +81,26 @@
 	--hotpinkFaint:   #c4aa;
 
 
-	--hilight: var(--blue);
-	--hilightHilight: var(--blueHilight);
-	--hilightFaint: var(--blueFaint);
-
 	--DEFAULT_ACCENT: var(--blue);
 	--DEFAULT_ACCENT_HILIGHT: var(--blueHilight);
+    
+    --DEFAULT_HILIGHT: var(--blue);
+	--DEFAULT_HILIGHT_HILIGHT: var(--blueHilight);
+    --DEFAULT_HILIGHT_FAINT: var(--blueFaint);
+    
+    --DEFAULT_SELECTION_BG: var(--blue);
+    
+    
 
 	--accent: var(--DEFAULT_ACCENT);
 	--accentHilight: var(--DEFAULT_ACCENT_HILIGHT);
+    
+    --hilight: var(--DEFAULT_HILIGHT);
+	--hilightHilight: var(--DEFAULT_HILIGHT_HILIGHT);
+	--hilightFaint: var(--DEFAULT_HILIGHT_FAINT);
+    
+    --selectionBackground: var(--DEFAULT_SELECTION_BACKGROUND);
+    --selectionForeground: var(--background);
 }
 
 
