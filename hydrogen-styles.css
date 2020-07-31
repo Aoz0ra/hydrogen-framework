@@ -117,7 +117,7 @@ div.navbar {
 
 	background: linear-gradient(to bottom, var(--backgroundTop) 0%, var(--backgroundBottom) 100%);
 
-	padding: var(--paddingTop) var(--paddingLeft) var(--paddingBottom) var(--paddingRight);
+	padding: var(--paddingTop) var(--paddingRight) var(--paddingBottom) var(--paddingLeft);
 
 	box-shadow: 0px 1px 2px 0px #0002, 0px 2px 2px -2px #0001;
 
@@ -142,13 +142,13 @@ div.navbar {
 	background: linear-gradient(to bottom, var(--backgroundTop) 0%, var(--backgroundBottom) 100%);
 
 	border: var(--borderWidth) solid;
-	border-color: var(--borderTop) var(--borderLeft) var(--borderBottom) var(--borderRight);
+	border-color: var(--borderTop) var(--borderRight) var(--borderBottom) var(--borderLeft);
 
 	border-radius: var(--borderRadius, 3px);
 
 	box-shadow: 0px 0px 10px 1px var(--decoration), 0px 1px 2px 0px #0005, 0px 2px 2px -2px #0003;
 
-	padding: var(--paddingTop) var(--paddingLeft) var(--paddingBottom) var(--paddingLeft);
+	padding: var(--paddingTop) var(--paddingRight) var(--paddingBottom) var(--paddingLeft);
 
 }
 
@@ -168,7 +168,7 @@ div.navbar {
 }
 
 /* Uncomment for a floating navbar */
-/* div.navbar{	top: 1.3vmin;left: 4vw;	width: calc(92vw);	border-radius: var(--borderRadius, 3px);	border: var(--borderWidth) solid;	border-color: var(--borderTop) var(--borderLeft) var(--borderBottom) var(--borderRight)} */
+/* div.navbar{	top: 1.3vmin;left: 4vw;	width: calc(92vw);	border-radius: var(--borderRadius, 3px);	border: var(--borderWidth) solid;	border-color: var(--borderTop) var(--borderRight) var(--borderBottom) var(--borderLeft)} */
 
 /* Uncomment for a standard, fixed navbar */
 /* div.navbar{position: fixed;}body{margin-top: calc(2em);} */
@@ -195,7 +195,7 @@ div.drop-content {
 	width: 200px;
 	overflow: hidden;
 	border: 0 var(--border) solid;
-	border-color: var(--borderTop) var(--borderLeft) var(--borderBottom) var(--borderRight);
+	border-color: var(--borderTop) var(--borderRight) var(--borderBottom) var(--borderLeft);
 	box-shadow: 0px 0px 0px 1px #0000, 0px 1px 2px 0px #0005, 0px 2px 2px -2px #0003;
 	padding: 0 var(--paddingMenuLeft, 4px) 0 var(--paddingMenuRight, 4px);
 	border-radius: var(--borderRadius, 3px);
@@ -212,7 +212,7 @@ div.dropdown:hover div.drop-content {
 	height: 12rem;
 	opacity: 1;
 	border-width: var(--borderWidth);
-	padding: var(--paddingMenuTop, 4px) var(--paddingMenuLeft, 4px) var(--paddingMenuBottom, 4px) var(--paddingMenuRight, 4px);
+	padding: var(--paddingMenuTop, 4px) var(--paddingMenuRight, 4px) var(--paddingMenuBottom, 4px) var(--paddingMenuLeft, 4px);
 	pointer-events: initial;
 
 	/* 	backdrop-filter: var(--backdropFilter); */
@@ -224,7 +224,7 @@ div.drop-content div.item {
 
 
 	background: var(--background);
-	padding: var(--paddingMenuTop, 0.1rem) var(--paddingMenuLeft, 0.4rem) var(--paddingMenuBottom, 0.1rem) var(--paddingMenuRight, 0.4rem);
+	padding: var(--paddingMenuTop, 0.1rem) var(--paddingMenuRight, 0.4rem) var(--paddingMenuBottom, 0.1rem) var(--paddingMenuLeft, 0.4rem);
 	margin: 0.2rem;
 
 	border-radius: var(--borderRadius)
@@ -255,7 +255,7 @@ div.drop-content.drop-ubuntu {
 	width: 128px;
 	overflow: hidden;
 	border: 0 var(--border) solid;
-	border-color: var(--background) var(--background) var(--background) var(--borderRight);
+	border-color: var(--background) var(--background) var(--background) var(--borderLeft);
 	box-shadow: 0px 0px 0px 1px #0000, 0px 1px 2px 0px #0005, 0px 2px 2px -2px #0003;
 	padding: 0 var(--paddingMenuLeft, 4px) 0 var(--paddingMenuRight, 4px);
 	border-radius: var(--borderRadius, 3px);
@@ -272,7 +272,7 @@ div.dropdown:hover div.drop-content.drop-ubuntu {
 	height: calc(100vh - 32px);
 	opacity: 1;
 	border-width: var(--borderWidth);
-	padding: var(--paddingMenuTop, 4px) var(--paddingMenuLeft, 4px) var(--paddingMenuBottom, 4px) var(--paddingMenuRight, 4px);
+	padding: var(--paddingMenuTop, 4px) var(--paddingMenuRight, 4px) var(--paddingMenuBottom, 4px) var(--paddingMenuLeft, 4px);
 	pointer-events: initial;
 
 	/* 	backdrop-filter: var(--backdropFilter); */
@@ -357,11 +357,11 @@ body {
 
 }
 div.page {
-	padding: var(--pagePaddingTop) var(--pagePaddingLeft) var(--pagePaddingBottom) var(--pagePaddingRight);
+	padding: var(--pagePaddingTop) var(--pagePaddingRight) var(--pagePaddingBottom) var(--pagePaddingLeft);
 }
 
 div.header {
-	padding: var(--headerPaddingTop) var(--headerPaddingLeft) var(--headerPaddingBottom) var(--headerPaddingRight);
+	padding: var(--headerPaddingTop) var(--headerPaddingRight) var(--headerPaddingBottom) var(--headerPaddingLeft);
 	background: var(--backgroundHilight);
 	background: linear-gradient(to bottom, var(--backgroundHilight) 0%, var(--background) 100%);
 }
@@ -388,13 +388,13 @@ button:not(.nohydrogen), input[type=color]:not(.nohydrogen) {
 	background: linear-gradient(to bottom, var(--backgroundTop) 0%, var(--backgroundBottom) 100%);
 
 	border: var(--borderWidth) solid;
-	border-color: var(--borderTop) var(--borderLeft) var(--borderBottom) var(--borderRight);
+	border-color: var(--borderTop) var(--borderRight) var(--borderBottom) var(--borderLeft);
 
 	border-radius: var(--borderRadius, 3px);
 
 	box-shadow: 0px 0px 10px 1px var(--decoration), 0px 1px 2px 0px #0005, 0px 2px 2px -2px #0003;
 
-	padding: var(--paddingTop) var(--paddingLeft) var(--paddingBottom) var(--paddingLeft);
+	padding: var(--paddingTop) var(--paddingRight) var(--paddingBottom) var(--paddingLeft);
 }
 ::-moz-focus-inner {border:0;}
 
@@ -428,7 +428,7 @@ input[type="checkbox"]:not(.nohydrogen) {
 	background: var(--background);
 	background: linear-gradient(to bottom, var(--backgroundTop) 0%, var(--backgroundBottom) 100%);
 	
-	border-color: var(--borderTop) var(--borderLeft) var(--borderBottom) var(--borderRight);
+	border-color: var(--borderTop) var(--borderRight) var(--borderBottom) var(--borderLeft);
 
 	border-radius: var(--borderRadius, 3px);
 
@@ -484,7 +484,7 @@ input[type="checkbox"]:not(.nohydrogen):checked:before {
 
 table:not(.nohydrogen), th:not(.nohydrogen), td:not(.nohydrogen) {
 	border: var(--borderWidth) solid var(--border);
-	border-color: var(--borderTop) var(--borderLeft) var(--borderBottom) var(--borderRight);
+	border-color: var(--borderTop) var(--borderRight) var(--borderBottom) var(--borderLeft);
 	border-spacing: 0px;
 
 }
@@ -1067,7 +1067,6 @@ div.fullscreen-round {
 		width: auto;
 		overflow: hidden;
 		border: 0 var(--border) solid;
-		border-color: var(--borderTop) var(--borderLeft) var(--borderBottom) var(--borderRight);
 		box-shadow: none;
 		padding: 0;
 		border-radius: var(--borderRadius, 3px);
