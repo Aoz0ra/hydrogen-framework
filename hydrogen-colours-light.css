@@ -16,10 +16,10 @@
 	--foregroundFaint:   #444c;
 
 
-	--border: #fefefe;
+	--border: #f8f8f8;
 	--borderTop:             #fff;
-	--borderLeft:  #fefefe;
-	--borderRight:                #fefefe;
+	--borderLeft:  #f8f8f8;
+	--borderRight:                #f8f8f8;
 	--borderBottom:        #eee;
 
 
@@ -141,12 +141,7 @@ div.navbar {
 	--backgroundTop: #000a;
 	--backgroundBottom: #000e;
 
-	--foreground: #fff;
-
-	--borderTop: #fff;
-	--borderLeft: #f8f8f8;
-	--borderRight: #f8f8f8;
-	--borderBottom: #eee;
+	--foreground: #eee;
 }
 
 div.navbar a:link {
@@ -158,13 +153,6 @@ div.navbar a:link {
 	--backgroundTop:           #444c;
 	--backgroundBottom:        #000c;
 
-	--foreground:        #eee;
-
-	--borderTop:             #fff;
-	--borderLeft:  #fefefe;
-	--borderRight:                #fefefe;
-	--borderBottom:        #eee;
-
 	--decoration: #0000;
 }
 
@@ -173,7 +161,6 @@ div.navbar a:link {
 
 div.drop-content div.item {
 	--background: #dddddd00;
-	--foreground: #eee;
 }
 
 
@@ -185,54 +172,30 @@ div.item:hover {
 
 
 
-button:not(.nohydrogen), input[type=color]:not(.nohydrogen) {
+button:not(.nohydrogen), input[type=color]:not(.nohydrogen),
+input[type="checkbox"]:not(.nohydrogen) {
 	--background:              #dddc;
 	--backgroundTop:           #f8f8f8cc;
 	--backgroundBottom:        #cccc;
-
-	--foreground:        #444;
-
-	--borderTop:             #fff;
-	--borderLeft:  #fefefe;
-	--borderRight:                #fefefe;
-	--borderBottom:        #eee;
 
 	--decoration: #0000;
 }
 
 button:not(.nohydrogen):hover, button:not(.nohydrogen):focus,
-input[type=color]:not(.nohydrogen):hover, input[type=color]:not(.nohydrogen):focus{
-	--background:              #dddc;
-	--backgroundTop:           #f8f8f8cc;
-	--backgroundBottom:        #cccc;
-
-	--foreground:        #444;
-
-	--borderTop:             #fff;
-	--borderLeft:  #fefefe;
-	--borderRight:                #fefefe;
-	--borderBottom:        #eee;
-
+input[type=color]:not(.nohydrogen):hover, input[type=color]:not(.nohydrogen):focus,
+input[type="checkbox"]:not(.nohydrogen):hover, input[type="checkbox"]:not(.nohydrogen):focus {
 	--decoration: var(--hilight);
 }
 
 button:not(.nohydrogen):active, button.active,
-input[type=color]:not(.nohydrogen):active {
+input[type=color]:not(.nohydrogen):active, input[type="checkbox"]:not(.nohydrogen):focus {
 	--background:              #d8d8d8cc;
-	--backgroundFaint:         #d8d8d888;
-
 	--backgroundTop:        #cccc;
-	--backgroundTopFaint:   #ccc8;
-
 	--backgroundBottom:           #f8f8f8cc;
 
-
-	--foreground:        #444;
-
-
 	--borderTop:              #eee;
-	--borderLeft:   #fefefe;
-	--borderRight:                 #fefefe;
+	--borderLeft:   #f8f8f8;
+	--borderRight:                 #f8f8f8;
 	--borderBottom:         #fff;
 }
 
@@ -242,22 +205,11 @@ button:not(.nohydrogen).hilight {
 	--background:       #ddd;
 	--backgroundTop:    #f8f8f8;
 	--backgroundBottom: #ccc;
+	
 	--foreground: #111;
-	--borderTop:             #fff;
-	--borderLeft:  #fefefe;
-	--borderRight:                #fefefe;
-	--borderBottom:        #eee;
 }
 
 button.hilight:not(.nohydrogen):hover, button.hilight:not(.nohydrogen):focus {
-	--background:       #ddd;
-	--backgroundTop:    #f8f8f8;
-	--backgroundBottom: #ccc;
-	--foreground: #111;
-	--borderTop:             #fff;
-	--borderLeft:  #fefefe;
-	--borderRight:                #fefefe;
-	--borderBottom:        #eee;
 	--decoration: var(--hilightHilight);
 }
 
@@ -265,11 +217,11 @@ button.hilight:not(.nohydrogen):active, button.hilight.active {
 	--background:       #ccc;
 	--backgroundTop: #ccc;
 	--backgroundBottom:    #f8f8f8;
-	--foreground: #111;
-	--borderTop:             #fff;
-	--borderLeft:  #fefefe;
-	--borderRight:                #fefefe;
-	--borderBottom:        #eee;
+	
+	--borderTop:             #eee;
+	--borderLeft:  #f8f8f8;
+	--borderRight:                #f8f8f8;
+	--borderBottom:        #fff;
 }
 
 
@@ -280,20 +232,12 @@ button.faint:not(.nohydrogen) {
 	--backgroundBottom:   #ccc8;
 	--foreground:   #444c;
 	--borderTop:             #fff8;
-	--borderLeft:  #fefefe88;
-	--borderRight:                #fefefe88;
+	--borderLeft:  #f8f8f888;
+	--borderRight:                #f8f8f888;
 	--borderBottom:        #eee8;
 }
 
 button.faint:not(.nohydrogen):hover, button.faint:not(.nohydrogen):focus {
-	--background:         #ddd8;
-	--backgroundTop:      #f8f8f888;
-	--backgroundBottom:   #ccc8;
-	--foreground:   #444c;
-	--borderTop:             #fff8;
-	--borderLeft:  #fefefe88;
-	--borderRight:                #fefefe88;
-	--borderBottom:        #eee8;
 	--decoration: var(--hilightFaint);
 }
 
@@ -308,62 +252,13 @@ button.faint:not(.nohydrogen):active, button.faint.active {
 	--background:         #ccc8;
 	--backgroundTop:      #ccc8;
 	--backgroundBottom:   #f8f8f888;
-	--foreground:   #444c;
 	--borderTop:             #eee8;
-	--borderLeft:  #fefefe88;
-	--borderRight:                 #fefefe88;
+	--borderLeft:  #f8f8f888;
+	--borderRight:                 #f8f8f888;
 	--borderBottom:         #fff8;
 }
 
 
-input[type="checkbox"]:not(.nohydrogen) {
-	--background:              #dddc;
-	--backgroundTop:           #f8f8f8cc;
-	--backgroundBottom:        #cccc;
-
-	--foreground:        #444;
-
-	--borderTop:             #fff;
-	--borderLeft:  #fefefe;
-	--borderRight:                #fefefe;
-	--borderBottom:        #eee;
-
-	--decoration: #0000;
-}
-
-input[type="checkbox"]:not(.nohydrogen):hover {
-	--background:              #dddc;
-	--backgroundTop:           #f8f8f8cc;
-	--backgroundBottom:        #cccc;
-
-	--foreground:        #444;
-
-	--borderTop:             #fff;
-	--borderLeft:  #fefefe;
-	--borderRight:                #fefefe;
-	--borderBottom:        #eee;
-
-	--decoration: var(--hilight);
-}
-
-input[type="checkbox"]:not(.nohydrogen):active {
-	--background:              #d8d8d8cc;
-	--backgroundFaint:         #d8d8d888;
-
-	--backgroundTop:        #cccc;
-	--backgroundTopFaint:   #ccc8;
-
-	--backgroundBottom:           #f8f8f8cc;
-
-
-	--foreground:        #444;
-
-
-	--borderTop:              #eee;
-	--borderLeft:   #fefefe;
-	--borderRight:                 #fefefe;
-	--borderBottom:         #fff;
-}
 
 
 
@@ -386,11 +281,6 @@ button.primary:not(.nohydrogen) {
 	--backgroundBottom:        var(--blue);
 
 	--foreground:        #eee;
-
-	--borderTop:             #fff;
-	--borderLeft:  #fefefe;
-	--borderRight:                #fefefe;
-	--borderBottom:        #eee;
 }
 button.primary:not(.nohydrogen):active {
 	--background:              var(--blue);
@@ -404,11 +294,6 @@ button.success:not(.nohydrogen) {
 	--backgroundBottom:        var(--green);
 
 	--foreground:        #eee;
-
-	--borderTop:             #fff;
-	--borderLeft:  #fefefe;
-	--borderRight:                #fefefe;
-	--borderBottom:        #eee;
 }
 button.success:not(.nohydrogen):active {
 	--background:              var(--green);
@@ -423,11 +308,6 @@ button.info:not(.nohydrogen) {
 	--backgroundBottom:        var(--cyan);
 
 	--foreground:        #444;
-
-	--borderTop:             #fff;
-	--borderLeft:  #fefefe;
-	--borderRight:                #fefefe;
-	--borderBottom:        #eee;
 }
 button.info:not(.nohydrogen):active {
 	--background:              var(--cyan);
@@ -441,11 +321,6 @@ button.warning:not(.nohydrogen) {
 	--backgroundBottom:        var(--yellow);
 
 	--foreground:        #444;
-
-	--borderTop:             #fff;
-	--borderLeft:  #fefefe;
-	--borderRight:                #fefefe;
-	--borderBottom:        #eee;
 }
 button.warning:not(.nohydrogen):active {
 	--background:              var(--yellow);
@@ -459,11 +334,6 @@ button.danger:not(.nohydrogen) {
 	--backgroundBottom:        var(--red);
 
 	--foreground:        #eee;
-
-	--borderTop:             #fff;
-	--borderLeft:  #fefefe;
-	--borderRight:                #fefefe;
-	--borderBottom:        #eee;
 }
 button.danger:not(.nohydrogen):active {
 	--background:              var(--red);
@@ -482,12 +352,6 @@ button.danger:not(.nohydrogen):active {
 /* Mobile users */
 
 @media screen and (any-pointer: coarse) {
-	button:not(.nohydrogen) {
-		--paddingTop: 0.4rem;
-		--paddingLeft: 0.7rem;
-		--paddingRight: 0.7rem;
-		--paddingBottom: 0.4rem;
-	}
 }
 
 
@@ -497,7 +361,6 @@ button.danger:not(.nohydrogen):active {
 
 /* eXtra Small screens */
 @media screen and (max-width: 600px) {
-	:root {--font-size: 90%;}
 }
 
 
@@ -527,12 +390,6 @@ button.danger:not(.nohydrogen):active {
 
 /* Large screens */
 @media screen and (min-width: 993px) and (max-width: 1200px) {
-	:root {
-		--pagePaddingTop:          24px;
-		--pagePaddingLeft: calc(18px + 8vw);
-		--pagePaddingRight:              calc(18px + 8vw);
-		--pagePaddingBottom:     36px;
-	}
 }
 
 
@@ -545,12 +402,6 @@ button.danger:not(.nohydrogen):active {
 
 /* eXtra-Large screens */
 @media screen and (min-width: 1201px) {
-	:root {
-		--pagePaddingTop:          24px;
-		--pagePaddingLeft: calc(18px + 11vw);
-		--pagePaddingRight:              calc(18px + 11vw);
-		--pagePaddingBottom:     36px;
-	}
 }
 
 
