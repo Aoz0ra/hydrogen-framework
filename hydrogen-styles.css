@@ -721,6 +721,17 @@ div.fullscreen-round {
 
 /* eXtra Small screens */
 @media (max-width: 600px) {
+
+.btn-group.btn-group-vertical-s,
+.btn-group.btn-group-justified.btn-group-vertical-s {
+display: block;
+}
+.btn-group.btn-group-vertical-s button,
+.btn-group.btn-group-justified.btn-group-vertical-s button {
+display: block;
+width: 100%;
+}
+
 	h1.title:not(.nohydrogen) {font-size: var(--fontSizeH1)}
 	div.navbar {padding: calc(0.3vh + 0.3vw) calc(0.5vh + 0.5vw)}
 	div.dropdown {position: relative;display: inline-block;}
