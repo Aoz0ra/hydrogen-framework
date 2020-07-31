@@ -145,7 +145,7 @@ div.navbar {
 }
 
 div.navbar a:link {
-	--foreground: var(--skyBlue);
+	--foreground: var(--skyblue);
 }
 
 .navbar .dropdown .dropdownbutton {
