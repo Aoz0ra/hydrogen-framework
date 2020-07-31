@@ -100,7 +100,7 @@
 	--hilightFaint: var(--DEFAULT_HILIGHT_FAINT);
     
     --selectionBackground: var(--DEFAULT_SELECTION_BACKGROUND);
-    --selectionForeground: var(--background);
+    --selectionForeground: var(--foreground);
 }
 
 
