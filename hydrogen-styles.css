@@ -780,6 +780,15 @@ div.fullscreen-round {
 /* Small screens */
 @media (min-width: 601px) and (max-width: 768px) {
 
+.btn-group.btn-group-vertical-s,
+.btn-group.btn-group-justified.btn-group-vertical-s {
+display: block;
+}
+.btn-group.btn-group-vertical-s button,
+.btn-group.btn-group-justified.btn-group-vertical-s button {
+display: block;
+width: 100%;
+}
 	div.float-left-xs, div.float-left-s {float: left;}
 	div.float-right-xs, div.float-right-s {float: right;}
 
