@@ -17,10 +17,10 @@
 
 
 	--border: #eee;
-	--borderTop:             #fff;
-	--borderLeft:  #eee;
-	--borderRight:                #eee;
-	--borderBottom:        #ddd;
+	--borderTop:             #888;
+	--borderLeft:  #808080;
+	--borderRight:                #808080;
+	--borderBottom:        #777;
 
 
 
@@ -191,10 +191,10 @@ input[type="checkbox"]:not(.nohydrogen):active {
 	--backgroundBottom:        #444c;
 	--backgroundTop:           #000c;
 
-	--borderBottom:        #fff;
-	--borderLeft:  #eee;
-	--borderRight:                #eee;
-	--borderTop:          #ddd;
+	--borderBottom:        #777;
+	--borderLeft:  #808080;
+	--borderRight:                #808080;
+	--borderTop:          #888;
 }
 
 
@@ -223,10 +223,10 @@ button.faint:not(.nohydrogen) {
 	--backgroundTop:      #4448;
 	--backgroundBottom:   #0008;
 	--foreground:   #eeec;
-	--borderTop:             #fff8;
-	--borderLeft:  #eee8;
-	--borderRight:                #eee8;
-	--borderBottom:        #ddd8;
+	--borderTop:             #8888;
+	--borderLeft:  #70707088;
+	--borderRight:                #70707088;
+	--borderBottom:        #7778;
 }
 
 button.faint:not(.nohydrogen):hover, button.faint:not(.nohydrogen):focus {
@@ -237,10 +237,10 @@ button.faint:not(.nohydrogen):active, button.faint.active {
 	--background:         #1118;
 	--backgroundTop:      #0008;
 	--backgroundBottom:   #4448;
-	--borderTop:             #eee8;
-	--borderLeft:  #eee8;
-	--borderRight:                #eee8;
-	--borderBottom:        #fff8;
+	--borderTop:             #7778;
+	--borderLeft:  #70707088;
+	--borderRight:                #70707088;
+	--borderBottom:        #8888;
 }
 
 
@@ -252,10 +252,10 @@ button.faint:not(.nohydrogen):active, button.faint.active {
 /* Buttons */
 
 button.default:not(.nohydrogen) {
-	--borderTop:             #bdf;
-	--borderLeft:  #bedefe;
-	--borderRight:                #bedefe;
-	--borderBottom:        #ace;
+	--borderTop:             #ace;
+	--borderLeft:  #aeceee;
+	--borderRight:                #aeceee;
+	--borderBottom:        #9bd;
 }
 
 button.primary:not(.nohydrogen) {
