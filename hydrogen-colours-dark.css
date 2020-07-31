@@ -204,10 +204,6 @@ button.hilight:not(.nohydrogen) {
 	--backgroundTop:    #444;
 	--backgroundBottom: #000;
 	--foreground: #fff;
-	--borderTop:             #fff;
-	--borderLeft:  #f8f8f8;
-	--borderRight:                #f8f8f8;
-	--borderBottom:        #eee;
 }
 
 button.hilight:not(.nohydrogen):hover, button.hilight:not(.nohydrogen):focus {
@@ -218,10 +214,6 @@ button.hilight:not(.nohydrogen):active, button.hilight.active {
 	--background:       #111;
 	--backgroundTop:    #000;
 	--backgroundBottom: #444;
-	--borderTop:             #eee;
-	--borderLeft:  #f8f8f8;
-	--borderRight:                #f8f8f8;
-	--borderBottom:        #fff;
 }
 
 
@@ -245,7 +237,6 @@ button.faint:not(.nohydrogen):active, button.faint.active {
 	--background:         #1118;
 	--backgroundTop:      #0008;
 	--backgroundBottom:   #4448;
-	--foreground:   #eeec;
 	--borderTop:             #eee8;
 	--borderLeft:  #eee8;
 	--borderRight:                #eee8;
