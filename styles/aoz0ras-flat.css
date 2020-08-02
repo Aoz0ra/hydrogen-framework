@@ -1,0 +1,192 @@
+/******* ******* ******* ******* ******* ******* ******* ******* ******* *******
+**                                                                            **
+**    Hydrogen Framework - Styles                      hydrogen-styles.css    **
+**                                                                              
+      Contains all the necessary stuff to make Hydrogen Framework work in     **
+**    the first place, without including colours.                             **
+**                                                                            **
+******* ******* ******* ******* ******* ******* ******* ******* ******* *******/
+
+
+
+
+/* Debug mode: */
+/* *:hover {box-shadow: 0 0 0 1px #000,0 0 4px 0 #fff !important;} */
+
+
+
+/*******************************************************************************
+*******************************************************************************/
+
+
+*:not(.nohydrogen) {
+	/* Why is this not standard?!  Internet Explorer was the only one to do this. */
+	box-sizing: border-box;
+	
+	/* Allow for instant customization of foreground colors */
+	color: var(--foreground);
+}
+
+/* override the spacing normally set by browsers */
+body {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	overflow-x: hidden;
+}
+
+
+/* multi-column multi-row dynamic layout */
+div.col-xs-1, div.col-xs-2, div.col-xs-3,
+div.col-xs-4, div.col-xs-5, div.col-xs-6,
+div.col-xs-7, div.col-xs-8, div.col-xs-9,
+div.col-xs-10, div.col-xs-11, div.col-xs-12, 
+div.col-s-1, div.col-s-2, div.col-s-3,
+div.col-s-4, div.col-s-5, div.col-s-6,
+div.col-s-7, div.col-s-8, div.col-s-9,
+div.col-s-10, div.col-s-11, div.col-s-12,
+div.col-m-1, div.col-m-2, div.col-m-3,
+div.col-m-4, div.col-m-5, div.col-m-6,
+div.col-m-7, div.col-m-8, div.col-m-9,
+div.col-m-10, div.col-m-11, div.col-m-12,
+div.col-l-1, div.col-l-2, div.col-l-3,
+div.col-l-4, div.col-l-5, div.col-l-6,
+div.col-l-7, div.col-l-8, div.col-l-9,
+div.col-l-10, div.col-l-11, div.col-l-12,
+div.col-xl-1, div.col-xl-2, div.col-xl-3,
+div.col-xl-4, div.col-xl-5, div.col-xl-6,
+div.col-xl-7, div.col-xl-8, div.col-xl-9,
+div.col-xl-10, div.col-xl-11, div.col-xl-12{
+	float: left;
+}
+
+div.col-r {
+	float: right !important;
+}
+
+div.row {
+	display: table;
+	width: 100%;
+}
+
+
+/* HEADERS */
+
+/* NAVIGATION BAR - UNIVERSAL STYLING */
+
+div.navbar {
+	background: var(--background);
+}
+
+.navbar .dropdown .dropdownbutton {
+	background: var(--background);
+}
+
+
+
+
+
+
+div.header {
+	background: var(--backgroundHilight);
+}
+
+button:not(.nohydrogen), input[type=color]:not(.nohydrogen) {
+	background: var(--background);
+
+  box-shadow: 0px 0px 10px 1px var(--decoration), 0px 0px 2px 0px #0005, 0px 0px 2px -2px #0003;
+}
+::-moz-focus-inner {border:0;}
+
+
+button:not(.nohydrogen):hover, button:not(.nohydrogen):focus,
+input[type=color]:not(.nohydrogen):hover, input[type=color]:not(.nohydrogen):focus {
+	box-shadow: 0px 0px 1px 1px var(--decoration), 0px 0px 2px 0px #0000, 0px 0px 2px -2px #0000;
+}
+
+input[type="checkbox"]:not(.nohydrogen) {
+	background: var(--background);
+	box-shadow: 0px 0px 10px 1px var(--decoration), 0px 0px 2px 0px #0005, 0px 0px 2px -2px #0003;
+}
+
+input[type="checkbox"]:not(.nohydrogen):hover {
+	box-shadow: 0px 0px 1px 1px var(--decoration), 0px 0px 2px 0px #0000, 0px 0px 2px -2px #0000;
+}
+
+
+
+
+
+
+
+
+/* ##"""""""""""""""""""############### */
+/* ## RESPONSIVE DESIGN ############### */
+/* ##...................############### */
+
+
+
+
+
+/* eXtra Small screens */
+@media (max-width: 600px) {
+}
+
+
+
+
+
+
+/* Small screens */
+@media (min-width: 601px) and (max-width: 768px) {
+}
+
+
+
+
+
+
+/* Medium screens */
+@media (min-width: 769px) and (max-width: 992px) {
+}
+
+
+
+
+
+
+
+
+/* Large screens */
+@media (min-width: 993px) and (max-width: 1200px) {
+}
+
+
+
+
+
+
+
+
+
+/* eXtra-Large screens */
+@media (min-width: 1201px) {
+}
+
+
+
+
+
+
+
+
+
+
+/* ###################################### */
+/* ## RESPONDING TO ACCESSIBILITY ####### */
+/* ###################################### */
+
+
+/* empty. */
