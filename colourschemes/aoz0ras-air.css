@@ -1,5 +1,5 @@
-/* HYDROGEN DEFAULTS */
-/* The default colors and stuff */
+/* AOZ0RA - AIR */
+/* A nice breath of fresh air */
 
 
 :root {
@@ -24,7 +24,7 @@
 
 
 
-  --gray:      #888;
+	--gray:      #888;
 	--red:       #c44;
 	--orange:    #ca4;
 	--yellow:    #cc4;
@@ -38,7 +38,7 @@
 	--pink:      #c4c;
 	--hotpink:   #c4a;
 
-  --grayMuted:      #999;
+	--grayMuted:      #999;
 	--redMuted:       #a66;
 	--orangeMuted:    #a86;
 	--yellowMuted:    #aa6;
@@ -52,7 +52,7 @@
 	--pinkMuted:      #a6a;
 	--hotpinkMuted:   #a68;
 
-  --grayHilight:      #666;
+	--grayHilight:      #666;
 	--redHilight:       #f22;
 	--orangeHilight:    #fc2;
 	--yellowHilight:    #ff2;
@@ -66,7 +66,7 @@
 	--pinkHilight:      #f2f;
 	--hotpinkHilight:   #f2b;
 
-  --grayFaint:      #888a;
+	--grayFaint:      #888a;
 	--redFaint:       #c44a;
 	--orangeFaint:    #ca4a;
 	--yellowFaint:    #cc4a;
@@ -84,22 +84,22 @@
 	--DEFAULT_ACCENT: var(--skyblue);
 	--DEFAULT_ACCENT_HILIGHT: var(--skyblueHilight);
     
-    --DEFAULT_HILIGHT: var(--skyblue);
+	--DEFAULT_HILIGHT: var(--skyblue);
 	--DEFAULT_HILIGHT_HILIGHT: var(--skyblueHilight);
-    --DEFAULT_HILIGHT_FAINT: var(--skyblueFaint);
+	--DEFAULT_HILIGHT_FAINT: var(--skyblueFaint);
     
-    --DEFAULT_SELECTION_BG: var(--skyblue);
+	--DEFAULT_SELECTION_BG: var(--skyblue);
     
     
 
 	--accent: var(--DEFAULT_ACCENT);
 	--accentHilight: var(--DEFAULT_ACCENT_HILIGHT);
     
-    --hilight: var(--DEFAULT_HILIGHT);
+	--hilight: var(--DEFAULT_HILIGHT);
 	--hilightHilight: var(--DEFAULT_HILIGHT_HILIGHT);
 	--hilightFaint: var(--DEFAULT_HILIGHT_FAINT);
     
-    --selectionBackground: var(--DEFAULT_SELECTION_BACKGROUND);
+	--selectionBackground: var(--DEFAULT_SELECTION_BACKGROUND);
 	--selectionForeground: var(--background);
 }
 
