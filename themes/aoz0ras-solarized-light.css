@@ -156,8 +156,8 @@ div.navbar {
 
 .navbar .dropdown .dropdownbutton {
 	--background:              var(--base3);
-	--backgroundTop:           var(--base2);
-	--backgroundBottom:        var(--base3);
+	--backgroundTop:           var(--base3);
+	--backgroundBottom:        var(--base2);
 
 	--foreground:        var(--base00);
 
