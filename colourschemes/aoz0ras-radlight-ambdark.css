@@ -1,2 +1,2 @@
-@import '/hydrogen-framework/themes/aoz0ras-radiance-light.css' screen and (prefers-color-scheme: light);
-@import '/hydrogen-framework/themes/aoz0ras-ambiance-dark.css' screen and (prefers-color-scheme: dark);
+@import '/hydrogen-framework/colourschemes/aoz0ras-radiance-light.css' screen and (prefers-color-scheme: light);
+@import '/hydrogen-framework/colourschemes/aoz0ras-ambiance-dark.css' screen and (prefers-color-scheme: dark);
