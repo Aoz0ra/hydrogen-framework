@@ -4,8 +4,7 @@
 	
 	<link rel="stylesheet" href="hydrogen.css">
 	
-	<script src="/jquery.min.js" />
-	<script src="/settings.js" />
+	<script src="/jquery.min.js"></script>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -34,7 +33,7 @@ function changeAccent(newColor) {
 
 <div class="navbar">
 	<div class="dropdown">
-		<span class="dropdownbutton">=</span>
+		<span class="dropdownbutton" tabindex="-1">=</span>
 <!--
 Alternates:
 drop-content
@@ -342,12 +341,12 @@ asdf</pre>
 			<h2>Tables</h2>
 		</div>
 	</div>
-	<div class="col-xs-12 nohydrogen">
-		<h1>What happened here?</h1>
-		<p>Adding <code>class="nohydrogen"</code> to mostly anything will remove the Hydrogen styling.</p>
+	<div class="col-xs-12">
+		<button class="nohydrogen">Add .nohydrogen for default styling</button>
 	</div>
 	<p>Bottom Of Page.</p>
 </div>
 
 </body>
+	<script src="/settings.js"></script>
 </html>
