@@ -1,0 +1,13 @@
+@import url("/hydrogen-framework/styles/aoz0ras-accessible.css") screen;
+:root {
+    --fontSize: 1.7rem;
+    --fontSizeH1: 2em;
+	--fontSizeH2: 1.8em;
+	--fontSizeH3: 1.6em;
+	--fontSizeH4: 1.4em;
+	--fontSizeH5: 1.3em;
+	--fontSizeH6: 1.2em;
+    
+    --borderWidth: 0.19rem;
+    --borderRadius: 0.78rem;
+}
