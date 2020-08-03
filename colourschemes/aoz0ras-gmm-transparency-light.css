@@ -1,0 +1,211 @@
+/* AOZ0RA - GLASSMYMOON TRANSPARENCY LIGHT */
+/* Only on Windows! */
+
+@import url("/hydrogen-framework/hydrogen-colours-light.css")
+
+
+:root {
+	/******************
+	**  MAIN COLORS  **
+	*******************/
+
+/* 	--background:        url("http://lorempixel.com/1920/1440/abstract/") center repeat fixed; */
+	--background:        #ddd0;
+	--backgroundHilight: #eee4;
+	--backgroundFaint:   #ccc1;
+  
+    --selectionForeground: #ddd;
+}
+
+
+/**********************************
+**********************************/
+
+/* NAVIGATION BAR */
+
+div.navbar {
+	/* 	--background:        #eee; */
+	/* 	--backgroundTop:     #fff; */
+	/* 	--backgroundBottom:  #e0e0e0; */
+
+	--background: #0007;
+	--backgroundTop: #0002;
+	--backgroundBottom: #000a;
+}
+
+.navbar .dropdown .dropdownbutton {
+	--background:              #2228;
+	--backgroundTop:           #4448;
+	--backgroundBottom:        #0008;
+}
+
+
+
+
+button:not(.nohydrogen), input[type=color]:not(.nohydrogen),
+input[type="checkbox"]:not(.nohydrogen) {
+	--background:              #eee4;
+	--backgroundTop:           #f8f8f866;
+	--backgroundBottom:        #ccc4;
+
+	--decoration: #0000;
+}
+
+button:not(.nohydrogen):hover, button:not(.nohydrogen):focus,
+input[type=color]:not(.nohydrogen):hover, input[type=color]:not(.nohydrogen):focus,
+input[type="checkbox"]:not(.nohydrogen):hover, input[type="checkbox"]:not(.nohydrogen):focus {
+	--decoration: var(--hilight);
+}
+
+button:not(.nohydrogen):active, button.active,
+input[type=color]:not(.nohydrogen):active, input[type="checkbox"]:not(.nohydrogen):focus {
+	--background:              #d8d8d833;
+	--backgroundTop:        #ccc3;
+	--backgroundBottom:           #f8f8f855;
+
+	--borderTop:              #eee;
+	--borderLeft:   #f8f8f8;
+	--borderRight:                 #f8f8f8;
+	--borderBottom:         #fff;
+}
+
+
+
+button:not(.nohydrogen).hilight {
+	--background:       #eee4;
+	--backgroundTop:    #f8f8f899;
+	--backgroundBottom: #ccc4;
+	
+	--foreground: #111;
+}
+
+button.hilight:not(.nohydrogen):hover, button.hilight:not(.nohydrogen):focus {
+	--decoration: var(--hilightHilight);
+}
+
+button.hilight:not(.nohydrogen):active, button.hilight.active {
+	--background:       #ccc3;
+	--backgroundTop: #ccc3;
+	--backgroundBottom:    #f8f8f888;
+	
+	--borderTop:             #eee;
+	--borderLeft:  #f8f8f8;
+	--borderRight:                #f8f8f8;
+	--borderBottom:        #fff;
+}
+
+
+
+button.faint:not(.nohydrogen) {
+	--background:         #eee3;
+	--backgroundTop:      #f8f8f844;
+	--backgroundBottom:   #ccc3;
+	--foreground:   #444c;
+	--borderTop:             #fff8;
+	--borderLeft:  #f8f8f888;
+	--borderRight:                #f8f8f888;
+	--borderBottom:        #eee8;
+}
+
+button.faint:not(.nohydrogen):hover, button.faint:not(.nohydrogen):focus {
+	--decoration: var(--hilightFaint);
+}
+
+button.faint:not(.nohydrogen):active, button.faint.active {
+	/*--backgroundBottom:      #f8f8f888;
+	--foreground:   #444c;
+	--borderTop:              #eee8;
+	--borderLeft:   #fefefe88;
+	--borderRight:                 #fefefe88;
+	--borderBottom:         #fff8;*/
+	
+	--background:         #ccc3;
+	--backgroundTop:      #ccc3;
+	--backgroundBottom:   #f8f8f844;
+	--borderTop:             #eee8;
+	--borderLeft:  #f8f8f888;
+	--borderRight:                 #f8f8f888;
+	--borderBottom:         #fff8;
+}
+
+
+
+
+
+/* ##"""""""""""""""""""############### */
+/* ## RESPONSIVE DESIGN ############### */
+/* ##...................############### */
+
+
+
+/* Mobile users */
+
+@media screen and (any-pointer: coarse) {
+}
+
+
+
+
+
+
+/* eXtra Small screens */
+@media screen and (max-width: 600px) {
+}
+
+
+
+
+
+
+/* Small screens */
+@media screen and (min-width: 601px) and (max-width: 768px) {
+}
+
+
+
+
+
+
+/* Medium screens */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+}
+
+
+
+
+
+
+
+
+/* Large screens */
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+}
+
+
+
+
+
+
+
+
+
+/* eXtra-Large screens */
+@media screen and (min-width: 1201px) {
+}
+
+
+
+
+
+
+
+
+
+
+/* ###################################### */
+/* ## RESPONDING TO ACCESSIBILITY ####### */
+/* ###################################### */
+
+/* Empty for now. */
+
+
