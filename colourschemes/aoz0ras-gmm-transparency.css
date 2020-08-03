@@ -1,7 +1,6 @@
 /* AOZ0RA - GLASSMYMOON TRANSPARENCY LIGHT */
 /* Only on Windows! */
 
-@import url("/hydrogen-framework/hydrogen-colours-light.css")
 
 
 :root {
@@ -207,5 +206,6 @@ button.faint:not(.nohydrogen):active, button.faint.active {
 /* ###################################### */
 
 /* Empty for now. */
+
 
 
