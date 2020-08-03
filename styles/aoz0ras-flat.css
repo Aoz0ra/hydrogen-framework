@@ -93,29 +93,26 @@ div.header {
 	background: var(--backgroundHilight);
 }
 
-button:not(.nohydrogen), input[type=color]:not(.nohydrogen) {
+button:not(.nohydrogen), input[type="checkbox"]:not(.nohydrogen),
+input[type=color]:not(.nohydrogen) {
 	background: var(--background);
 
   box-shadow: 0px 0px 10px 1px var(--decoration), 0px 0px 2px 0px #0005, 0px 0px 2px -2px #0003;
 }
+
 ::-moz-focus-inner {border:0;}
 
 
 button:not(.nohydrogen):hover, button:not(.nohydrogen):focus,
+input[type="checkbox"]:not(.nohydrogen):hover, input[type="checkbox"]:not(.nohydrogen):focus,
 input[type=color]:not(.nohydrogen):hover, input[type=color]:not(.nohydrogen):focus {
 	box-shadow: 0px 0px 1px 1px var(--decoration), 0px 0px 2px 0px #0000, 0px 0px 2px -2px #0000;
 }
 
-input[type="checkbox"]:not(.nohydrogen) {
+button:not(.nohydrogen):active, button.active, input[type="checkbox"]:not(.nohydrogen):active,
+input[type=color]:not(.nohydrogen):active {
 	background: var(--background);
-	box-shadow: 0px 0px 10px 1px var(--decoration), 0px 0px 2px 0px #0005, 0px 0px 2px -2px #0003;
 }
-
-input[type="checkbox"]:not(.nohydrogen):hover {
-	box-shadow: 0px 0px 1px 1px var(--decoration), 0px 0px 2px 0px #0000, 0px 0px 2px -2px #0000;
-}
-
-
 
 
 
