@@ -10,6 +10,8 @@
 	--background:        #e9e6e4;
 	--backgroundHilight: #f9f6f4;
 	--backgroundFaint:   #d9d6d4;
+	
+	--backgroundSecondary: #d9d6d4;
 
 	--foreground:        #655;
 	--foregroundHilight: #432;
@@ -131,7 +133,8 @@ a:active {
 
 
 
-button:not(.nohydrogen), input[type=color]:not(.nohydrogen) {
+button:not(.nohydrogen), input[type=color]:not(.nohydrogen),
+input[type="checkbox"]:not(.nohydrogen) {
 	--background:              #f9f7f4;
 	--backgroundTop:           #f9f7f4;
 	--backgroundBottom:        #e9e7e4;
@@ -147,23 +150,15 @@ button:not(.nohydrogen), input[type=color]:not(.nohydrogen) {
 }
 
 button:not(.nohydrogen):hover, button:not(.nohydrogen):focus,
-input[type=color]:not(.nohydrogen):hover, input[type=color]:not(.nohydrogen):focus{
-	--background:              #f9f7f4;
-	--backgroundTop:           #f9f7f4;
-	--backgroundBottom:        #e9e7e4;
-
-	--foreground:        #555;
-
-	--borderTop:             #fff;
-	--borderLeft:  #fff;
-	--borderRight:                #fff;
-	--borderBottom:        #fff;
+input[type=color]:not(.nohydrogen):hover, input[type=color]:not(.nohydrogen):focus,
+input[type="checkbox"]:not(.nohydrogen):hover, input[type="checkbox"]:not(.nohydrogen):focus {
 
 	--decoration: var(--hilight);
 }
 
 button:not(.nohydrogen):active, button.active,
-input[type=color]:not(.nohydrogen):active{
+input[type=color]:not(.nohydrogen):active,
+input[type="checkbox"]:not(.nohydrogen):active {
 	--background:              #d9d7d4;
 	--backgroundTop:           #d9d7d4;
 	--backgroundBottom:        #e9e7e4;
@@ -190,14 +185,6 @@ button:not(.nohydrogen).hilight {
 }
 
 button.hilight:not(.nohydrogen):hover, button.hilight:not(.nohydrogen):focus {
-	--background:       #fefcfa;
-	--backgroundTop:    #fefcfa;
-	--backgroundBottom: #eeecea;
-	--foreground: #222;
-	--borderTop:             #fff;
-	--borderLeft:  #fff;
-	--borderRight:                #fff;
-	--borderBottom:        #fff;
 	--decoration: var(--hilightHilight);
 }
 
@@ -253,52 +240,6 @@ button.faint:not(.nohydrogen):active, button.faint.active {
 	--borderRight:                #fff8;
 	--borderBottom:        #fff8;
 }
-
-
-input[type="checkbox"]:not(.nohydrogen) {
-	--background:              #f9f7f4;
-	--backgroundTop:           #f9f7f4;
-	--backgroundBottom:        #e9e7e4;
-
-	--foreground:        #555;
-
-	--borderTop:             #fff;
-	--borderLeft:  #fff;
-	--borderRight:                #fff;
-	--borderBottom:        #fff;
-
-	--decoration: #0000;
-}
-
-input[type="checkbox"]:not(.nohydrogen):hover {
-	--background:              #f9f7f4;
-	--backgroundTop:           #f9f7f4;
-	--backgroundBottom:        #e9e7e4;
-
-	--foreground:        #555;
-
-	--borderTop:             #fff;
-	--borderLeft:  #fff;
-	--borderRight:                #fff;
-	--borderBottom:        #fff;
-
-	--decoration: var(--hilight);
-}
-
-input[type="checkbox"]:not(.nohydrogen):active {
-	--background:              #d9d7d4;
-	--backgroundTop:           #d9d7d4;
-	--backgroundBottom:        #e9e7e4;
-
-	--foreground:        #555;
-
-	--borderTop:             #fff;
-	--borderLeft:  #fff;
-	--borderRight:                #fff;
-	--borderBottom:        #fff;
-}
-
-
 
 /* ##"""""""""""""##################### */
 /* ## BOOTSTRAP 3 ##################### */
@@ -403,88 +344,3 @@ button.danger:not(.nohydrogen):active {
 	--backgroundBottom:        var(--redFaint);
 	--backgroundTop:           var(--red);
 }
-
-
-
-/* ##"""""""""""""""""""############### */
-/* ## RESPONSIVE DESIGN ############### */
-/* ##...................############### */
-
-
-
-/* Mobile users */
-
-@media screen and (any-pointer: coarse) {
-}
-
-
-
-
-
-
-/* eXtra Small screens */
-@media screen and (max-width: 600px) {
-}
-
-
-
-
-
-
-/* Small screens */
-@media screen and (min-width: 601px) and (max-width: 768px) {
-}
-
-
-
-
-
-
-/* Medium screens */
-@media screen and (min-width: 769px) and (max-width: 992px) {
-}
-
-
-
-
-
-
-
-
-/* Large screens */
-@media screen and (min-width: 993px) and (max-width: 1200px) {
-}
-
-
-
-
-
-
-
-
-
-/* eXtra-Large screens */
-@media screen and (min-width: 1201px) {
-}
-
-
-
-
-
-
-
-
-
-
-/* ###################################### */
-/* ## RESPONDING TO ACCESSIBILITY ####### */
-/* ###################################### */
-
-/* Empty for now. */
-
-
-
-
-
-
-
