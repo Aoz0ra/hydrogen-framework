@@ -1,3 +1,13 @@
+:root {
+--fontSizeH1: 3em;
+--fontSizeH2: 2.5em;
+--fontSizeH3: 2em;
+--fontSizeH4: 1.72em;
+--fontSizeH5: 1.44em;
+--fontSizeH6: 1.2em;
+}
+
+
 body {
 	background: var(--backgroundSecondary);
 }
@@ -14,4 +24,37 @@ div.page {
 
 div.header {
 	--background: var(--backgroundSecondary);
+}
+
+h1:not(.nohydrogen),
+h2:not(.nohydrogen),
+h3:not(.nohydrogen),
+h4:not(.nohydrogen),
+h5:not(.nohydrogen),
+h6:not(.nohydrogen) {
+  color: var(--accentColor);
+}
+
+h1:not(.nohydrogen) {
+  font-weight: 200;
+}
+
+h2:not(.nohydrogen) {
+  font-weight: 200;
+}
+
+h3:not(.nohydrogen) {
+  font-weight: 200;
+}
+
+h4:not(.nohydrogen) {
+  font-weight: 300;
+}
+
+h5:not(.nohydrogen) {
+  font-weight: 300;
+}
+
+h6:not(.nohydrogen) {
+  font-weight: 
 }
