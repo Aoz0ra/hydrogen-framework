@@ -16,6 +16,8 @@
 	--background:        var(--base3);
 	--backgroundHilight: var(--base2);
 	--backgroundFaint:   var(--base3);
+	
+	--backgroundSecondary: var(--base2);
 
 	--foreground:        var(--base00);
 	--foregroundHilight: var(--base01);
