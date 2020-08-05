@@ -5,6 +5,11 @@
 :root {
 	--borderRadius: 3px;
 
+  --xsScreenMaxWidth:calc(600px / var(--fontSize) * 16);
+  --sScreenMaxWidth: calc(768px / var(--fontSize) * 16);
+  --mScreenMaxWidth: calc(992px / var(--fontSize) * 16);
+  --lScreenMaxWidth: calc(1200px/ var(--fontSize) * 16);
+
 
 	/*****************************
 	**  MAIN SIZES AND MARGINS  **
@@ -135,8 +140,8 @@ button:not(.nohydrogen) {
 
 
 /* eXtra Small screens */
-@media screen and (max-width: 600px) {
-	:root {--font-size: 90%;}
+@media screen and (max-width: var(--xsScreenMaxWidth)) {
+	
 }
 
 
@@ -145,7 +150,7 @@ button:not(.nohydrogen) {
 
 
 /* Small screens */
-@media screen and (min-width: 601px) and (max-width: 768px) {
+@media screen and (min-width: calc(var(--xsScreenMaxWidth) + 1px)) and (max-width: var(--sScreenMaxWidth)) {
 }
 
 
@@ -154,7 +159,7 @@ button:not(.nohydrogen) {
 
 
 /* Medium screens */
-@media screen and (min-width: 769px) and (max-width: 992px) {
+@media screen and (min-width: calc(var(--sScreenMaxWidth) + 1px)) and (max-width: var(--mScreenMaxWidth)) {
 }
 
 
@@ -165,12 +170,12 @@ button:not(.nohydrogen) {
 
 
 /* Large screens */
-@media screen and (min-width: 993px) and (max-width: 1200px) {
+@media screen and (min-width: calc(var(--mScreenMaxWidth) + 1px)) and (max-width: var(--lScreenMaxWidth)) {
 	:root {
 		--pagePaddingTop:          24px;
 		--pagePaddingLeft: calc(18px + 8vw);
 		--pagePaddingRight:              calc(18px + 8vw);
-		--pagePaddingBottom:     36px;
+		--pagePaddingBottom:     48px;
 	}
 }
 
@@ -183,29 +188,12 @@ button:not(.nohydrogen) {
 
 
 /* eXtra-Large screens */
-@media screen and (min-width: 1201px) {
+@media screen and (min-width: calc(var(--lScreenMaxWidth) + 1px) {
 	:root {
-		--pagePaddingTop:          24px;
+		--pagePaddingTop:          36px;
 		--pagePaddingLeft: calc(18px + 11vw);
 		--pagePaddingRight:              calc(18px + 11vw);
-		--pagePaddingBottom:     36px;
+		--pagePaddingBottom:     72px;
 	}
 }
 
-
-
-
-
-
-
-
-
-
-/* ###################################### */
-/* ## RESPONDING TO ACCESSIBILITY ####### */
-/* ###################################### */
-
-
-
-
-/* empty for now */
