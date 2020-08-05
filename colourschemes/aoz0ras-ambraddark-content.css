@@ -152,17 +152,6 @@ input[type="checkbox"]:not(.nohydrogen) {
 button:not(.nohydrogen):hover, button:not(.nohydrogen):focus,
 input[type=color]:not(.nohydrogen):hover, input[type=color]:not(.nohydrogen):focus,
 input[type="checkbox"]:not(.nohydrogen):hover, input[type="checkbox"]:not(.nohydrogen):focus {
-	--background:              #595754;
-	--backgroundTop:           #595754;
-	--backgroundBottom:        #494744;
-
-	--foreground:        #dcc;
-
-	--borderTop:             #898784;
-	--borderLeft:  #898784;
-	--borderRight:                #898784;
-	--borderBottom:        #898784;
-
 	--decoration: var(--hilight);
 }
 
@@ -197,16 +186,7 @@ button:not(.nohydrogen).hilight {
 }
 
 button.hilight:not(.nohydrogen):hover, button.hilight:not(.nohydrogen):focus {
-	--background:              #696764;
-	--backgroundTop:           #696764;
-	--backgroundBottom:        #595754;
 
-	--foreground:        #dcc;
-
-	--borderTop:             #898784;
-	--borderLeft:  #898784;
-	--borderRight:                #898784;
-	--borderBottom:        #898784;
 	--decoration: var(--hilightHilight);
 }
 
@@ -239,16 +219,7 @@ button.faint:not(.nohydrogen) {
 }
 
 button.faint:not(.nohydrogen):hover, button.faint:not(.nohydrogen):focus {
-	--background:              #59575488;
-	--backgroundTop:           #59575488;
-	--backgroundBottom:        #49474488;
 
-	--foreground:        #dcca;
-
-	--borderTop:             #89878488;
-	--borderLeft:  #89878488;
-	--borderRight:                #89878488;
-	--borderBottom:        #89878488;
 	--decoration: var(--hilightFaint);
 }
 
