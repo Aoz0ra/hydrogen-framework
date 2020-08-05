@@ -10,6 +10,8 @@
 	--background:        #eee;
 	--backgroundHilight: #fff;
 	--backgroundFaint:   #ddd;
+	
+	--backgroundSecondary: #ddd;
 
 	--foreground:        #666;
 	--foregroundHilight: #222;
@@ -182,7 +184,8 @@ div.item:hover {
 
 
 
-button:not(.nohydrogen), input[type=color]:not(.nohydrogen) {
+button:not(.nohydrogen), input[type=color]:not(.nohydrogen),
+input[type="checkbox"]:not(.nohydrogen) {
 	--background:              #fffc;
 	--backgroundTop:           #fffc;
 	--backgroundBottom:        #eeec;
@@ -198,23 +201,14 @@ button:not(.nohydrogen), input[type=color]:not(.nohydrogen) {
 }
 
 button:not(.nohydrogen):hover, button:not(.nohydrogen):focus,
-input[type=color]:not(.nohydrogen):hover, input[type=color]:not(.nohydrogen):focus{
-	--background:              #fffc;
-	--backgroundTop:           #fffc;
-	--backgroundBottom:        #eeec;
-
-	--foreground:        #555;
-
-	--borderTop:             #fff;
-	--borderLeft:  #fff;
-	--borderRight:                #fff;
-	--borderBottom:        #fff;
-
+input[type=color]:not(.nohydrogen):hover, input[type=color]:not(.nohydrogen):focus,
+input[type="checkbox"]:not(.nohydrogen):hover, input[type="checkbox"]:not(.nohydrogen):focus {
 	--decoration: var(--hilight);
 }
 
 button:not(.nohydrogen):active, button.active,
-input[type=color]:not(.nohydrogen):active{
+input[type=color]:not(.nohydrogen):active,
+input[type="checkbox"]:not(.nohydrogen):active {
 	--background:              #eeec;
 	--backgroundTop:        #eeec;
 	--backgroundBottom:           #fffc;
@@ -243,14 +237,6 @@ button:not(.nohydrogen).hilight {
 }
 
 button.hilight:not(.nohydrogen):hover, button.hilight:not(.nohydrogen):focus {
-	--background:       #fff;
-	--backgroundTop:    #fff;
-	--backgroundBottom: #eee;
-	--foreground: #222;
-	--borderTop:             #fff;
-	--borderLeft:  #fff;
-	--borderRight:                #fff;
-	--borderBottom:        #fff;
 	--decoration: var(--hilightHilight);
 }
 
@@ -279,14 +265,6 @@ button.faint:not(.nohydrogen) {
 }
 
 button.faint:not(.nohydrogen):hover, button.faint:not(.nohydrogen):focus {
-	--background:         #fff8;
-	--backgroundTop:      #fff8;
-	--backgroundBottom:   #eee8;
-	--foreground:   #555c;
-	--borderTop:             #fff8;
-	--borderLeft:  #fff8;
-	--borderRight:                #fff8;
-	--borderBottom:        #fff8;
 	--decoration: var(--hilightFaint);
 }
 
@@ -299,50 +277,6 @@ button.faint:not(.nohydrogen):active, button.faint.active {
 	--borderLeft:  #fff8;
 	--borderRight:                #fff8;
 	--borderBottom:        #fff8;
-}
-
-
-input[type="checkbox"]:not(.nohydrogen) {
-	--background:              #fffc;
-	--backgroundTop:           #fffc;
-	--backgroundBottom:        #eeec;
-
-	--foreground:        #555;
-
-	--borderTop:             #fff;
-	--borderLeft:  #fff;
-	--borderRight:                #fff;
-	--borderBottom:        #fff;
-
-	--decoration: #0000;
-}
-
-input[type="checkbox"]:not(.nohydrogen):hover {
-	--background:              #fffc;
-	--backgroundTop:           #fffc;
-	--backgroundBottom:        #eeec;
-
-	--foreground:        #555;
-
-	--borderTop:             #fff;
-	--borderLeft:  #fff;
-	--borderRight:                #fff;
-	--borderBottom:        #fff;
-
-	--decoration: var(--hilight);
-}
-
-input[type="checkbox"]:not(.nohydrogen):active {
-	--background:              #eeec;
-	--backgroundTop:           #eeec;
-	--backgroundBottom:        #fffc;
-
-	--foreground:        #555;
-
-	--borderTop:             #fff;
-	--borderLeft:  #fff;
-	--borderRight:                #fff;
-	--borderBottom:        #fff;
 }
 
 
