@@ -10,6 +10,8 @@
 	--background:        Window;
 	--backgroundHilight: ButtonFace;
 	--backgroundFaint:   Window;
+	
+	--backgroundSecondary: Background;
 
 	--foreground:        WindowText;
 	--foregroundHilight: ButtonText;
