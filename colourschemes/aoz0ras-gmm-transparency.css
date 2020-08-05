@@ -8,10 +8,13 @@
 	**  MAIN COLORS  **
 	*******************/
 
-/* 	--background:        url("http://lorempixel.com/1920/1440/abstract/") center repeat fixed; */
+/* 	--backgroundSecondary:        url("http://lorempixel.com/1920/1440/abstract/") center repeat fixed; */
+	
 	--background:        #ddd0;
 	--backgroundHilight: #eee4;
 	--backgroundFaint:   #ccc1;
+	
+	--backgroundSecondary: #ccc0;
   
     --selectionForeground: #ddd;
 }
