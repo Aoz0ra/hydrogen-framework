@@ -10,6 +10,8 @@
 	--background:        #494744;
 	--backgroundHilight: #6f6662;
 	--backgroundFaint:   #393734;
+	
+	--backgroundSecondary: #393734;
 
 	--foreground:        #dcc;
 	--foregroundHilight: #edd;
@@ -131,7 +133,8 @@ a:active {
 
 
 
-button:not(.nohydrogen), input[type=color]:not(.nohydrogen) {
+button:not(.nohydrogen), input[type=color]:not(.nohydrogen),
+input[type="checkbox"]:not(.nohydrogen) {
 	--background:              #595754;
 	--backgroundTop:           #595754;
 	--backgroundBottom:        #494744;
@@ -147,7 +150,8 @@ button:not(.nohydrogen), input[type=color]:not(.nohydrogen) {
 }
 
 button:not(.nohydrogen):hover, button:not(.nohydrogen):focus,
-input[type=color]:not(.nohydrogen):hover, input[type=color]:not(.nohydrogen):focus{
+input[type=color]:not(.nohydrogen):hover, input[type=color]:not(.nohydrogen):focus,
+input[type="checkbox"]:not(.nohydrogen):hover, input[type="checkbox"]:not(.nohydrogen):focus {
 	--background:              #595754;
 	--backgroundTop:           #595754;
 	--backgroundBottom:        #494744;
@@ -163,7 +167,8 @@ input[type=color]:not(.nohydrogen):hover, input[type=color]:not(.nohydrogen):foc
 }
 
 button:not(.nohydrogen):active, button.active,
-input[type=color]:not(.nohydrogen):active{
+input[type=color]:not(.nohydrogen):active,
+input[type="checkbox"]:not(.nohydrogen):active {
 	--background:              #393734;
 	--backgroundTop:           #393734;
 	--backgroundBottom:        #494744;
@@ -258,50 +263,6 @@ button.faint:not(.nohydrogen):active, button.faint.active {
 	--borderLeft:  #89878488;
 	--borderRight:                #89878488;
 	--borderBottom:        #89878488;
-}
-
-
-input[type="checkbox"]:not(.nohydrogen) {
-	--background:              #595754;
-	--backgroundTop:           #595754;
-	--backgroundBottom:        #494744;
-
-	--foreground:        #dcc;
-
-	--borderTop:             #898784;
-	--borderLeft:  #898784;
-	--borderRight:                #898784;
-	--borderBottom:        #898784;
-
-	--decoration: #0000;
-}
-
-input[type="checkbox"]:not(.nohydrogen):hover {
-	--background:              #595754;
-	--backgroundTop:           #595754;
-	--backgroundBottom:        #494744;
-
-	--foreground:        #dcc;
-
-	--borderTop:             #898784;
-	--borderLeft:  #898784;
-	--borderRight:                #898784;
-	--borderBottom:        #898784;
-
-	--decoration: var(--hilight);
-}
-
-input[type="checkbox"]:not(.nohydrogen):active {
-	--background:              #393734;
-	--backgroundTop:           #393734;
-	--backgroundBottom:        #494744;
-
-	--foreground:        #dcc;
-
-	--borderTop:             #898784;
-	--borderLeft:  #898784;
-	--borderRight:                #898784;
-	--borderBottom:        #898784;
 }
 
 
@@ -409,88 +370,3 @@ button.danger:not(.nohydrogen):active {
 	--backgroundBottom:        var(--redFaint);
 	--backgroundTop:           var(--red);
 }
-
-
-
-/* ##"""""""""""""""""""############### */
-/* ## RESPONSIVE DESIGN ############### */
-/* ##...................############### */
-
-
-
-/* Mobile users */
-
-@media screen and (any-pointer: coarse) {
-}
-
-
-
-
-
-
-/* eXtra Small screens */
-@media screen and (max-width: 600px) {
-}
-
-
-
-
-
-
-/* Small screens */
-@media screen and (min-width: 601px) and (max-width: 768px) {
-}
-
-
-
-
-
-
-/* Medium screens */
-@media screen and (min-width: 769px) and (max-width: 992px) {
-}
-
-
-
-
-
-
-
-
-/* Large screens */
-@media screen and (min-width: 993px) and (max-width: 1200px) {
-}
-
-
-
-
-
-
-
-
-
-/* eXtra-Large screens */
-@media screen and (min-width: 1201px) {
-}
-
-
-
-
-
-
-
-
-
-
-/* ###################################### */
-/* ## RESPONDING TO ACCESSIBILITY ####### */
-/* ###################################### */
-
-/* Empty for now. */
-
-
-
-
-
-
-
