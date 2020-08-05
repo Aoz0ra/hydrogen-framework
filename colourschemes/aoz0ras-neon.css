@@ -10,6 +10,8 @@
 	--background:        #000;
 	--backgroundHilight: #00f;
 	--backgroundFaint:   #111;
+	
+	--backgroundSecondary: #004;
 
 	--foreground:        #fff;
 	--foregroundHilight: #ff0;
@@ -183,9 +185,9 @@ div.item:hover {
 
 
 button:not(.nohydrogen), input[type=color]:not(.nohydrogen) {
-	--background:              #004;
-	--backgroundTop:           #002;
-	--backgroundBottom:        #009;
+	--background:              #00f4;
+	--backgroundTop:           #00f2;
+	--backgroundBottom:        #00f9;
 
 	--foreground:        #4af;
 
@@ -199,9 +201,9 @@ button:not(.nohydrogen), input[type=color]:not(.nohydrogen) {
 
 button:not(.nohydrogen):hover, button:not(.nohydrogen):focus,
 input[type=color]:not(.nohydrogen):hover, input[type=color]:not(.nohydrogen):focus{
-	--background:              #009;
-	--backgroundTop:           #004;
-	--backgroundBottom:        #00f;
+	--background:              #00f9;
+	--backgroundTop:           #00f4;
+	--backgroundBottom:        #00ff;
 
 	--foreground:        #4ff;
 
@@ -216,7 +218,7 @@ input[type=color]:not(.nohydrogen):hover, input[type=color]:not(.nohydrogen):foc
 button:not(.nohydrogen):active, button.active {
 	--background:              #ff0;
 	--backgroundTop:        #ff0;
-	--backgroundBottom:           #000;
+	--backgroundBottom:           #ff00;
 
 
 	--foreground:        #fff;
@@ -231,9 +233,9 @@ button:not(.nohydrogen):active, button.active {
 
 
 button:not(.nohydrogen).hilight {
-	--background:              #024;
-	--backgroundTop:           #012;
-	--backgroundBottom:        #059;
+	--background:              #0bf4;
+	--backgroundTop:           #0bf2;
+	--backgroundBottom:        #0bf9;
 
 	--foreground:        #4ff;
 
@@ -244,9 +246,9 @@ button:not(.nohydrogen).hilight {
 }
 
 button.hilight:not(.nohydrogen):hover, button.hilight:not(.nohydrogen):focus {
-	--background:              #059;
-	--backgroundTop:           #024;
-	--backgroundBottom:        #09a;
+	--background:              #0bf9;
+	--backgroundTop:           #0bf4;
+	--backgroundBottom:        #0bfa;
 
 	--foreground:        #4ff;
 
@@ -260,7 +262,7 @@ button.hilight:not(.nohydrogen):hover, button.hilight:not(.nohydrogen):focus {
 button.hilight:not(.nohydrogen):active, button.hilight.active {
 	--background:              #fa0;
 	--backgroundTop:        #fa0;
-	--backgroundBottom:           #000;
+	--backgroundBottom:           #fa00;
 
 
 	--foreground:        #fff;
@@ -275,9 +277,9 @@ button.hilight:not(.nohydrogen):active, button.hilight.active {
 
 
 button.faint:not(.nohydrogen) {
-	--background:              #004a;
-	--backgroundTop:           #002a;
-	--backgroundBottom:        #009a;
+	--background:              #00f2;
+	--backgroundTop:           #00f1;
+	--backgroundBottom:        #00f4;
 
 	--foreground:        #4afa;
 
@@ -288,9 +290,9 @@ button.faint:not(.nohydrogen) {
 }
 
 button.faint:not(.nohydrogen):hover, button.faint:not(.nohydrogen):focus {
-	--background:              #009a;
-	--backgroundTop:           #004a;
-	--backgroundBottom:        #00fa;
+	--background:              #00f4;
+	--backgroundTop:           #00f2;
+	--backgroundBottom:        #00f8;
 
 	--foreground:        #4ffa;
 
@@ -305,7 +307,7 @@ button.faint:not(.nohydrogen):hover, button.faint:not(.nohydrogen):focus {
 button.faint:not(.nohydrogen):active, button.faint.active {
 	--background:              #ff0;
 	--backgroundTop:        #ff0;
-	--backgroundBottom:           #000;
+	--backgroundBottom:           #ff00;
 
 
 	--foreground:        #fff;
@@ -319,9 +321,9 @@ button.faint:not(.nohydrogen):active, button.faint.active {
 
 
 input[type="checkbox"]:not(.nohydrogen) {
-	--background:              #008;
-	--backgroundTop:           #000;
-	--backgroundBottom:        #00f;
+	--background:              #00f8;
+	--backgroundTop:           #00f0;
+	--backgroundBottom:        #00ff;
 
 	--foreground:        #fb0;
 
@@ -334,9 +336,9 @@ input[type="checkbox"]:not(.nohydrogen) {
 }
 
 input[type="checkbox"]:not(.nohydrogen):hover {
-	--background:              #00a;
-	--backgroundTop:           #004;
-	--backgroundBottom:        #00f;
+	--background:              #00fa;
+	--backgroundTop:           #00f4;
+	--backgroundBottom:        #00ff;
 
 	--foreground:        #fc0;
 
@@ -349,9 +351,9 @@ input[type="checkbox"]:not(.nohydrogen):hover {
 }
 
 input[type="checkbox"]:not(.nohydrogen):active {
-	--background:              #fff;
-	--backgroundTop:           #fff;
-	--backgroundBottom:        #fff;
+	--background:              #fffe;
+	--backgroundTop:           #fffd;
+	--backgroundBottom:        #ffff;
 
 	--foreground:        #000;
 
@@ -466,88 +468,4 @@ button.danger:not(.nohydrogen):active {
 	--backgroundBottom:        var(--cyan);
 	--backgroundTop:           var(--cyan);
 }
-
-
-
-/* ##"""""""""""""""""""############### */
-/* ## RESPONSIVE DESIGN ############### */
-/* ##...................############### */
-
-
-
-/* Mobile users */
-
-@media screen and (any-pointer: coarse) {
-}
-
-
-
-
-
-
-/* eXtra Small screens */
-@media screen and (max-width: 600px) {
-}
-
-
-
-
-
-
-/* Small screens */
-@media screen and (min-width: 601px) and (max-width: 768px) {
-}
-
-
-
-
-
-
-/* Medium screens */
-@media screen and (min-width: 769px) and (max-width: 992px) {
-}
-
-
-
-
-
-
-
-
-/* Large screens */
-@media screen and (min-width: 993px) and (max-width: 1200px) {
-}
-
-
-
-
-
-
-
-
-
-/* eXtra-Large screens */
-@media screen and (min-width: 1201px) {
-}
-
-
-
-
-
-
-
-
-
-
-/* ###################################### */
-/* ## RESPONDING TO ACCESSIBILITY ####### */
-/* ###################################### */
-
-/* Empty for now. */
-
-
-
-
-
-
 
