@@ -87,6 +87,15 @@ div.row {
 
 /* HEADERS */
 
+h1:not(.nohydrogen),
+h2:not(.nohydrogen),
+h3:not(.nohydrogen),
+h4:not(.nohydrogen),
+h5:not(.nohydrogen),
+h6:not(.nohydrogen) {
+  color: var(--accent);
+}
+
 /* NAVIGATION BAR - UNIVERSAL STYLING */
 
 div.navbar {
