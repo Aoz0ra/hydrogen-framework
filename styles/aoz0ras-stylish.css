@@ -32,11 +32,12 @@ h3:not(.nohydrogen),
 h4:not(.nohydrogen),
 h5:not(.nohydrogen),
 h6:not(.nohydrogen) {
-  color: var(--accentColor);
+  color: var(--accent);
+	text-shadow: 0px 1px 3px var(--accent);
 }
 
 h1:not(.nohydrogen) {
-  font-weight: 200;
+  font-weight: 100;
 }
 
 h2:not(.nohydrogen) {
@@ -56,5 +57,29 @@ h5:not(.nohydrogen) {
 }
 
 h6:not(.nohydrogen) {
-  font-weight: 
+  font-weight: 400;
+}
+
+
+
+input[type="checkbox"]:not(.nohydrogen):active {
+	--foreground: var(--grayFaint);
+}
+
+input[type="checkbox"]:not(.nohydrogen):active:before {
+	opacity: 100%;
+}
+
+input[type="checkbox"]:not(.nohydrogen):checked {
+	--background: var(--accent);
+	--backgroundTop: var(--accentHilight);
+	--backgroundBottom: var(--accent);
+	--foreground: var(--selectionForeground);
+}
+
+input[type="checkbox"]:not(.nohydrogen):checked:active {
+	--background: var(--accentHilight);
+	--backgroundTop: var(--accent);
+	--backgroundBottom: var(--accentHilight);
+	--foreground: var(--accentHilight);
 }
