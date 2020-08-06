@@ -1,5 +1,5 @@
 /* AOZ0RA - SYSTEM COLOURS */
-/* Yes I know these are deprecated but they're still allowed and still work */
+/* Risky! Also some are deprecated from CSS2 */
 
 
 :root {
@@ -9,7 +9,7 @@
 
 	--background:        Window;
 	--backgroundHilight: ButtonFace;
-	--backgroundFaint:   Window;
+	--backgroundFaint:   Canvas;
 	
 	--backgroundSecondary: Background;
 
@@ -113,22 +113,22 @@
 **********************************/
 
 a:link {
-  --foreground: var(--blue);
+  --foreground: linkText;
 }
 
 /* visited link */
 a:visited {
-  --foreground: var(--hotpink);
+  --foreground: visitedText;
 }
 
 /* mouse over link */
 a:hover, a:focus {
-  --foreground: var(--blueHilight);
+  --foreground: linkText;
 }
 
 /* selected link */
 a:active {
-  --foreground: var(--skyblue);
+  --foreground: activeText;
 }
 
 
@@ -143,7 +143,7 @@ div.navbar {
 	--backgroundTop: Menu;
 	--backgroundBottom: Menu;
 
-	--foreground: WindowText;
+	--foreground: MenuText;
 }
 
 div.navbar a:link {
