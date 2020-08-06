@@ -720,7 +720,7 @@ div.fullscreen-round {
 
 
 /* eXtra Small screens */
-@media (max-width: var(--xsScreenMaxWidth)) {
+@media (max-width: 600px) {
 
 .btn-group.btn-group-vertical-s,
 .btn-group.btn-group-justified.btn-group-vertical-s {
@@ -789,7 +789,7 @@ width: 100%;
 
 
 /* Small screens */
-@media (min-width: calc(var(--xsScreenMaxWidth) + 1px)) and (max-width: var(--sScreenMaxWidth)) {
+@media (min-width: 601px) and (max-width: 768px) {
 
 .btn-group.btn-group-vertical-s,
 .btn-group.btn-group-justified.btn-group-vertical-s {
@@ -869,7 +869,7 @@ width: 100%;
 
 
 /* Medium screens */
-@media (min-width: calc(var(--sScreenMaxWidth) + 1px)) and (max-width: var(--mScreenMaxWidth)) {
+@media (min-width: 769px) and (max-width: 992px) {
 
 	div.float-left-xs, div.float-left-s, div.float-left-m {float: left;}
 	div.float-right-xs, div.float-right-s, div.float-right-m {float: right;}
@@ -956,7 +956,7 @@ width: 100%;
 
 
 /* Large screens */
-@media (min-width: calc(var(--mScreenMaxWidth) + 1px)) and (max-width: var(--lScreenMaxWidth)) {
+@media (min-width: 993px) and (max-width: 1200px) {
 	div.float-left-xs, div.float-left-s, div.float-left-m, div.float-left-l {float: left;}
 	div.float-right-xs,div.float-right-s,div.float-right-m,div.float-right-l{float: right;}
 
@@ -1073,7 +1073,7 @@ width: 100%;
 
 
 /* eXtra-Large screens */
-@media (min-width: calc(var(--xsScreenMaxWidth) + 1px)) {
+@media (min-width: 1201px) {
 	div.drop-content.drop-navbar {
 		display: flex;
 		transition: none;
@@ -1294,4 +1294,3 @@ width: 100%;
 		margin-top: calc(2em);
 	}
 }
-
