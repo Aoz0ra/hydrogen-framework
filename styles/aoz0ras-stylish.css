@@ -83,3 +83,13 @@ input[type="checkbox"]:not(.nohydrogen):checked:active {
 	--backgroundBottom: var(--accentHilight);
 	--foreground: var(--accentHilight);
 }
+
+
+
+div.floating-toc-m {
+	z-index: 0;
+}
+
+div.navbar {
+	z-index: 1;
+}
