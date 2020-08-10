@@ -1,0 +1,21 @@
+/* extreme WIP! */
+
+:root {
+	--borderRadius: 2px;
+}
+
+button:not(.nohydrogen), input[type=color]:not(.nohydrogen),
+input[type="checkbox"]:not(.nohydrogen) {
+	background: var(--background);
+	box-shadow: 1px 1px 1px 0px #0004;
+}
+
+button:not(.nohydrogen):hover, button:not(.nohydrogen):focus,
+input[type=color]:not(.nohydrogen):hover, input[type=color]:not(.nohydrogen):focus,
+input[type="checkbox"]:not(.nohydrogen):hover, input[type="checkbox"]:not(.nohydrogen):focus {
+    --borderTop: var(--hilight);
+    --borderLeft: var(--hilight);
+    --borderRight: var(--hilight);
+    --borderBottom: var(--hilight);
+	box-shadow: 1px 1px 1px 0px #0004;
+}
