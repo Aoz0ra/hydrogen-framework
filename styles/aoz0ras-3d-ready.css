@@ -1,0 +1,12 @@
+html {
+	height: 100%;
+	overflow: hidden;
+
+	perspective: 7px;
+}
+
+body {
+	background: var(--backgroundSecondary);
+	height: 100%;
+	overflow: hidden scroll;
+}
