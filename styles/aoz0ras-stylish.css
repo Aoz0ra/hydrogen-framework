@@ -23,7 +23,7 @@ div.page {
 div.header {
 	--background: var(--backgroundSecondary);
 
-  background: radial-gradient(farthest-side at 50% 0%, var(--backgroundHilight), #fff0 no-repeat, linear-gradient(to bottom, var(--backgroundHilight), #fff0) no-repeat, var(--backgroundSecondary);
+  background: radial-gradient(farthest-side at 50% 0%, var(--backgroundHilight), #fff0) no-repeat, linear-gradient(to bottom, var(--backgroundHilight), #fff0) no-repeat, var(--backgroundSecondary);
 	background-size: 100vw 70px, 100vw 110px;
 	background-attachment: fixed;
 
