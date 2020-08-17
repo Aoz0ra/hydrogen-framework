@@ -7,6 +7,9 @@
 --fontSizeH6: 1.2em;
 }
 
+body {
+  background: var(--backgroundSecondary);
+}
 
 div.page {
 	margin: var(--pagePaddingTop) var(--pagePaddingRight) var(--pagePaddingBottom) var(--pagePaddingLeft);
