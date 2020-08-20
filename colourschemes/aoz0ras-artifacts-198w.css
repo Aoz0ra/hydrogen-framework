@@ -1,0 +1,7 @@
+@import url("/hydrogen-framework/colourschemes/aoz0ras-artifacts-general.css") screen;
+
+:root {
+	--artifacts-dark:   var(--a198w-dark);
+	--artifacts-mid:    var(--a198w-mid);
+	--artifacts-light:  var(--a198w-light);
+}
