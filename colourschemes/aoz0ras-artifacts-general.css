@@ -18,10 +18,6 @@
 	--a201z-mid:        #848284;
 	--a201z-light:      #04fcfa;
 	
-	--artifacts-dark:   var(--a199x-dark);
-	--artifacts-mid:    var(--a199x-mid);
-	--artifacts-light:  var(--a199x-light);
-	
 	--artifacts-white:  #fafcfa;
 	
 	
@@ -209,193 +205,115 @@ div.item:hover {
 
 
 
-button:not(.nohydrogen), input[type=color]:not(.nohydrogen) {
-	--background:              var(--artifacts-dark);
-	--backgroundTop:           var(--artifacts-dark);
-	--backgroundBottom:        var(--artifacts-dark);
+button:not(.nohydrogen), input[type=color]:not(.nohydrogen),
+input[type="checkbox"]:not(.nohydrogen) {
+	--background:              var(--artifacts-blue);
+	--backgroundTop:           var(--artifacts-blue);
+	--backgroundBottom:        var(--artifacts-black);
 
 	--foreground:        var(--artifacts-light);
 
-	--border: var(--base2);
-	--borderTop:             var(--base2);
-	--borderLeft:  var(--base2);
-	--borderRight:                var(--base2);
-	--borderBottom:        var(--base2);
+	--border: var(--artifacts-mid);
+	--borderTop:             var(--artifacts-mid);
+	--borderLeft:  var(--artifacts-mid);
+	--borderRight:                var(--artifacts-mid);
+	--borderBottom:        var(--artifacts-mid);
 
 
 	--decoration: #0000;
 }
 
 button:not(.nohydrogen):hover, button:not(.nohydrogen):focus,
-input[type=color]:not(.nohydrogen):hover, input[type=color]:not(.nohydrogen):focus{
-	--background:              var(--base3);
-	--backgroundTop:           var(--base3);
-	--backgroundBottom:        var(--base2);
+input[type=color]:not(.nohydrogen):hover, input[type=color]:not(.nohydrogen):focus,
+input[type="checkbox"]:not(.nohydrogen):hover, input[type="checkbox"]:not(.nohydrogen):focus {
 
-	--foreground:        var(--base00);
-
-	--border: var(--hilight);
-	--borderTop:             var(--hilight);
-	--borderLeft:  var(--hilight);
-	--borderRight:                var(--hilight);
-	--borderBottom:        var(--hilight);
-
-	--decoration: var(--base2);
+	--decoration: var(--hilight);
 }
 
 button:not(.nohydrogen):active, button.active,
-input[type=color]:not(.nohydrogen):active {
-	--background:              var(--base2);
-	--backgroundTop:           var(--base2);
-	--backgroundBottom:        var(--base3);
+input[type=color]:not(.nohydrogen):active,
+input[type="checkbox"]:not(.nohydrogen):active {
+	--background:              var(--artifacts-black);
+	--backgroundTop:           var(--artifacts-black);
+	--backgroundBottom:        var(--artifacts-blue);
 
-	--foreground:        var(--base00);
+	--foreground:        var(--artifacts-light);
 
-	--border: var(--base2);
-	--borderTop:             var(--base2);
-	--borderLeft:  var(--base2);
-	--borderRight:                var(--base2);
-	--borderBottom:        var(--base2);
+	--border: var(--artifacts-mid);
+	--borderTop:             var(--artifacts-midmid);
+	--borderLeft:  var(--artifacts-mid);
+	--borderRight:                var(--artifacts-mid);
+	--borderBottom:        var(--artifacts-mid);
 }
 
 
 
 button.hilight:not(.nohydrogen) {
-	--background:              var(--base2);
-	--backgroundTop:           var(--base3);
-	--backgroundBottom:        var(--base2);
+	--background:              var(--artifacts-dark);
+	--backgroundTop:           var(--artifacts-dark);
+	--backgroundBottom:        var(--artifacts-black);
 
-	--foreground:        var(--base01);
+	--foreground:        var(--artifacts-white);
 
-	--border: var(--base1);
-	--borderTop:             var(--base1);
-	--borderLeft:  var(--base1);
-	--borderRight:                var(--base1);
-	--borderBottom:        var(--base1);
+	--border: var(--artifacts-light);
+	--borderTop:             var(--artifacts-light);
+	--borderLeft:  var(--artifacts-light);
+	--borderRight:                var(--artifacts-light);
+	--borderBottom:        var(--artifacts-light);
 }
 
 button.hilight:not(.nohydrogen):hover, button.hilight:not(.nohydrogen):focus {
-	--background:              var(--base2);
-	--backgroundTop:           var(--base3);
-	--backgroundBottom:        var(--base2);
-
-	--foreground:        var(--base01);
-
-	--border: var(--hilightHilight);
-	--borderTop:             var(--hilightHilight);
-	--borderLeft:  var(--hilightHilight);
-	--borderRight:                var(--hilightHilight);
-	--borderBottom:        var(--hilightHilight);
 	
-	--decoration: var(--base2);
+	--decoration: var(--hilightHilight);
 }
 
 button.hilight:not(.nohydrogen):active, button.hilight.active {
-	--background:              var(--base3);
-	--backgroundTop:           var(--base2);
-	--backgroundBottom:        var(--base3);
+	--background:              var(--artifacts-blue);
+	--backgroundTop:           var(--artifacts-black);
+	--backgroundBottom:        var(--artifacts-dark);
 
-	--foreground:        var(--base01);
+	--foreground:        var(--artifacts-light);
 
-	--border: var(--base1);
-	--borderTop:             var(--base1);
-	--borderLeft:  var(--base1);
-	--borderRight:                var(--base1);
-	--borderBottom:        var(--base1);
+	--border: var(--artifacts-light);
+	--borderTop:             var(--artifacts-light);
+	--borderLeft:  var(--artifacts-light);
+	--borderRight:                var(--artifacts-light);
+	--borderBottom:        var(--artifacts-light);
 }
 
 
 
 button.faint:not(.nohydrogen) {
-	--background:              var(--base3);
-	--backgroundTop:           var(--base3);
-	--backgroundBottom:        var(--base3);
+	--background:              var(--artifacts-black);
+	--backgroundTop:           var(--artifacts-black);
+	--backgroundBottom:        var(--artifacts-black);
 
-	--foreground:        var(--base1);
+	--foreground:        var(--artifacts-light);
 
-	--border: var(--base2);
-	--borderTop:             var(--base2);
-	--borderLeft:  var(--base2);
-	--borderRight:                var(--base2);
-	--borderBottom:        var(--base2);
+	--border: var(--artifacts-dark);
+	--borderTop:             var(--artifacts-dark);
+	--borderLeft:  var(--artifacts-dark);
+	--borderRight:                var(--artifacts-dark);
+	--borderBottom:        var(--artifacts-dark);
 }
 
 button.faint:not(.nohydrogen):hover, button.faint:not(.nohydrogen):focus {
-	--background:              var(--base3);
-	--backgroundTop:           var(--base3);
-	--backgroundBottom:        var(--base3);
-
-	--foreground:        var(--base00);
-
-	--border: var(--hilightFaint);
-	--borderTop:             var(--hilightFaint);
-	--borderLeft:  var(--hilightFaint);
-	--borderRight:                var(--hilightFaint);
-	--borderBottom:        var(--hilightFaint);
 	
-	--decoration: #0000;
+	--decoration: var(--hilightFaint);
 }
 
 button.faint:not(.nohydrogen):active, button.faint.active {
-	--background:              var(--base3);
-	--backgroundTop:           var(--base2);
-	--backgroundBottom:        var(--base3);
+	--background:              var(--artifacts-black);
+	--backgroundTop:           var(--artifacts-black);
+	--backgroundBottom:        var(--artifacts-blue);
 
-	--foreground:        var(--base1);
+	--foreground:        var(--artifacts-light);
 
-	--border: var(--base2);
-	--borderTop:             var(--base2);
-	--borderLeft:  var(--base2);
-	--borderRight:                var(--base2);
-	--borderBottom:        var(--base2);
-}
-
-
-input[type="checkbox"]:not(.nohydrogen) {
-	--background:              var(--base3);
-	--backgroundTop:           var(--base3);
-	--backgroundBottom:        var(--base2);
-
-	--foreground:        var(--base00);
-
-	--border: var(--base2);
-	--borderTop:             var(--base2);
-	--borderLeft:  var(--base2);
-	--borderRight:                var(--base2);
-	--borderBottom:        var(--base2);
-
-	--decoration: #0000;
-}
-
-input[type="checkbox"]:not(.nohydrogen):hover {
-	--background:              var(--base3);
-	--backgroundTop:           var(--base3);
-	--backgroundBottom:        var(--base2);
-
-	--foreground:        var(--base00);
-
-	--border: var(--hilight);
-	--borderTop:             var(--hilight);
-	--borderLeft:  var(--hilight);
-	--borderRight:                var(--hilight);
-	--borderBottom:        var(--hilight);
-
-	--decoration: var(--base2);
-}
-
-input[type="checkbox"]:not(.nohydrogen):active {
-	--background:              var(--base2);
-	--backgroundTop:           var(--base2);
-	--backgroundBottom:        var(--base3);
-
-	--foreground:        var(--base00);
-
-	--border: var(--base2);
-	--borderTop:             var(--base2);
-	--borderLeft:  var(--base2);
-	--borderRight:                var(--base2);
-	--borderBottom:        var(--base2);
-
+	--border: var(--artifacts-mid);
+	--borderTop:             var(--artifacts-mid);
+	--borderLeft:  var(--artifacts-mid);
+	--borderRight:                var(--artifacts-mid);
+	--borderBottom:        var(--artifacts-mid);
 }
 
 
@@ -407,11 +325,11 @@ input[type="checkbox"]:not(.nohydrogen):active {
 /* Buttons */
 
 button.default:not(.nohydrogen) {
-	--border: var(--base1);
-	--borderTop:             var(--base2);
-	--borderLeft:  var(--base2);
-	--borderRight:                var(--base2);
-	--borderBottom:        var(--base0);
+	--border: var(--artifacts-light);
+	--borderTop:             var(--artifacts-mid);
+	--borderLeft:  var(--artifacts-light);
+	--borderRight:                var(--artifacts-light);
+	--borderBottom:        var(--artifacts-white);
 }
 
 button.primary:not(.nohydrogen) {
@@ -419,12 +337,12 @@ button.primary:not(.nohydrogen) {
 	--backgroundTop:           var(--blueFaint);
 	--backgroundBottom:        var(--blue);
 
-	--foreground:        #eee;
+	--foreground:        var(--artifacts-white);
 
-	--borderTop:             #fff;
-	--borderLeft:  #fefefe;
-	--borderRight:                #fefefe;
-	--borderBottom:        #eee;
+	--borderTop:             var(--artifacts-white);
+	--borderLeft:  var(--artifacts-white);
+	--borderRight:                var(--artifacts-white);
+	--borderBottom:        var(--artifacts-white;
 }
 button.primary:not(.nohydrogen):active {
 	--background:              var(--blue);
@@ -437,12 +355,12 @@ button.success:not(.nohydrogen) {
 	--backgroundTop:           var(--greenFaint);
 	--backgroundBottom:        var(--green);
 
-	--foreground:        #eee;
+	--foreground:        var(--artifacts-white);
 
-	--borderTop:             #fff;
-	--borderLeft:  #fefefe;
-	--borderRight:                #fefefe;
-	--borderBottom:        #eee;
+	--borderTop:             var(--artifacts-white);
+	--borderLeft:  var(--artifacts-white);
+	--borderRight:                var(--artifacts-white);
+	--borderBottom:        var(--artifacts-white;
 }
 button.success:not(.nohydrogen):active {
 	--background:              var(--green);
@@ -456,12 +374,12 @@ button.info:not(.nohydrogen) {
 	--backgroundTop:           var(--cyanFaint);
 	--backgroundBottom:        var(--cyan);
 
-	--foreground:        #444;
+	--foreground:        var(--artifacts-blue);
 
-	--borderTop:             #fff;
-	--borderLeft:  #fefefe;
-	--borderRight:                #fefefe;
-	--borderBottom:        #eee;
+	--borderTop:             var(--artifacts-white);
+	--borderLeft:  var(--artifacts-white);
+	--borderRight:                var(--artifacts-white);
+	--borderBottom:        var(--artifacts-white;
 }
 button.info:not(.nohydrogen):active {
 	--background:              var(--cyan);
@@ -474,12 +392,12 @@ button.warning:not(.nohydrogen) {
 	--backgroundTop:           var(--yellowFaint);
 	--backgroundBottom:        var(--yellow);
 
-	--foreground:        #444;
+	--foreground:        var(--artifacts-black);
 
-	--borderTop:             #fff;
-	--borderLeft:  #fefefe;
-	--borderRight:                #fefefe;
-	--borderBottom:        #eee;
+	--borderTop:             var(--artifacts-white);
+	--borderLeft:  var(--artifacts-white);
+	--borderRight:                var(--artifacts-white);
+	--borderBottom:        var(--artifacts-white;
 }
 button.warning:not(.nohydrogen):active {
 	--background:              var(--yellow);
@@ -492,89 +410,16 @@ button.danger:not(.nohydrogen) {
 	--backgroundTop:           var(--redFaint);
 	--backgroundBottom:        var(--red);
 
-	--foreground:        #eee;
+	--foreground:        var(--artifacts-light);
 
-	--borderTop:             #fff;
-	--borderLeft:  #fefefe;
-	--borderRight:                #fefefe;
-	--borderBottom:        #eee;
+	--borderTop:             var(--artifacts-white);
+	--borderLeft:  var(--artifacts-white);
+	--borderRight:                var(--artifacts-white);
+	--borderBottom:        var(--artifacts-white;
 }
 button.danger:not(.nohydrogen):active {
 	--background:              var(--red);
 	--backgroundBottom:        var(--redFaint);
 	--backgroundTop:           var(--red);
 }
-
-
-
-/* ##"""""""""""""""""""############### */
-/* ## RESPONSIVE DESIGN ############### */
-/* ##...................############### */
-
-
-
-
-
-
-
-
-/* eXtra Small screens */
-@media screen and (max-width: 600px) {
-}
-
-
-
-
-
-
-/* Small screens */
-@media screen and (min-width: 601px) and (max-width: 768px) {
-}
-
-
-
-
-
-
-/* Medium screens */
-@media screen and (min-width: 769px) and (max-width: 992px) {
-}
-
-
-
-
-
-
-
-
-/* Large screens */
-@media screen and (min-width: 993px) and (max-width: 1200px) {
-}
-
-
-
-
-
-
-
-
-
-/* eXtra-Large screens */
-@media screen and (min-width: 1201px) {
-}
-
-
-
-
-
-
-
-
-
-
-/* ###################################### */
-/* ## RESPONDING TO ACCESSIBILITY ####### */
-/* ###################################### */
-
-/* Empty for now. */
 
