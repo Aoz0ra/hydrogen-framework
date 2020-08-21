@@ -1,0 +1,36 @@
+@import url("/hydrogen-framework/colourschemes/aoz0ras-windows-classic-general.css") screen;
+
+:root {
+	--ButtonAlternateFace: rgb(231 226 218);
+	--ButtonDkShadow: rgb(183 173 160);
+	--ButtonFace: rgb(231 226 218);
+	--ButtonHilight: rgb(255 250 241);
+	--ButtonLight: rgb(241 235 227);
+	--ButtonShadow: rgb(212 209 197);
+	--ButtonText: rgb(64 64 64);
+	--ActiveBorder: rgb(231 226 218);
+	--AppWorkspace: rgb(165 153 135);
+	--Background: rgb(90 170 255);
+	--InactiveBorder: rgb(231 226 218);
+	--Scrollbar: rgb(231 226 218);
+	--Window: rgb(255 255 255);
+	--WindowFrame: rgb(161 153 141);
+	--WindowText: rgb(64 64 64);
+	--ActiveTitle: rgb(111 141 222);
+	--GradientActiveTitle: rgb(166 202 240);
+	--GradientInactiveTitle: rgb(71 135 208);
+	--InactiveTitle: rgb(77 85 154);
+	--InactiveTitleText: rgb(183 202 220);
+	--TitleText: rgb(255 255 255);
+	--Menu: rgb(231 226 218);
+	--MenuBar: rgb(231 226 218);
+	--MenuHilight: rgb(129 165 255);
+	--MenuText: rgb(64 64 64);
+	--GrayText: rgb(187 180 171);
+	--Hilight: rgb(129 165 255);
+	--HilightText: rgb(255 255 255);
+	--HotTrackingColor: rgb(77 128 255);
+	--InfoText: rgb(64 64 64);
+	--InfoWindow: rgb(248 247 234);
+}
+
