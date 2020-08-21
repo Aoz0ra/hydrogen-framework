@@ -1,0 +1,401 @@
+/* AOZ0RA - WINDOWS ClASSIC */
+/* When you need to quickly convert Windows Classic to Hydrogen */
+
+
+:root {
+	/******************
+	**  MAIN COLORS  **
+	*******************/
+	
+	
+	
+
+	--background:        var(--ButtonFace);
+	--backgroundHilight: var(--Window);
+	--backgroundFaint:   var(--ButtonFace);
+	
+	--backgroundSecondary: var(--Background);
+
+	--foreground:        var(--WindowText);
+	--foregroundHilight: var(--HotTrackingColor);
+	--foregroundFaint:   var(--GrayText);
+
+
+	--border: var(--WindowFrame);
+	--borderTop:             var(--ButtonHilight);
+	--borderLeft:  var(--ButtonShadow);
+	--borderRight:                var(--ButtonLight);
+	--borderBottom:        var(--ButtonDkShadow);
+
+
+
+	--gray:      #888;
+	--red:       #c44;
+	--orange:    #ca4;
+	--yellow:    #cc4;
+	--lime:      #ac4;
+	--green:     #4c4;
+	--aquagreen: #4ca;
+	--cyan:      #4bc;
+	--skyblue:   #4ac;
+	--blue:      #44c;
+	--purple:    #a4c;
+	--pink:      #c4c;
+	--hotpink:   #c4a;
+
+	--grayMuted:      #999;
+	--redMuted:       #a66;
+	--orangeMuted:    #a86;
+	--yellowMuted:    #aa6;
+	--limeMuted:      #8a6;
+	--greenMuted:     #6a6;
+	--aquagreenMuted: #6a8;
+	--cyanMuted:      #68a;
+	--skyblueMuted:   #67a;
+	--blueMuted:      #66a;
+	--purpleMuted:    #86a;
+	--pinkMuted:      #a6a;
+	--hotpinkMuted:   #a68;
+
+	--grayHilight:      #666;
+	--redHilight:       #f22;
+	--orangeHilight:    #fc2;
+	--yellowHilight:    #ff2;
+	--limeHilight:      #bf2;
+	--greenHilight:     #2f2;
+	--aquagreenHilight: #2fb;
+	--cyanHilight:      #2ef;
+	--skyblueHilight:   #2bf;
+	--blueHilight:      #22f;
+	--purpleHilight:    #b2f;
+	--pinkHilight:      #f2f;
+	--hotpinkHilight:   #f2b;
+
+	--grayFaint:      #888a;
+	--redFaint:       #c44a;
+	--orangeFaint:    #ca4a;
+	--yellowFaint:    #cc4a;
+	--limeFaint:      #ac4a;
+	--greenFaint:     #4c4a;
+	--aquagreenFaint: #4caa;
+	--cyanFaint:      #4bca;
+	--skyblueFaint:   #4aca;
+	--blueFaint:      #44ca;
+	--purpleFaint:    #a4ca;
+	--pinkFaint:      #c4ca;
+	--hotpinkFaint:   #c4aa;
+
+
+	--DEFAULT_ACCENT: var(--blue);
+	--DEFAULT_ACCENT_HILIGHT: var(--blueHilight);
+    
+	--DEFAULT_HILIGHT: var(--blue);
+	--DEFAULT_HILIGHT_HILIGHT: var(--blueHilight);
+	--DEFAULT_HILIGHT_FAINT: var(--blueFaint);
+    
+	--DEFAULT_SELECTION_BG: var(--blue);
+    
+    
+
+	--accent: var(--DEFAULT_ACCENT);
+	--accentHilight: var(--DEFAULT_ACCENT_HILIGHT);
+    
+	--hilight: var(--DEFAULT_HILIGHT);
+	--hilightHilight: var(--DEFAULT_HILIGHT_HILIGHT);
+	--hilightFaint: var(--DEFAULT_HILIGHT_FAINT);
+    
+	--selectionBackground: var(--DEFAULT_SELECTION_BACKGROUND);
+	--selectionForeground: var(--background);
+}
+
+
+/**********************************
+**********************************/
+
+a:link {
+  --foreground: var(--HotTrackingColor);
+}
+
+/* visited link */
+a:visited {
+  --foreground: var(--hotpink);
+}
+
+/* mouse over link */
+a:hover, a:focus {
+  --foreground: var(--skyblueHilight);
+}
+
+/* selected link */
+a:active {
+  --foreground: var(--cyan);
+}
+
+
+/* NAVIGATION BAR */
+
+div.navbar {
+	/* 	--background:        #eee; */
+	/* 	--backgroundTop:     #fff; */
+	/* 	--backgroundBottom:  #e0e0e0; */
+
+	--background: var(--ActiveTitle);
+	--backgroundTop: var(--GradientActiveTitle);
+	--backgroundBottom: var(--ActiveTitle);
+
+	--foreground: var(--ActiveTitleText);
+
+	--borderTop: var(--ButtonHilight);
+	--borderLeft: var(--ButtonShadow);
+	--borderRight: var(--ButtonLight);
+	--borderBottom: var(--ButtonDkShadow);
+}
+
+div.navbar a:link {
+	--foreground: var(--HotTrackingColor);
+}
+
+.navbar .dropdown .dropdownbutton {
+	--background:              var(--ButtonFace);
+	--backgroundTop:           var(--ButtonHilight);
+	--backgroundBottom:        var(--ButtonFace);
+
+	--foreground:        var(--ButtonText);
+
+	--borderTop:             var(--ButtonLight);
+	--borderLeft:  var(--ButtonShadow);
+	--borderRight:                var(--ButtonLight);
+	--borderBottom:        var(--ButtonDkShadow);
+
+	--decoration: #0000;
+}
+
+
+div.drop-content {
+	--background: var(--ButtonFace)
+}
+
+
+div.drop-content div.item {
+	--background: #dddddd00;
+	--foreground: var(--WindowText);
+}
+
+
+
+div.item:hover {
+	--background: var(--Hilight) !important;
+	--foreground: var(--HilightText);
+}
+
+
+
+
+button:not(.nohydrogen), input[type=color]:not(.nohydrogen),
+input[type="checkbox"]:not(.nohydrogen) {
+	--background:              var(--ButtonFace);
+	--backgroundTop:           var(--ButtonHilight);
+	--backgroundBottom:        var(--ButtonFace);
+
+	--foreground:        var(--ButtonText);
+
+	--borderTop:             var(--ButtonHilight);
+	--borderLeft:  var(--ButtonShadow);
+	--borderRight:                var(--ButtonLight);
+	--borderBottom:        var(--ButtonDkShadow);
+
+	--decoration: #0000;
+}
+
+button:not(.nohydrogen):hover, button:not(.nohydrogen):focus,
+input[type=color]:not(.nohydrogen):hover, input[type=color]:not(.nohydrogen):focus,
+input[type="checkbox"]:not(.nohydrogen):hover, input[type="checkbox"]:not(.nohydrogen):focus {
+	--decoration: var(--hilight);
+}
+
+button:not(.nohydrogen):active, button.active,
+input[type=color]:not(.nohydrogen):active,
+input[type="checkbox"]:not(.nohydrogen):active {
+	--background:              var(--ButtonHilight);
+	--backgroundTop:           var(--ButtonFace);
+	--backgroundBottom:        var(--ButtonHilight);
+
+	--foreground:        var(--ButtonText);
+
+	--borderTop:             var(--ButtonDkShadow);
+	--borderLeft:  var(--ButtonLight);
+	--borderRight:                var(--ButtonShadow);
+	--borderBottom:        var(--ButtonHilight);
+}
+
+
+
+button:not(.nohydrogen).hilight {
+	--background:              var(--ButtonLight);
+	--backgroundTop:           var(--ButtonHilight);
+	--backgroundBottom:        var(--ButtonLight);
+
+	--foreground:        var(--HotTrackingColor);
+
+	--borderTop:             var(--ButtonHilight);
+	--borderLeft:  var(--ButtonShadow);
+	--borderRight:                var(--ButtonLight);
+	--borderBottom:        var(--ButtonDkShadow);
+}
+
+button.hilight:not(.nohydrogen):hover, button.hilight:not(.nohydrogen):focus {
+	--decoration: var(--hilightHilight);
+}
+
+button.hilight:not(.nohydrogen):active, button.hilight.active {
+	--background:              var(--ButtonHilight);
+	--backgroundTop:           var(--ButtonLight);
+	--backgroundBottom:        var(--ButtonHilight);
+
+	--foreground:        var(--HotTrackingColor);
+
+	--borderTop:             var(--ButtonDkShadow);
+	--borderLeft:  var(--ButtonLight);
+	--borderRight:                var(--ButtonShadow);
+	--borderBottom:        var(--ButtonHilight);
+}
+
+
+
+button.faint:not(.nohydrogen) {
+	--background:              var(--ButtonFace);
+	--backgroundTop:           var(--ButtonFace);
+	--backgroundBottom:        var(--ButtonFace);
+
+	--foreground:        var(--ButtonText);
+
+	--borderTop:             var(--ButtonLight);
+	--borderLeft:  var(--ButtonShadow);
+	--borderRight:                var(--ButtonLight);
+	--borderBottom:        var(--ButtonShadow);
+}
+
+button.faint:not(.nohydrogen):hover, button.faint:not(.nohydrogen):focus {
+	--decoration: var(--hilightFaint);
+}
+
+button.faint:not(.nohydrogen):active, button.faint.active {
+	--background:              var(--ButtonFace);
+	--backgroundTop:           var(--ButtonFace);
+	--backgroundBottom:        var(--ButtonFace);
+
+	--foreground:        var(--ButtonText);
+
+	--borderTop:             var(--ButtonShadow);
+	--borderLeft:  var(--ButtonLight);
+	--borderRight:                var(--ButtonShadow);
+	--borderBottom:        var(--ButtonLight);
+}
+
+
+
+/* ##"""""""""""""##################### */
+/* ## BOOTSTRAP 3 ##################### */
+/* ##.............##################### */
+
+/* Buttons */
+
+button.default:not(.nohydrogen) {
+	--borderTop:             var(--WindowFrame);
+	--borderLeft:  var(--WindowFrame);
+	--borderRight:                var(--WindowFrame);
+	--borderBottom:        var(--WindowFrame);
+}
+
+button.primary:not(.nohydrogen) {
+	--background:              var(--blue);
+	--backgroundTop:           var(--blueFaint);
+	--backgroundBottom:        var(--blue);
+
+	--foreground:        var(--HilightText);
+
+	--borderTop:             var(--ButtonShadow);
+	--borderLeft:  var(--ButtonLight);
+	--borderRight:                var(--ButtonShadow);
+	--borderBottom:        var(--ButtonLight);
+}
+button.primary:not(.nohydrogen):active {
+	--background:              var(--blue);
+	--backgroundBottom:        var(--blueFaint);
+	--backgroundTop:           var(--blue);
+}
+
+button.success:not(.nohydrogen) {
+	--background:              var(--green);
+	--backgroundTop:           var(--greenFaint);
+	--backgroundBottom:        var(--green);
+
+	--foreground:        var(--HilightText);
+
+	--borderTop:             var(--ButtonShadow);
+	--borderLeft:  var(--ButtonLight);
+	--borderRight:                var(--ButtonShadow);
+	--borderBottom:        var(--ButtonLight);
+}
+button.success:not(.nohydrogen):active {
+	--background:              var(--green);
+	--backgroundBottom:        var(--greenFaint);
+	--backgroundTop:           var(--green);
+}
+
+
+button.info:not(.nohydrogen) {
+	--background:              var(--skyblue);
+	--backgroundTop:           var(--cyanFaint);
+	--backgroundBottom:        var(--cyan);
+
+	--foreground:        var(--HilightText);
+
+	--borderTop:             var(--ButtonShadow);
+	--borderLeft:  var(--ButtonLight);
+	--borderRight:                var(--ButtonShadow);
+	--borderBottom:        var(--ButtonLight);
+}
+button.info:not(.nohydrogen):active {
+	--background:              var(--cyan);
+	--backgroundBottom:        var(--cyanFaint);
+	--backgroundTop:           var(--cyan);
+}
+
+button.warning:not(.nohydrogen) {
+	--background:              var(--yellow);
+	--backgroundTop:           var(--yellowFaint);
+	--backgroundBottom:        var(--yellow);
+
+	--foreground:        var(--HilightText);
+
+	--borderTop:             var(--ButtonShadow);
+	--borderLeft:  var(--ButtonLight);
+	--borderRight:                var(--ButtonShadow);
+	--borderBottom:        var(--ButtonLight);
+}
+button.warning:not(.nohydrogen):active {
+	--background:              var(--yellow);
+	--backgroundBottom:        var(--yellowFaint);
+	--backgroundTop:           var(--yellow);
+}
+
+button.danger:not(.nohydrogen) {
+	--background:              var(--red);
+	--backgroundTop:           var(--redFaint);
+	--backgroundBottom:        var(--red);
+
+	--foreground:        var(--HilightText);
+
+	--borderTop:             var(--ButtonShadow);
+	--borderLeft:  var(--ButtonLight);
+	--borderRight:                var(--ButtonShadow);
+	--borderBottom:        var(--ButtonLight);
+}
+button.danger:not(.nohydrogen):active {
+	--background:              var(--red);
+	--backgroundBottom:        var(--redFaint);
+	--backgroundTop:           var(--red);
+}
+
+
