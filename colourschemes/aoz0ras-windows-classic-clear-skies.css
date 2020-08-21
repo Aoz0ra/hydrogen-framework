@@ -1,4 +1,4 @@
-@import url("/hydrogen-framework/colourschemes/aoz0ras-windows-classic-general.css")
+@import url("/hydrogen-framework/colourschemes/aoz0ras-windows-classic-general.css") screen;
 
 :root {
 	--ButtonAlternateFace: rgb(235 235 235);
