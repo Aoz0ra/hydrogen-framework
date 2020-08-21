@@ -1,0 +1,9 @@
+@import url("/hydrogen-framework/styles/aoz0ras-3d-ready.css") screen;
+
+button:not(.nohydrogen), input:not(.nohydrogen) {
+  transform: translateZ(5px);
+}
+
+button:not(.nohydrogen):active, input:not(.nohydrogen):active {
+  transform: translateZ(2px) rotateX(5deg);
+}
