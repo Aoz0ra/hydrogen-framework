@@ -1,5 +1,5 @@
-/* HYDROGEN DEFAULTS */
-/* The default colors and stuff */
+/* AOZ0RA - AMBIANCE */
+/* Ubuntu */
 
 
 :root {
@@ -135,7 +135,7 @@ a:active {
 
 button:not(.nohydrogen), input[type=color]:not(.nohydrogen),
 input[type="checkbox"]:not(.nohydrogen) {
-	--background:              #595754;
+	--background:              #514f4c;
 	--backgroundTop:           #595754;
 	--backgroundBottom:        #494744;
 
@@ -158,7 +158,7 @@ input[type="checkbox"]:not(.nohydrogen):hover, input[type="checkbox"]:not(.nohyd
 button:not(.nohydrogen):active, button.active,
 input[type=color]:not(.nohydrogen):active,
 input[type="checkbox"]:not(.nohydrogen):active {
-	--background:              #393734;
+	--background:              #413f3c;
 	--backgroundTop:           #393734;
 	--backgroundBottom:        #494744;
 
