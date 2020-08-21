@@ -4,9 +4,8 @@ html {
 }
 
 body {
-	background: var(--backgroundSecondary);
 	height: 100%;
 	overflow: hidden scroll;
 	
-	perspective: 3000px;
+	perspective: 300px;
 }
