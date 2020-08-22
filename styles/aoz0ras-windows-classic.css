@@ -49,18 +49,25 @@ div.navbar {
 }
 
 button:not(.nohydrogen) {
-	box-shadow: -1px -1px 0 0 var(--ButtonDkShadow) inset,
-		1px 1px 0 0 var(--ButtonHilight) inset,
-		-2px -2px 0 0 var(--ButtonShadow) inset,
-		2px 2px 0 0 var(--ButtonLight) inset;
+	box-shadow: -1px -1px 0 0 var(--ButtonDkShadow, #000c) inset,
+		1px 1px 0 0 var(--ButtonHilight, #fffc) inset,
+		-2px -2px 0 0 var(--ButtonShadow, #0008) inset,
+		2px 2px 0 0 var(--ButtonLight, #fff0) inset;
 	
 	background: var(--background);
 	border: none;
 }
 
 button:not(.nohydrogen):hover, button:not(.nohydrogen):focus {
-	box-shadow: -1px -1px 0 0 var(--ButtonDkShadow) inset,
-		1px 1px 0 0 var(--ButtonHilight) inset,
-		-2px -2px 0 0 var(--ButtonShadow) inset,
-		2px 2px 0 0 var(--ButtonLight) inset;
+	box-shadow: -1px -1px 0 0 var(--ButtonDkShadow, #000c) inset,
+		1px 1px 0 0 var(--ButtonHilight, #fffc) inset,
+		-2px -2px 0 0 var(--ButtonShadow, #0008) inset,
+		2px 2px 0 0 var(--ButtonLight, #fff0) inset;
+}
+
+button:not(.nohydrogen):active, button:not(.nohydrogen):active {
+	box-shadow: -1px -1px 0 0 var(--ButtonDkShadow, #000c) inset,
+		1px 1px 0 0 var(--ButtonDkShadow, #000c) inset,
+		-2px -2px 0 0 var(--ButtonShadow, #0008) inset,
+		2px 2px 0 0 var(--ButtonShadow, #000c) inset;
 }
