@@ -216,7 +216,7 @@ input[type="checkbox"]:not(.nohydrogen):hover, input[type="checkbox"]:not(.nohyd
 button:not(.nohydrogen):active, button.active,
 input[type=color]:not(.nohydrogen):active,
 input[type="checkbox"]:not(.nohydrogen):active {
-	--background:              var(--ButtonHilight);
+	--background:              var(--ButtonFace);
 	--backgroundTop:           var(--ButtonFace);
 	--backgroundBottom:        var(--ButtonHilight);
 
@@ -248,7 +248,7 @@ button.hilight:not(.nohydrogen):hover, button.hilight:not(.nohydrogen):focus {
 }
 
 button.hilight:not(.nohydrogen):active, button.hilight.active {
-	--background:              var(--ButtonHilight);
+	--background:              var(--ButtonLight);
 	--backgroundTop:           var(--ButtonLight);
 	--backgroundBottom:        var(--ButtonHilight);
 
