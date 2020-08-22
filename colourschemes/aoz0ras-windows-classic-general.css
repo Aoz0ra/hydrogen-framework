@@ -86,14 +86,14 @@
 	--hotpinkFaint:   #c4aa;
 
 
-	--DEFAULT_ACCENT: var(--blue);
-	--DEFAULT_ACCENT_HILIGHT: var(--blueHilight);
+	--DEFAULT_ACCENT: var(--HotTrackingColor);
+	--DEFAULT_ACCENT_HILIGHT: var(--HotTrackingColor);
     
-	--DEFAULT_HILIGHT: var(--blue);
-	--DEFAULT_HILIGHT_HILIGHT: var(--blueHilight);
-	--DEFAULT_HILIGHT_FAINT: var(--blueFaint);
+	--DEFAULT_HILIGHT: var(--HotTrackingColor);
+	--DEFAULT_HILIGHT_HILIGHT: var(--HotTrackingColor);
+	--DEFAULT_HILIGHT_FAINT: var(--HotTrackingColor);
     
-	--DEFAULT_SELECTION_BG: var(--blue);
+	--DEFAULT_SELECTION_BG: var(--Hilight);
     
     
 
@@ -105,7 +105,7 @@
 	--hilightFaint: var(--DEFAULT_HILIGHT_FAINT);
     
 	--selectionBackground: var(--DEFAULT_SELECTION_BACKGROUND);
-	--selectionForeground: var(--background);
+	--selectionForeground: var(--HilightText);
 }
 
 
@@ -267,7 +267,7 @@ button.faint:not(.nohydrogen) {
 	--backgroundTop:           var(--ButtonFace);
 	--backgroundBottom:        var(--ButtonFace);
 
-	--foreground:        var(--ButtonText);
+	--foreground:        var(--GrayText);
 
 	--borderTop:             var(--ButtonLight);
 	--borderLeft:  var(--ButtonShadow);
@@ -284,7 +284,7 @@ button.faint:not(.nohydrogen):active, button.faint.active {
 	--backgroundTop:           var(--ButtonFace);
 	--backgroundBottom:        var(--ButtonFace);
 
-	--foreground:        var(--ButtonText);
+	--foreground:        var(--GrayText);
 
 	--borderTop:             var(--ButtonShadow);
 	--borderLeft:  var(--ButtonLight);
