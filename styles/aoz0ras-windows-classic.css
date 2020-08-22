@@ -1,0 +1,66 @@
+:root {
+	--borderRadius: 0;
+	
+}
+
+body {
+  background: var(--backgroundSecondary);
+}
+
+div.page {
+	margin: var(--pagePaddingTop) var(--pagePaddingRight) var(--pagePaddingBottom) var(--pagePaddingLeft);
+	padding: 0;
+	
+	background: var(--background);
+	
+	box-shadow: 0px 3px 6px 0px #0002, 0px 6px 6px -6px #0001;
+}
+
+div.header {
+	--background: var(--backgroundSecondary);
+
+  background: var(--backgroundSecondary);
+	background-size: 100vw 70px, 100vw 110px;
+	background-attachment: fixed;
+
+}
+
+h1:not(.nohydrogen),
+h2:not(.nohydrogen),
+h3:not(.nohydrogen),
+h4:not(.nohydrogen),
+h5:not(.nohydrogen),
+h6:not(.nohydrogen) {
+  color: var(--accent);
+	font-weight: 400;
+}
+
+
+
+
+
+
+div.floating-toc-m {
+	z-index: 0;
+}
+
+div.navbar {
+	z-index: 1;
+}
+
+button:not(.nohydrogen) {
+	box-shadow: -1px -1px 0 0 var(--ButtonDkShadow) inset,
+		1px 1px 0 0 var(--ButtonHilight) inset,
+		-2px -2px 0 0 var(--ButtonShadow) inset,
+		2px 2px 0 0 var(--ButtonLight) inset;
+	
+	background: var(--background);
+	border: none;
+}
+
+button:not(.nohydrogen):hover, button:not(.nohydrogen):focus {
+	box-shadow: -1px -1px 0 0 var(--ButtonDkShadow) inset,
+		1px 1px 0 0 var(--ButtonHilight) inset,
+		-2px -2px 0 0 var(--ButtonShadow) inset,
+		2px 2px 0 0 var(--ButtonLight) inset;
+}
