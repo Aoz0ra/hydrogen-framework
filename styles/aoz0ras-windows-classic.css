@@ -115,13 +115,26 @@ input[type="checkbox"]:not(.nohydrogen){
 	border: none;
 }
 
-button:not(.nohydrogen):hover, button:not(.nohydrogen):focus,
-input[type="color"]:not(.nohydrogen):hover, input[type="color"]:not(.nohydrogen):focus,
-input[type="checkbox"]:not(.nohydrogen):hover, input[type="checkbox"]:not(.nohydrogen):focus {
+button:not(.nohydrogen):hover,
+input[type="color"]:not(.nohydrogen):hover,
+input[type="checkbox"]:not(.nohydrogen):hover {
 	box-shadow: -1px -1px 0 0 var(--ButtonDkShadow, #000c) inset,
 		1px 1px 0 0 var(--ButtonHilight, #fffc) inset,
 		-2px -2px 0 0 var(--ButtonShadow, #0008) inset,
 		2px 2px 0 0 var(--ButtonLight, #fff0) inset;
+	
+	background: var(--background);
+}
+
+button:not(.nohydrogen):focus,
+input[type="color"]:not(.nohydrogen):focus {
+	box-shadow: 0 0 0 1px var(--WindowFrame, #000) inset,
+		-2px -2px 0 0 var(--ButtonDkShadow, #000c) inset,
+		2px 2px 0 0 var(--ButtonHilight, #fffc) inset,
+		-3px -3px 0 0 var(--ButtonShadow, #0008) inset,
+		3px 3px 0 0 var(--ButtonLight, #fff0) inset;
+	
+	background: var(--background);
 }
 
 button:not(.nohydrogen):active, input[type="color"]:not(.nohydrogen):active,
@@ -130,5 +143,10 @@ input[type="checkbox"]:not(.nohydrogen):active{
 		1px 1px 0 0 var(--ButtonDkShadow, #000c) inset,
 		-2px -2px 0 0 var(--ButtonShadow, #0008) inset,
 		2px 2px 0 0 var(--ButtonShadow, #000c) inset;
+	
+	background: var(--background);
+	
+	color: #0000;
+	text-shadow: 1px 1px 0 var(--foreground);
 }
 
