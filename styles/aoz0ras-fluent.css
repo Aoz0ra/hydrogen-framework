@@ -70,7 +70,7 @@ input[type=color]:not(.nohydrogen) {
 button:not(.nohydrogen):hover, button:not(.nohydrogen):focus,
 input[type="checkbox"]:not(.nohydrogen):hover, input[type="checkbox"]:not(.nohydrogen):focus,
 input[type=color]:not(.nohydrogen):hover, input[type=color]:not(.nohydrogen):focus {
-	box-shadow: 0 2px 4px 0 #000;
+	box-shadow: 0 2px 4px 0 #0006;
 }
 
 button:not(.nohydrogen):active, button.active, input[type="checkbox"]:not(.nohydrogen):active,
