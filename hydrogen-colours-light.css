@@ -181,6 +181,11 @@ input[type="checkbox"]:not(.nohydrogen) {
 	--backgroundBottom:        #cccc;
 
 	--decoration: #0000;
+
+	--borderTop:              #fff;
+	--borderLeft:   #f8f8f8;
+	--borderRight:                 #f8f8f8;
+	--borderBottom:         #eee;
 }
 
 button:not(.nohydrogen):hover, button:not(.nohydrogen):focus,
