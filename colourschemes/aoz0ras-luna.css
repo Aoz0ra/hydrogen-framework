@@ -135,9 +135,9 @@ div.navbar {
 	/* 	--backgroundTop:     #fff; */
 	/* 	--backgroundBottom:  #e0e0e0; */
 
-	--background: 0054e3;
+	--background: #0054e3;
 	--backgroundTop: #1a6eff;
-	--backgroundBottom: 0054e3;
+	--backgroundBottom: #0054e3;
 
 	--foreground: var(--ActiveTitleText);
 
