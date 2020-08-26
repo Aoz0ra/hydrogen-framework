@@ -3,22 +3,28 @@
   --sansSerifFont: "Microsoft Sans Serif", "Arial", "Helvetica", "FreeSans", "Arimo", "Liberation Sans", sans-serif;
 }
 
-button:not(.nohydrogen) {
+button:not(.nohydrogen), input[type=color]:not(.nohydrogen) {
 	padding: 3px 8px;
-	border-radius: 3px;
-  background: var(--background);
-	background: linear-gradient(top, var(--backgroundTop), var(--backgroundBottom));
-	box-shadow: 1px 1px 1px 0px rgba(255,255,255,0.3), /* inset appearance (bottom-right) */
+	background: linear-gradient(to bottom, var(--backgroundTop), 30%, var(--backgroundBottom));
+	box-shadow: 0px 0px 0px 0px #fff8 inset, /* top */
+		0px 0px 0px 0px var(--hilight) inset, /* inner top */
+		0px 0px 0px 0px var(--hilight) inset, /* left */
+		0px 0px 0px 0px var(--hilight) inset, /* right */
+		0px 0px 0px 0px #0004 inset, /* bottom */
+		0px 0px 0px 0px var(--hilight) inset, /* inner bottom */
+
+		1px 1px 1px 0px rgba(255,255,255,0.3), /* inset appearance (bottom-right) */
 		-1px -1px 1px 0px rgba(0,0,0,0.15), /* inset appearance (top-left) */
 		-1px -2px 2px 0px rgba(0,0,0,0.15) inset; /* slightly rounded appearance */
 }
-button:not(.nohydrogen):hover, button:not(.nohydrogen):focus {
-	box-shadow: 0px 1px 1px 0px #aea inset, /* top */
-		0px 2px 0px 0px #4b4 inset, /* inner top */
-		2px 0px 0px 0px #1b1 inset, /* left */
-		-2px 0px 0px 0px #1b1 inset, /* right */
-		0px -1px 1px 0px #181 inset, /* bottom */
-		0px -2px 0px 0px #2c2 inset, /* inner bottom */
+button:not(.nohydrogen):hover, button:not(.nohydrogen):focus,
+input[type=color]:not(.nohydrogen):hover, input[type=color]:not(.nohydrogen):focus {
+	box-shadow: 0px 1px 1px 0px #fff8 inset, /* top */
+		0px 2px 0px 0px var(--hilight) inset, /* inner top */
+		2px 0px 0px 0px var(--hilight) inset, /* left */
+		-2px 0px 0px 0px var(--hilight) inset, /* right */
+		0px -1px 1px 0px #0004 inset, /* bottom */
+		0px -2px 0px 0px var(--hilight) inset, /* inner bottom */
 
 		1px 1px 1px 0px rgba(255,255,255,0.3), /* inset appearance (bottom-right) */
 		-1px -1px 1px 0px rgba(0,0,0,0.15), /* inset appearance (top-left) */
