@@ -6,7 +6,8 @@
 button:not(.nohydrogen) {
 	padding: 3px 8px;
 	border-radius: 3px;
-	background: linear-gradient(top, var(--backgroundTop), 30%, var(--backgroundBottom));
+  background: var(--background);
+	background: linear-gradient(top, var(--backgroundTop), var(--backgroundBottom));
 	box-shadow: 1px 1px 1px 0px rgba(255,255,255,0.3), /* inset appearance (bottom-right) */
 		-1px -1px 1px 0px rgba(0,0,0,0.15), /* inset appearance (top-left) */
 		-1px -2px 2px 0px rgba(0,0,0,0.15) inset; /* slightly rounded appearance */
