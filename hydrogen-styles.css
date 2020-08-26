@@ -214,6 +214,8 @@ div.dropdown:hover div.drop-content {
 	border-width: var(--borderWidth);
 	padding: var(--paddingMenuTop, 4px) var(--paddingMenuRight, 4px) var(--paddingMenuBottom, 4px) var(--paddingMenuLeft, 4px);
 	pointer-events: initial;
+	
+	z-index: 999999999999999999999999999999999999999 !important;
 
 	/* 	backdrop-filter: var(--backdropFilter); */
 	/* 	-webkit-backdrop-filter: var(--backdropFilter); */
@@ -260,8 +262,6 @@ div.drop-content.drop-ubuntu {
 	padding: 0 var(--paddingMenuLeft, 4px) 0 var(--paddingMenuRight, 4px);
 	border-radius: var(--borderRadius, 3px);
 	pointer-events: none;
-
-	z-index: 999999999999999999999999999999999999999;
 }
 
 div.dropdown:hover div.drop-content.drop-ubuntu {
