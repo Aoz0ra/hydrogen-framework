@@ -1,0 +1,97 @@
+/******* ******* ******* ******* ******* ******* ******* ******* ******* *******
+**                                                                            **
+**    Aoz0ra - Fluent                                   aoz0ras-fluent.css    **
+**                                                                            **
+******* ******* ******* ******* ******* ******* ******* ******* ******* *******/
+
+
+
+
+/* Debug mode: */
+/* *:hover {box-shadow: 0 0 0 1px #000,0 0 4px 0 #fff !important;} */
+
+
+
+/*******************************************************************************
+*******************************************************************************/
+
+
+:root {
+    --borderRadius: 4px;
+    --sansSerifFont: "Segoe UI", "Segoe", "Webly Sleek UI", "Selawik", "Frutiger", "Noto Sans", "Open Sans", "Tahoma", "Verdana", -apple-system, system-ui, sans-serif;
+}
+
+
+
+/* NAVIGATION BAR - UNIVERSAL STYLING */
+
+div.navbar {
+	background: var(--background);
+    border: none;
+    box-shadow: 0;
+    height: 40px;
+    padding-top: 8px;
+}
+
+.navbar .dropdown .dropdownbutton {
+	background: var(--background);
+    border: none;
+    box-shadow: none;
+}
+
+div.drop-content {
+    border: none;
+    box-shadow: none;
+}
+
+
+
+
+
+
+div.header {
+	background: var(--backgroundHilight);
+}
+
+button:not(.nohydrogen), input[type="checkbox"]:not(.nohydrogen),
+input[type=color]:not(.nohydrogen) {
+    border: none;
+
+  box-shadow: 0 1px 2px 0 #0005;
+    
+    padding: 6px;
+
+    margin: 4px;
+}
+
+::-moz-focus-inner {border:0;}
+
+
+button:not(.nohydrogen):hover, button:not(.nohydrogen):focus,
+input[type="checkbox"]:not(.nohydrogen):hover, input[type="checkbox"]:not(.nohydrogen):focus,
+input[type=color]:not(.nohydrogen):hover, input[type=color]:not(.nohydrogen):focus {
+	box-shadow: 0 1px 2px 0 #0006;
+}
+
+
+
+
+
+
+
+/* ##"""""""""""""""""""############### */
+/* ## RESPONSIVE DESIGN ############### */
+/* ##...................############### */
+
+
+
+
+
+
+
+/* ###################################### */
+/* ## RESPONDING TO ACCESSIBILITY ####### */
+/* ###################################### */
+
+
+/* empty. */
