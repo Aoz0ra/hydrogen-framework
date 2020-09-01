@@ -56,7 +56,7 @@ div.navbar {
 	top: 10px;
 	left: var(--pagePaddingLeft);
 	
-	border: 3px var(--background) solid;
+	border: 3px var(--Background, #fff4) solid;
 	
 	margin-top: var(--pagePaddingTop);
 	
