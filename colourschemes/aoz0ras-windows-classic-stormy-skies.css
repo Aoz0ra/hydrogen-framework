@@ -2,11 +2,11 @@
 
 :root {
 	--ButtonAlternateFace: rgb(193 193 193);
-  --ButtonDkShadow: rgb(170 170 170);
+  --ButtonDkShadow: rgb(113 113 113);
   --ButtonFace: rgb(170 170 170);
   --ButtonHilight: rgb(193 193 193);
   --ButtonLight: rgb(170 170 170);
-  --ButtonShadow: rgb(113 113 113);
+  --ButtonShadow: rgb(170 170 170);
   --ButtonText: rgb(67 67 67);
   --ActiveBorder: rgb(170 170 170);
   --AppWorkspace: rgb(113 113 113);
