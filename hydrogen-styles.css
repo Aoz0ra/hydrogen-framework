@@ -25,6 +25,7 @@
 	
 	/* Allow for instant customization of foreground colors */
 	color: var(--foreground);
+font-size: var(--fontSize);
 }
 
 /* override the spacing normally set by browsers */
@@ -35,7 +36,6 @@ body {
 
 html {
 	overflow-x: hidden;
-  font-size: var(--fontSize);
 }
 
 
