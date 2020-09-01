@@ -13,21 +13,21 @@ div.page {
 	
 	background: var(--background);
 	
-	box-shadow: -1px -1px 0 0 var(--ButtonLight),
-		-1px 0px 0 0 var(--ButtonLight),
-		0px -1px 0 0 var(--ButtonLight),
+	box-shadow: -1px -1px 0 0 var(--ButtonLight, #fff4),
+		-1px 0px 0 0 var(--ButtonLight, #fff4),
+		0px -1px 0 0 var(--ButtonLight, #fff4),
 		
-		1px 1px 0 0 var(--ButtonShadow),
-		-1px 1px 0 0 var(--ButtonShadow),
-		1px -1px 0 0 var(--ButtonShadow),
+		1px 1px 0 0 var(--ButtonShadow, #0008),
+		-1px 1px 0 0 var(--ButtonShadow, #0008),
+		1px -1px 0 0 var(--ButtonShadow, #0008),
 		
-		-1px -1px 0 1px var(--ButtonHilight),
-		-1px 0px 0 1px var(--ButtonHilight),
-		0px -1px 0 1px var(--ButtonHilight),
+		-1px -1px 0 1px var(--ButtonHilight, #fff),
+		-1px 0px 0 1px var(--ButtonHilight, #fff),
+		0px -1px 0 1px var(--ButtonHilight, #fff),
 		
-		1px 1px 0 1px var(--ButtonDkShadow),
-		-1px 1px 0 1px var(--ButtonDkShadow),
-		1px -1px 0 1px var(--ButtonDkShadow);
+		1px 1px 0 1px var(--ButtonDkShadow, #000),
+		-1px 1px 0 1px var(--ButtonDkShadow, #000),
+		1px -1px 0 1px var(--ButtonDkShadow ,#000);
 }
 
 div.header {
@@ -41,22 +41,22 @@ div.header {
 
 div.navbar {
 	background: linear-gradient(to right, var(--backgroundBottom), var(--backgroundTop));
-	box-shadow:-1px -1px 0 0 var(--ButtonLight),
-		0px -1px 0 0 var(--ButtonLight),
+	box-shadow:-1px -1px 0 0 var(--ButtonLight, #fff4),
+		0px -1px 0 0 var(--ButtonLight, #fff4),
 		
-		1px 0px 0 0 var(--ButtonShadow),
-		1px -1px 0 0 var(--ButtonShadow),
+		1px 0px 0 0 var(--ButtonShadow, #0008),
+		1px -1px 0 0 var(--ButtonShadow, #0008),
 		
-		-2px -2px 0 0px var(--ButtonHilight),
-		1px -2px 0 0px var(--ButtonHilight),
+		-2px -2px 0 0px var(--ButtonHilight, #fff),
+		1px -2px 0 0px var(--ButtonHilight, #fff),
 		
-		2px 0px 0 0px var(--ButtonDkShadow),
-		2px -2px 0 0px var(--ButtonDkShadow);
+		2px 0px 0 0px var(--ButtonDkShadow, #fff),
+		2px -2px 0 0px var(--ButtonDkShadow, #fff);
 	
 	top: 10px;
 	left: var(--pagePaddingLeft);
 	
-	border: 3px var(--ButtonFace) solid;
+	border: 3px var(--background) solid;
 	
 	margin-top: var(--pagePaddingTop);
 	
@@ -108,8 +108,8 @@ button:not(.nohydrogen), input[type="color"]:not(.nohydrogen),
 input[type="checkbox"]:not(.nohydrogen){
 	box-shadow: -1px -1px 0 0 var(--ButtonDkShadow, #000c) inset,
 		1px 1px 0 0 var(--ButtonHilight, #fffc) inset,
-		-2px -2px 0 0 var(--ButtonShadow, #0008) inset,
-		2px 2px 0 0 var(--ButtonLight, #fff0) inset;
+		-2px -2px 0 0 var(--ButtonShadow, #0004) inset,
+		2px 2px 0 0 var(--ButtonLight, #fff2) inset;
 	
 	background: var(--background);
 	border: none;
@@ -120,8 +120,8 @@ input[type="color"]:not(.nohydrogen):hover,
 input[type="checkbox"]:not(.nohydrogen):hover {
 	box-shadow: -1px -1px 0 0 var(--ButtonDkShadow, #000c) inset,
 		1px 1px 0 0 var(--ButtonHilight, #fffc) inset,
-		-2px -2px 0 0 var(--ButtonShadow, #0008) inset,
-		2px 2px 0 0 var(--ButtonLight, #fff0) inset;
+		-2px -2px 0 0 var(--ButtonShadow, #0004) inset,
+		2px 2px 0 0 var(--ButtonLight, #fff2) inset;
 	
 	background: var(--background);
 }
@@ -131,8 +131,8 @@ input[type="color"]:not(.nohydrogen):focus {
 	box-shadow: 0 0 0 1px var(--WindowFrame, #000) inset,
 		-2px -2px 0 0 var(--ButtonDkShadow, #000c) inset,
 		2px 2px 0 0 var(--ButtonHilight, #fffc) inset,
-		-3px -3px 0 0 var(--ButtonShadow, #0008) inset,
-		3px 3px 0 0 var(--ButtonLight, #fff0) inset;
+		-3px -3px 0 0 var(--ButtonShadow, #0004) inset,
+		3px 3px 0 0 var(--ButtonLight, #fff2) inset;
 	
 	background: var(--background);
 }
