@@ -1,0 +1,6 @@
+@import url("/hydrogen-framework/colourschemes/aoz0ras-onebit-general.css") screen;
+
+:root {
+	--onebitbg: #79a;
+	--onebitfg: #579;
+}
