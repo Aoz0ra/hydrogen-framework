@@ -21,9 +21,14 @@
 	--borderRight:                var(--onebitfg);
 	--borderBottom:        var(--onebitfg);
 
+--ButtonHilight: var(--onebitfg);
+--ButtonLight: var(--onebitfg);
+--ButtonShadow: var(--onebitfg);
+--ButtonDkShadow: var(--onebitfg);
 
 
 
+--gray: var(--onebitfg);
 	--red:       var(--onebitfg);
 	--orange:    var(--onebitfg);
 	--yellow:    var(--onebitfg);
@@ -37,6 +42,7 @@
 	--pink:      var(--onebitfg);
 	--hotpink:   var(--onebitfg);
 
+--grayMuted: var(--onebitfg);
 	--redMuted:       var(--onebitfg);
 	--orangeMuted:    var(--onebitfg);
 	--yellowMuted:    var(--onebitfg);
@@ -50,31 +56,33 @@
 	--pinkMuted:      var(--onebitfg);
 	--hotpinkMuted:   var(--onebitfg);
 
+--grayHilight: var(--onebitfg);
 	--redHilight:       var(--onebitfg);
-	--orangeHilight:    #fc2;
-	--yellowHilight:    #ff2;
-	--limeHilight:      #bf2;
-	--greenHilight:     #2f2;
-	--aquagreenHilight: #2fb;
-	--cyanHilight:      #2ef;
-	--skyblueHilight:   #2bf;
-	--blueHilight:      #22f;
-	--purpleHilight:    #b2f;
-	--pinkHilight:      #f2f;
-	--hotpinkHilight:   #f2b;
+	--orangeHilight:    var(--onebitfg);
+	--yellowHilight:    var(--onebitfg);
+	--limeHilight:      var(--onebitfg);
+	--greenHilight:     var(--onebitfg);
+	--aquagreenHilight: var(--onebitfg);
+	--cyanHilight:      var(--onebitfg);
+	--skyblueHilight:   var(--onebitfg);
+	--blueHilight:      var(--onebitfg);
+	--purpleHilight:    var(--onebitfg);
+	--pinkHilight:      var(--onebitfg);
+	--hotpinkHilight:   var(--onebitfg);
 
-	--redFaint:       #dc322faa;
-	--orangeFaint:    #cb4b16aa;
-	--yellowFaint:    #b58900aa;
-	--limeFaint:      #9D9100aa;
-	--greenFaint:     #859900aa;
-	--aquagreenFaint: #568a61aa;
-	--cyanFaint:      #2aa198aa;
-	--skyblueFaint:   #1896a5aa;
-	--blueFaint:      #268bd2aa;
-	--purpleFaint:    #6c71c4aa;
-	--pinkFaint:      #d33682aa;
-	--hotpinkFaint:   #D13C62aa;
+--grayFaint: var(--onebitfg);
+	--redFaint:       var(--onebitfg);
+	--orangeFaint:    var(--onebitfg);
+	--yellowFaint:    var(--onebitfg);
+	--limeFaint:      var(--onebitfg);
+	--greenFaint:     var(--onebitfg);
+	--aquagreenFaint: var(--onebitfg);
+	--cyanFaint:      var(--onebitfg);
+	--skyblueFaint:   var(--onebitfg);
+	--blueFaint:      var(--onebitfg);
+	--purpleFaint:    var(--onebitfg);
+	--pinkFaint:      var(--onebitfg);
+	--hotpinkFaint:   var(--onebitfg);
 
 
 	--DEFAULT_ACCENT: var(--blue);
@@ -96,7 +104,7 @@
 	--hilightFaint: var(--DEFAULT_HILIGHT_FAINT);
     
     --selectionBackground: var(--DEFAULT_SELECTION_BACKGROUND);
-    --selectionForeground: var(--base2);
+    --selectionForeground: var(--onebitbg);
 }
 
 
@@ -130,35 +138,35 @@ div.navbar {
 	/* 	--backgroundTop:     #fff; */
 	/* 	--backgroundBottom:  #e0e0e0; */
 
-	--background: var(--base03);
-	--backgroundTop: var(--base02);
-	--backgroundBottom: var(--base03);
+	--background: var(--onebitfg);
+	--backgroundTop: var(--onebitfg);
+	--backgroundBottom: var(--onebitfg);
 
-	--foreground: var(--base1);
+	--foreground: var(--onebitbg);
 
-	--border: var(--base02);
-	--borderTop:             var(--base02);
-	--borderLeft:  var(--base02);
-	--borderRight:                var(--base02);
-	--borderBottom:        var(--base02);
+	--border: var(--onebitbg);
+	--borderTop:             var(--onebitbg);
+	--borderLeft:  var(--onebitbg);
+	--borderRight:                var(--onebitbg);
+	--borderBottom:        var(--onebitbg);
 }
 
 .navbar a:link {
-	--foreground: var(--blue);
+	--foreground: var(--onebitbg);
 }
 
 .navbar .dropdown .dropdownbutton {
-	--background:              var(--base03);
-	--backgroundTop:           var(--base02);
-	--backgroundBottom:        var(--base03);
+	--background:              var(--onebitfg);
+	--backgroundTop:           var(--onebitfg);
+	--backgroundBottom:        var(--onebitfg);
 
-	--foreground:        var(--base0);
+	--foreground:        var(--onebitbg);
 
-	--border: var(--base02);
-	--borderTop:             var(--base02);
-	--borderLeft:  var(--base02);
-	--borderRight:                var(--base02);
-	--borderBottom:        var(--base02);
+	--border: var(--onebitbg);
+	--borderTop:             var(--onebitbg);
+	--borderLeft:  var(--onebitbg);
+	--borderRight:                var(--onebitbg);
+	--borderBottom:        var(--onebitbg);
 
 	--decoration: #0000;
 }
@@ -168,205 +176,128 @@ div.navbar {
 
 div.drop-content div.item {
 	--background: #dddddd00;
-	--foreground: var(--base0);
+	--foreground: var(--onebitbg);
 }
 
 
 
 div.item:hover {
-	--background: var(--base01) !important;
+	--background: var(--onebitbg) !important;
+  --foreground: var(--onebitfg) !important;
 }
 
 
 
 
-button:not(.nohydrogen), input[type=color]:not(.nohydrogen) {
-	--background:              var(--base03);
-	--backgroundTop:           var(--base02);
-	--backgroundBottom:        var(--base03);
+button:not(.nohydrogen), input[type=color]:not(.nohydrogen),
+input[type="checkbox"]:not(.nohydrogen) {
+	--background:              var(--onebitbg);
+	--backgroundTop:           var(--onebitbg);
+	--backgroundBottom:        var(--onebitbg);
 
-	--foreground:        var(--base0);
+	--foreground:        var(--onebitfg);
 
-	--border: var(--base02);
-	--borderTop:             var(--base02);
-	--borderLeft:  var(--base02);
-	--borderRight:                var(--base02);
-	--borderBottom:        var(--base02);
+	--border: var(--onebitfg);
+	--borderTop:             var(--onebitfg);
+	--borderLeft:  var(--onebitfg);
+	--borderRight:                var(--onebitfg);
+	--borderBottom:        var(--onebitfg);
 
 
 	--decoration: #0000;
 }
 
 button:not(.nohydrogen):hover, button:not(.nohydrogen):focus,
-input[type=color]:not(.nohydrogen):hover, input[type=color]:not(.nohydrogen):focus{
-	--background:              var(--base03);
-	--backgroundTop:           var(--base02);
-	--backgroundBottom:        var(--base03);
+input[type=color]:not(.nohydrogen):hover, input[type=color]:not(.nohydrogen):focus,
+input[type="checkbox"]:not(.nohydrogen):hover, input[type="checkbox"]:not(.nohydrogen):focus {
 
-	--foreground:        var(--base0);
-
-	--border: var(--hilight);
-	--borderTop:             var(--hilight);
-	--borderLeft:  var(--hilight);
-	--borderRight:                var(--hilight);
-	--borderBottom:        var(--hilight);
-
-	--decoration: var(--base02);
+	--decoration: var(--hilight);
 }
 
 button:not(.nohydrogen):active, button.active,
-input[type=color]:not(.nohydrogen):active {
-	--background:              var(--base02);
-	--backgroundTop:           var(--base03);
-	--backgroundBottom:        var(--base02);
+input[type=color]:not(.nohydrogen):active,
+input[type="checkbox"]:not(.nohydrogen):active {
+	--background:              var(--onebitfg);
+	--backgroundTop:           var(--onebitfg);
+	--backgroundBottom:        var(--onebitfg);
 
-	--foreground:        var(--base0);
+	--foreground:        var(--onebitbg);
 
-	--border: var(--base02);
-	--borderTop:             var(--base02);
-	--borderLeft:  var(--base02);
-	--borderRight:                var(--base02);
-	--borderBottom:        var(--base02);
+	--border: var(--onebitfg);
+	--borderTop:             var(--onebitfg);
+	--borderLeft:  var(--onebitfg);
+	--borderRight:                var(--onebitfg);
+	--borderBottom:        var(--onebitfg);
 }
 
 
 
 button.hilight:not(.nohydrogen) {
-	--background:              var(--base02);
-	--backgroundTop:           var(--base02);
-	--backgroundBottom:        var(--base03);
+	--background:              var(--onebitfg);
+	--backgroundTop:           var(--onebitfg);
+	--backgroundBottom:        var(--onebitfg);
 
-	--foreground:        var(--base1);
+	--foreground:        var(--onebitbg);
 
-	--border: var(--base01);
-	--borderTop:             var(--base01);
-	--borderLeft:  var(--base01);
-	--borderRight:                var(--base01);
-	--borderBottom:        var(--base01);
+	--border: var(--onebitfg);
+	--borderTop:             var(--onebitfg);
+	--borderLeft:  var(--onebitfg);
+	--borderRight:                var(--onebitfg);
+	--borderBottom:        var(--onebitfg);
 }
 
 button.hilight:not(.nohydrogen):hover, button.hilight:not(.nohydrogen):focus {
-	--background:              var(--base02);
-	--backgroundTop:           var(--base02);
-	--backgroundBottom:        var(--base03);
-
-	--foreground:        var(--base1);
-
-	--border: var(--hilightHilight);
-	--borderTop:             var(--hilightHilight);
-	--borderLeft:  var(--hilightHilight);
-	--borderRight:                var(--hilightHilight);
-	--borderBottom:        var(--hilightHilight);
 	
-	--decoration: var(--base02);
+	--decoration: var(--hilightHilight);
 }
 
 button.hilight:not(.nohydrogen):active, button.hilight.active {
-	--background:              var(--base03);
-	--backgroundTop:           var(--base03);
-	--backgroundBottom:        var(--base02);
+	--background:              var(--onebitbg);
+	--backgroundTop:           var(--onebitbg);
+	--backgroundBottom:        var(--onebitbg);
 
-	--foreground:        var(--base1);
+	--foreground:        var(--onebitfg);
 
-	--border: var(--base01);
-	--borderTop:             var(--base01);
-	--borderLeft:  var(--base01);
-	--borderRight:                var(--base01);
-	--borderBottom:        var(--base01);
+	--border: var(--onebitfg);
+	--borderTop:             var(--onebitfg);
+	--borderLeft:  var(--onebitfg);
+	--borderRight:                var(--onebitfg);
+	--borderBottom:        var(--onebitfg);
 }
 
 
 
 button.faint:not(.nohydrogen) {
-	--background:              var(--base03);
-	--backgroundTop:           var(--base03);
-	--backgroundBottom:        var(--base03);
+	--background:              var(--onebitbg);
+	--backgroundTop:           var(--onebitbg);
+	--backgroundBottom:        var(--onebitbg);
 
-	--foreground:        var(--base01);
+	--foreground:        var(--onebitfg);
 
-	--border: var(--base02);
-	--borderTop:             var(--base02);
-	--borderLeft:  var(--base02);
-	--borderRight:                var(--base02);
-	--borderBottom:        var(--base02);
+	--border: var(--onebitfg);
+	--borderTop:             var(--onebitfg);
+	--borderLeft:  var(--onebitfg);
+	--borderRight:                var(--onebitfg);
+	--borderBottom:        var(--onebitfg);
 }
 
 button.faint:not(.nohydrogen):hover, button.faint:not(.nohydrogen):focus {
-	--background:              var(--base03);
-	--backgroundTop:           var(--base02);
-	--backgroundBottom:        var(--base03);
-
-	--foreground:        var(--base0);
-
-	--border: var(--hilightFaint);
-	--borderTop:             var(--hilightFaint);
-	--borderLeft:  var(--hilightFaint);
-	--borderRight:                var(--hilightFaint);
-	--borderBottom:        var(--hilightFaint);
 	
-	--decoration: #0000;
+	--decoration: var(--hilightFaint);
 }
 
 button.faint:not(.nohydrogen):active, button.faint.active {
-	--background:              var(--base03);
-	--backgroundTop:           var(--base03);
-	--backgroundBottom:        var(--base02);
+	--background:              var(--onebitfg);
+	--backgroundTop:           var(--onebitfg);
+	--backgroundBottom:        var(--onebitfg);
 
-	--foreground:        var(--base01);
+	--foreground:        var(--onebitbg);
 
-	--border: var(--base02);
-	--borderTop:             var(--base02);
-	--borderLeft:  var(--base02);
-	--borderRight:                var(--base02);
-	--borderBottom:        var(--base02);
-}
-
-
-input[type="checkbox"]:not(.nohydrogen) {
-	--background:              var(--base03);
-	--backgroundTop:           var(--base02);
-	--backgroundBottom:        var(--base03);
-
-	--foreground:        var(--base0);
-
-	--border: var(--base02);
-	--borderTop:             var(--base02);
-	--borderLeft:  var(--base02);
-	--borderRight:                var(--base02);
-	--borderBottom:        var(--base02);
-
-	--decoration: #0000;
-}
-
-input[type="checkbox"]:not(.nohydrogen):hover {
-	--background:              var(--base03);
-	--backgroundTop:           var(--base02);
-	--backgroundBottom:        var(--base03);
-
-	--foreground:        var(--base0);
-
-	--border: var(--hilight);
-	--borderTop:             var(--hilight);
-	--borderLeft:  var(--hilight);
-	--borderRight:                var(--hilight);
-	--borderBottom:        var(--hilight);
-
-	--decoration: var(--base02);
-}
-
-input[type="checkbox"]:not(.nohydrogen):active {
-	--background:              var(--base02);
-	--backgroundTop:           var(--base03);
-	--backgroundBottom:        var(--base02);
-
-	--foreground:        var(--base0);
-
-	--border: var(--base02);
-	--borderTop:             var(--base02);
-	--borderLeft:  var(--base02);
-	--borderRight:                var(--base02);
-	--borderBottom:        var(--base02);
-
+	--border: var(--onebitfg);
+	--borderTop:             var(--onebitfg);
+	--borderLeft:  var(--onebitfg);
+	--borderRight:                var(--onebitfg);
+	--borderBottom:        var(--onebitfg);
 }
 
 
@@ -378,11 +309,11 @@ input[type="checkbox"]:not(.nohydrogen):active {
 /* Buttons */
 
 button.default:not(.nohydrogen) {
-	--border: var(--base01);
-	--borderTop:             var(--base02);
-	--borderLeft:  var(--base02);
-	--borderRight:                var(--base02);
-	--borderBottom:        var(--base00);
+	--border: var(--onebitfg);
+	--borderTop:             var(--onebitfg);
+	--borderLeft:  var(--onebitbg);
+	--borderRight:                var(--onebitbg);
+	--borderBottom:        var(--onebitfg);
 }
 
 button.primary:not(.nohydrogen) {
@@ -390,12 +321,12 @@ button.primary:not(.nohydrogen) {
 	--backgroundTop:           var(--blueFaint);
 	--backgroundBottom:        var(--blue);
 
-	--foreground:        #eee;
+	--foreground:        var(--onebitfg);
 
-	--borderTop:             #fff;
-	--borderLeft:  #fefefe;
-	--borderRight:                #fefefe;
-	--borderBottom:        #eee;
+	--borderTop:             var(--onebitfg);
+	--borderLeft:  var(--onebitfg);
+	--borderRight:                var(--onebitfg);
+	--borderBottom:        var(--onebitfg);
 }
 button.primary:not(.nohydrogen):active {
 	--background:              var(--blue);
@@ -408,12 +339,12 @@ button.success:not(.nohydrogen) {
 	--backgroundTop:           var(--greenFaint);
 	--backgroundBottom:        var(--green);
 
-	--foreground:        #eee;
+	--foreground:        var(--onebitfg);
 
-	--borderTop:             #fff;
-	--borderLeft:  #fefefe;
-	--borderRight:                #fefefe;
-	--borderBottom:        #eee;
+	--borderTop:             var(--onebitfg);
+	--borderLeft:  var(--onebitfg);
+	--borderRight:                var(--onebitfg);
+	--borderBottom:        var(--onebitfg);
 }
 button.success:not(.nohydrogen):active {
 	--background:              var(--green);
@@ -427,12 +358,12 @@ button.info:not(.nohydrogen) {
 	--backgroundTop:           var(--cyanFaint);
 	--backgroundBottom:        var(--cyan);
 
-	--foreground:        #444;
+	--foreground:        var(--onebitfg);
 
-	--borderTop:             #fff;
-	--borderLeft:  #fefefe;
-	--borderRight:                #fefefe;
-	--borderBottom:        #eee;
+	--borderTop:             var(--onebitfg);
+	--borderLeft:  var(--onebitfg);
+	--borderRight:                var(--onebitfg);
+	--borderBottom:        var(--onebitfg);
 }
 button.info:not(.nohydrogen):active {
 	--background:              var(--cyan);
@@ -445,12 +376,12 @@ button.warning:not(.nohydrogen) {
 	--backgroundTop:           var(--yellowFaint);
 	--backgroundBottom:        var(--yellow);
 
-	--foreground:        #444;
+	--foreground:        var(--onebitfg);
 
-	--borderTop:             #fff;
-	--borderLeft:  #fefefe;
-	--borderRight:                #fefefe;
-	--borderBottom:        #eee;
+	--borderTop:             var(--onebitfg);
+	--borderLeft:  var(--onebitfg);
+	--borderRight:                var(--onebitfg);
+	--borderBottom:        var(--onebitfg);
 }
 button.warning:not(.nohydrogen):active {
 	--background:              var(--yellow);
@@ -463,12 +394,12 @@ button.danger:not(.nohydrogen) {
 	--backgroundTop:           var(--redFaint);
 	--backgroundBottom:        var(--red);
 
-	--foreground:        #eee;
+	--foreground:        var(--onebitfg);
 
-	--borderTop:             #fff;
-	--borderLeft:  #fefefe;
-	--borderRight:                #fefefe;
-	--borderBottom:        #eee;
+	--borderTop:             var(--onebitfg);
+	--borderLeft:  var(--onebitfg);
+	--borderRight:                var(--onebitfg);
+	--borderBottom:        var(--onebitfg);
 }
 button.danger:not(.nohydrogen):active {
 	--background:              var(--red);
