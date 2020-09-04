@@ -1,0 +1,8 @@
+div.navbar {
+	top: 1.3vmin;
+	left: 4vw;
+	width: calc(92vw);
+	border-radius: var(--borderRadius, 3px);
+	border: var(--borderWidth) solid;
+	border-color: var(--borderTop) var(--borderRight) var(--borderBottom) var(--borderLeft);
+}
