@@ -1,0 +1,46 @@
+/******* ******* ******* ******* ******* ******* ******* ******* ******* *******
+**                                                                            **
+**    Aoz0ra - Tenified                               aoz0ras-tenified.css    **
+**                                                                            **
+**                                                                            **
+******* ******* ******* ******* ******* ******* ******* ******* ******* *******/
+
+
+:root {
+	--borderRadius: 0;
+	--sansSerifFont: "Segoe UI", "Segoe", "WeblySleek UI", "Frutiger", "Hind", "Selawik", "Tahoma", "Verdana", sans-serif;
+}
+
+
+div.header {
+	background: var(--backgroundHilight);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 400;
+}
+
+button:not(.nohydrogen), input[type="checkbox"]:not(.nohydrogen),
+input[type=color]:not(.nohydrogen), div.navbar, .dropdownbutton {
+	background: var(--background) !important;
+
+  box-shadow: none;
+}
+
+::-moz-focus-inner {border:0;}
+
+
+button:not(.nohydrogen):hover, button:not(.nohydrogen):focus,
+input[type="checkbox"]:not(.nohydrogen):hover, input[type="checkbox"]:not(.nohydrogen):focus,
+input[type=color]:not(.nohydrogen):hover, input[type=color]:not(.nohydrogen):focus {
+	background: var(--background);
+	box-shadow: none;
+	border-color: var(--hilight);
+}
+
+button:not(.nohydrogen):active, button.active, input[type="checkbox"]:not(.nohydrogen):active,
+input[type=color]:not(.nohydrogen):active {
+	background: var(--background);
+}
+
+
