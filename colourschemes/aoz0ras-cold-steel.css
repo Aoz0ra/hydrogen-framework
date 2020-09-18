@@ -178,6 +178,11 @@ input[type="checkbox"]:not(.nohydrogen){
 	--backgroundBottom:        #012c;
 
 	--decoration: #0000;
+
+	--borderTop:             #557;
+	--borderLeft:  #557;
+	--borderRight:                #557;
+	--borderBottom:        #557;
 }
 
 button:not(.nohydrogen):hover, button:not(.nohydrogen):focus,
@@ -202,6 +207,11 @@ button.hilight:not(.nohydrogen) {
 	--backgroundBottom: #012;
     
     --foreground: #99b;
+
+    --borderTop:             #679;
+	--borderLeft:  #679;
+	--borderRight:                #679;
+	--borderBottom:        #679;
 }
 
 button.hilight:not(.nohydrogen):hover, button.hilight:not(.nohydrogen):focus {
@@ -212,6 +222,11 @@ button.hilight:not(.nohydrogen):active, button.hilight.active {
 	--background:       #012;
 	--backgroundTop:    #012;
 	--backgroundBottom: #234;
+
+	--borderTop:             #679;
+	--borderLeft:  #679;
+	--borderRight:                #679;
+	--borderBottom:        #679;
 }
 
 
@@ -220,7 +235,7 @@ button.faint:not(.nohydrogen) {
 	--background:         #2228;
 	--backgroundTop:      #4448;
 	--backgroundBottom:   #0008;
-	--foreground:   #eeec;
+	--foreground:   #88ac;
 	--borderTop:             #88a8;
 	--borderLeft:  #88a8;
 	--borderRight:                #88a8;
@@ -323,82 +338,5 @@ button.danger:not(.nohydrogen):active {
 	--backgroundBottom:        var(--redFaint);
 	--backgroundTop:           var(--red);
 }
-
-
-
-/* ##"""""""""""""""""""############### */
-/* ## RESPONSIVE DESIGN ############### */
-/* ##...................############### */
-
-
-
-
-
-
-
-
-/* eXtra Small screens */
-@media screen and (max-width: 600px) {
-}
-
-
-
-
-
-
-/* Small screens */
-@media screen and (min-width: 601px) and (max-width: 768px) {
-}
-
-
-
-
-
-
-/* Medium screens */
-@media screen and (min-width: 769px) and (max-width: 992px) {
-}
-
-
-
-
-
-
-
-
-/* Large screens */
-@media screen and (min-width: 993px) and (max-width: 1200px) {
-}
-
-
-
-
-
-
-
-
-
-/* eXtra-Large screens */
-@media screen and (min-width: 1201px) {
-}
-
-
-
-
-
-
-
-
-
-
-/* ###################################### */
-/* ## RESPONDING TO ACCESSIBILITY ####### */
-/* ###################################### */
-
-/* Empty for now. */
-
-
-
-
 
 
