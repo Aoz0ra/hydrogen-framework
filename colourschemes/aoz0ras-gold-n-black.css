@@ -270,9 +270,9 @@ button.default:not(.nohydrogen) {
 }
 
 button.primary:not(.nohydrogen) {
-	--background:              var(--blue);
-	--backgroundTop:           var(--blueFaint);
-	--backgroundBottom:        var(--blue);
+	--background:              var(--border);
+	--backgroundTop:           var(--borderTop);
+	--backgroundBottom:        var(--borderBottom);
 
 	--foreground:        #eee;
 }
