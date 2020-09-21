@@ -195,10 +195,10 @@ input[type="checkbox"]:not(.nohydrogen) {
 
 	--foreground:        #000000;
 
-	--borderTop:             #000044;
-	--borderLeft:  #000044;
-	--borderRight:                #000044;
-	--borderBottom:        #000044;
+	--borderTop:             #003c74;
+	--borderLeft:  #003c74;
+	--borderRight:                #003c74;
+	--borderBottom:        #003c74;
 
 	--decoration: #0000;
 }
@@ -218,10 +218,10 @@ input[type="checkbox"]:not(.nohydrogen):active {
 
 	--foreground:        #000000;
 
-	--borderTop:             #000044;
-	--borderLeft:  #000044;
-	--borderRight:                #000044;
-	--borderBottom:        #000044;
+	--borderTop:             #003c74;
+	--borderLeft:  #003c74;
+	--borderRight:                #003c74;
+	--borderBottom:        #003c74;
 }
 
 
@@ -265,10 +265,10 @@ button.faint:not(.nohydrogen) {
 
 	--foreground:        #aca899;
 
-	--borderTop:             #000044cc;
-	--borderLeft:  #000044cc;
-	--borderRight:                #000044cc;
-	--borderBottom:        #000044cc;
+	--borderTop:             #003c74cc;
+	--borderLeft:  #003c74cc;
+	--borderRight:                #003c74cc;
+	--borderBottom:        #003c74cc;
 }
 
 button.faint:not(.nohydrogen):hover, button.faint:not(.nohydrogen):focus {
@@ -282,10 +282,10 @@ button.faint:not(.nohydrogen):active, button.faint.active {
 
 	--foreground:        #aca899;
 
-	--borderTop:             #000044cc;
-	--borderLeft:  #000044cc;
-	--borderRight:                #000044cc;
-	--borderBottom:        #000044cc;
+	--borderTop:             #003c74cc;
+	--borderLeft:  #003c74cc;
+	--borderRight:                #003c74cc;
+	--borderBottom:        #003c74cc;
 }
 
 
