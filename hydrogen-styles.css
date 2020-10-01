@@ -29,6 +29,7 @@
 /* for accessibility on my website */
 letter-spacing: var(--letterSpacing);
 line-height: var(--lineHeight);
+word-spacing: var(--wordSpacing);
 }
 
 /* override the spacing normally set by browsers */
