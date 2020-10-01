@@ -20,11 +20,15 @@
 
 
 *:not(.nohydrogen) {
-	/* Why is this not standard?!  Internet Explorer was the only one to do this. */
+	/* Why is this not standard?  Internet Explorer was the only one to do this. */
 	box-sizing: border-box;
 	
 	/* Allow for instant customization of foreground colors */
 	color: var(--foreground);
+
+/* for accessibility on my website */
+letter-spacing: var(--letterSpacing);
+line-height: var(--lineHeight);
 }
 
 /* override the spacing normally set by browsers */
