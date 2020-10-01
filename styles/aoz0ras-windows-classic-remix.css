@@ -1,0 +1,151 @@
+:root {
+	--borderRadius: 0;
+	--borderWidth: 1px;
+}
+
+body {
+  background: var(--backgroundSecondary);
+}
+
+div.page {
+	margin: 0 var(--pagePaddingRight) var(--pagePaddingBottom) var(--pagePaddingLeft);
+	padding: 0;
+	
+	background: var(--background);
+	
+	box-shadow: -1px -1px 0 0 var(--ButtonLight, #004),
+		-1px 0px 0 0 var(--ButtonLight, #008),
+		0px -1px 0 0 var(--ButtonLight, #00a),
+		
+		1px 1px 0 0 var(--ButtonShadow, #040),
+		-1px 1px 0 0 var(--ButtonShadow, #080),
+		1px -1px 0 0 var(--ButtonShadow, #0a0),
+		
+		-1px -1px 0 1px var(--ButtonHilight, #400),
+		-1px 0px 0 1px var(--ButtonHilight, #800),
+		0px -1px 0 1px var(--ButtonHilight, #a00),
+		
+		1px 1px 0 1px var(--ButtonDkShadow, #222),
+		-1px 1px 0 1px var(--ButtonDkShadow, #444),
+		1px -1px 0 1px var(--ButtonDkShadow, #666);
+}
+
+div.header {
+	--background: var(--backgroundSecondary);
+
+  background: var(--backgroundSecondary);
+	background-size: 100vw 70px, 100vw 110px;
+	background-attachment: fixed;
+
+}
+
+div.navbar {
+	background: linear-gradient(to right, var(--backgroundBottom), var(--backgroundTop));
+	box-shadow:-1px -1px 0 0 var(--ButtonLight, #fff4),
+		0px -1px 0 0 var(--ButtonLight, #fff4),
+		
+		1px 0px 0 0 var(--ButtonShadow, #0008),
+		1px -1px 0 0 var(--ButtonShadow, #0008),
+		
+		-2px -2px 0 0px var(--ButtonHilight, #fff),
+		1px -2px 0 0px var(--ButtonHilight, #fff),
+		
+		2px 0px 0 0px var(--ButtonDkShadow, #fff),
+		2px -2px 0 0px var(--ButtonDkShadow, #fff);
+	
+	top: 10px;
+	left: var(--pagePaddingLeft);
+	
+	border: 3px var(--ButtonFace, #fff4) solid;
+	
+	margin-top: var(--pagePaddingTop);
+	
+	width: calc(100vw - var(--pagePaddingLeft) - var(--pagePaddingRight));
+}
+
+div.navbar:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: -15px;
+	left: -5px;
+	width: calc(100vw - var(--pagePaddingLeft) - var(--pagePaddingRight) + 4px);
+	height: 10px;
+	background: var(--backgroundSecondary);
+}
+
+h1:not(.nohydrogen),
+h2:not(.nohydrogen),
+h3:not(.nohydrogen),
+h4:not(.nohydrogen),
+h5:not(.nohydrogen),
+h6:not(.nohydrogen) {
+	font-weight: 400;
+}
+
+h1:not(.nohydrogen):hover,
+h2:not(.nohydrogen):hover,
+h3:not(.nohydrogen):hover,
+h4:not(.nohydrogen):hover,
+h5:not(.nohydrogen):hover,
+h6:not(.nohydrogen):hover {
+	background: none;
+}
+
+
+
+
+
+div.floating-toc-m {
+	z-index: 0;
+}
+
+div.navbar {
+	z-index: 1;
+}
+
+button:not(.nohydrogen), input[type="color"]:not(.nohydrogen),
+input[type="checkbox"]:not(.nohydrogen){
+	box-shadow: -1px -1px 0 0 var(--ButtonDkShadow, #000c) inset,
+		1px 1px 0 0 var(--ButtonHilight, #fffc) inset,
+		-2px -2px 0 0 var(--ButtonShadow, #0004) inset,
+		2px 2px 0 0 var(--ButtonLight, #fff2) inset;
+	
+	background: var(--background);
+	border: none;
+}
+
+button:not(.nohydrogen):hover,
+input[type="color"]:not(.nohydrogen):hover,
+input[type="checkbox"]:not(.nohydrogen):hover {
+	box-shadow: -1px -1px 0 0 var(--ButtonDkShadow, #000c) inset,
+		1px 1px 0 0 var(--ButtonHilight, #fffc) inset,
+		-2px -2px 0 0 var(--ButtonShadow, #0004) inset,
+		2px 2px 0 0 var(--ButtonLight, #fff2) inset;
+	
+	background: var(--background);
+}
+
+button:not(.nohydrogen):focus,
+input[type="color"]:not(.nohydrogen):focus {
+	box-shadow: 0 0 0 1px var(--WindowFrame, #000) inset,
+		-2px -2px 0 0 var(--ButtonDkShadow, #000c) inset,
+		2px 2px 0 0 var(--ButtonHilight, #fffc) inset,
+		-3px -3px 0 0 var(--ButtonShadow, #0004) inset,
+		3px 3px 0 0 var(--ButtonLight, #fff2) inset;
+	
+	background: var(--background);
+}
+
+button:not(.nohydrogen):active, input[type="color"]:not(.nohydrogen):active,
+input[type="checkbox"]:not(.nohydrogen):active{
+	box-shadow: -1px -1px 0 0 var(--ButtonDkShadow, #000c) inset,
+		1px 1px 0 0 var(--ButtonDkShadow, #000c) inset,
+		-2px -2px 0 0 var(--ButtonShadow, #0008) inset,
+		2px 2px 0 0 var(--ButtonShadow, #000c) inset;
+	
+	background: var(--background);
+	
+	color: #0000;
+	text-shadow: 1px 1px 0 var(--foreground);
+}
