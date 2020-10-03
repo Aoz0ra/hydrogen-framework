@@ -11,7 +11,7 @@
 	--backgroundHilight: #f9f6f4;
 	--backgroundFaint:   #d9d6d4;
 	
-	--backgroundSecondary: #d9d6d4;
+	--backgroundSecondary: #a946d4;
 
 	--foreground:        #655;
 	--foregroundHilight: #432;
@@ -23,6 +23,12 @@
 	--borderLeft:  #543;
 	--borderRight:                #543;
 	--borderBottom:        #543;
+
+--ButtonHilight: #d9d6d4;
+--ButtonLight: #f9f6f4;
+--ButtonFace: #e9e6e4;
+--ButtonShadow: #e1dfdc;
+--ButtonDkShadow: #d9d6d4;
 
 
 
