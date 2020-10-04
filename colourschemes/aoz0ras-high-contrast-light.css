@@ -24,7 +24,11 @@
 	--borderRight:                #ff0;
 	--borderBottom:        #ff0;
 
-
+--ButtonHilight: #000;
+--ButtonLight: #000;
+--ButtonFace: #ff0;
+--ButtonShadow: #000;
+--ButtonDkShadow: #000;
 
   --gray:      #888;
 	--red:       #f00;
