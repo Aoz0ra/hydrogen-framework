@@ -400,6 +400,8 @@ button:not(.nohydrogen), input[type=color]:not(.nohydrogen) {
 	box-shadow: 0px 0px 1px 0px var(--decoration), 0px 1px 2px 0px #0005, 0px 2px 2px -2px #0003;
 
 	padding: var(--paddingTop) var(--paddingRight) var(--paddingBottom) var(--paddingLeft);
+	
+	margin: 2px;
 }
 ::-moz-focus-inner {border:0;}
 
