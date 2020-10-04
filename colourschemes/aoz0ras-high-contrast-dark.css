@@ -1,5 +1,5 @@
-/* HYDROGEN DEFAULTS */
-/* The default colors and stuff */
+/* AOZ0RA - HIGH CONTRAST DARK */
+/* no comment */
 
 
 :root {
@@ -24,7 +24,11 @@
 	--borderRight:                #00f;
 	--borderBottom:        #00f;
 
-
+--ButtonHilight: #fff;
+--ButtonLight: #fff;
+--ButtonFace: #000;
+--ButtonShadow: #fff;
+--ButtonDkShadow: #fff;
 
   --gray:      #888;
 	--red:       #f00;
