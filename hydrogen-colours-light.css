@@ -25,7 +25,12 @@
 	--borderBottom:        #eee;
 
 
-	--borderRadius: 3px;
+	--ButtonHilight: #fff;
+	--ButtonLight: #fff7;
+	--ButtonFace: #ddd;
+	--ButtonShadow: #0007;
+	--ButtonDkShadow: #000d;
+	--WindowFrame: var(--hilight);
 
 
 
