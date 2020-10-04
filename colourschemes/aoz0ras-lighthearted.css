@@ -24,11 +24,12 @@
 	--borderRight:                #fff0;
 	--borderBottom:        #fff0;
 
---ButtonHilight: #fbf9fa;
---ButtonLight: #f8f4f6;
---ButtonFace: #f4eef2;
---ButtonShadow: #f8f4f6;
---ButtonDkShadow: #fbf9fa;
+	--ButtonHilight: #fbf9fa;
+	--ButtonLight: #f8f4f6;
+	--ButtonFace: #f4eef2;
+	--ButtonShadow: #f8f4f6;
+	--ButtonDkShadow: #fbf9fa;
+	--WindowFrame: #ebe;
 
 	--gray:      #888;
 	--red:       #daa;
