@@ -1,5 +1,5 @@
-/* HYDROGEN DEFAULTS */
-/* The default colors and stuff */
+/* AOZ0RA - HANNAH MONTANA LINUX */
+/* Oh yeah / Boot up */
 
 
 :root {
@@ -25,7 +25,11 @@
 	--borderBottom:        #eee;
 
 
-	--borderRadius: 3px;
+--ButtonHilight: #fff;
+--ButtonLight: #aae;
+--ButtonFace: #d0d;
+--ButtonShadow: #88c;
+--ButtonDkShadow: #44b;
 
 
 
