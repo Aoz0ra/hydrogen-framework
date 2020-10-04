@@ -42,12 +42,12 @@
 	--borderRight:                var(--artifacts-mid);
 	--borderBottom:        var(--artifacts-mid);
 
---ButtonHilight: var(--artifacts-white);
---ButtonLight: var(--artifacts-dark);
---ButtonFace: var(--artifacts-black);
---ButtonShadow: var(--artifacts-light);
---ButtonDkShadow: var(--artifacts-blue);
-
+	--ButtonHilight: var(--artifacts-white);
+	--ButtonLight: var(--artifacts-dark);
+	--ButtonFace: var(--artifacts-black);
+	--ButtonShadow: var(--artifacts-light);
+	--ButtonDkShadow: var(--artifacts-blue);
+	--WindowFrame: var(--artifacts-white);
 
 	--gray:      var(--artifacts-mid);
 	--red:       var(--artifacts-mid);
