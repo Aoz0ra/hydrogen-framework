@@ -18,4 +18,4 @@ If you want to override all styling for an element, add the <pre>.nohydrogen</pr
 
 ## To Do
 
-[] Proper documentation
+- [ ] Proper documentation
