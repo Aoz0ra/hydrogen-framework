@@ -7,29 +7,6 @@
 
 
 
-/* Debug mode: */
-/* *:hover {box-shadow: 0 0 0 1px #000,0 0 4px 0 #fff !important;} */
-
-
-
-/*******************************************************************************
-*******************************************************************************/
-
-
-*:not(.nohydrogen) {
-	/* Why is this not standard?!  Internet Explorer was the only one to do this. */
-	box-sizing: border-box;
-	
-	/* Allow for instant customization of foreground colors */
-	color: var(--foreground);
-}
-
-/* override the spacing normally set by browsers */
-body {
-	margin: 0;
-
-/* NAVIGATION BAR - UNIVERSAL STYLING */
-
 div.navbar {
 	background: var(--background);
 }
