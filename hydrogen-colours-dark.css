@@ -179,11 +179,17 @@ div.item:hover {
 
 button:not(.nohydrogen), input[type=color]:not(.nohydrogen),
 input[type="checkbox"]:not(.nohydrogen) {
-	--background:              #222c;
-	--backgroundTop:           #444c;
-	--backgroundBottom:        #000c;
+	--background:              #222d;
+	--backgroundTop:           #444d;
+	--backgroundBottom:        #000e;
 
 	--decoration: #0000;
+	
+	--border: #808080;
+	--borderTop:             #888;
+	--borderLeft:  #808080;
+	--borderRight:                #808080;
+	--borderBottom:        #777;
 }
 
 button:not(.nohydrogen):hover, button:not(.nohydrogen):focus,
