@@ -13,21 +13,21 @@ div.page {
 	
 	background: var(--background);
 	
-	box-shadow: -1px -1px 0 0 var(--ButtonLight, #004),
-		-1px 0px 0 0 var(--ButtonLight, #008),
+	box-shadow: 1px -1px 0 0 var(--ButtonLight, #004),
+		1px 0px 0 0 var(--ButtonLight, #008),
 		0px -1px 0 0 var(--ButtonLight, #00a),
 		
-		1px 1px 0 0 var(--ButtonShadow, #040),
-		-1px 1px 0 0 var(--ButtonShadow, #080),
-		1px -1px 0 0 var(--ButtonShadow, #0a0),
+		-1px 1px 0 0 var(--ButtonShadow, #040),
+		1px 1px 0 0 var(--ButtonShadow, #080),
+		-1px -1px 0 0 var(--ButtonShadow, #0a0),
 		
-		-1px -1px 0 1px var(--ButtonHilight, #400),
-		-1px 0px 0 1px var(--ButtonHilight, #800),
+		1px -1px 0 1px var(--ButtonHilight, #400),
+		1px 0px 0 1px var(--ButtonHilight, #800),
 		0px -1px 0 1px var(--ButtonHilight, #a00),
 		
-		1px 1px 0 1px var(--ButtonDkShadow, #222),
-		-1px 1px 0 1px var(--ButtonDkShadow, #444),
-		1px -1px 0 1px var(--ButtonDkShadow, #666);
+		-1px 1px 0 1px var(--ButtonDkShadow, #222),
+		1px 1px 0 1px var(--ButtonDkShadow, #444),
+		-1px -1px 0 1px var(--ButtonDkShadow, #666);
 }
 
 div.header {
@@ -41,17 +41,17 @@ div.header {
 
 div.navbar {
 	background: linear-gradient(to right, var(--backgroundBottom), var(--backgroundTop));
-	box-shadow:-1px -1px 0 0 var(--ButtonLight, #fff4),
+	box-shadow:1px -1px 0 0 var(--ButtonLight, #fff4),
 		0px -1px 0 0 var(--ButtonLight, #fff4),
 		
-		1px 0px 0 0 var(--ButtonShadow, #0008),
-		1px -1px 0 0 var(--ButtonShadow, #0008),
+		-1px 0px 0 0 var(--ButtonShadow, #0008),
+		-1px -1px 0 0 var(--ButtonShadow, #0008),
 		
-		-2px -2px 0 0px var(--ButtonHilight, #fff),
-		1px -2px 0 0px var(--ButtonHilight, #fff),
+		2px -2px 0 0px var(--ButtonHilight, #fff),
+		-1px -2px 0 0px var(--ButtonHilight, #fff),
 		
-		2px 0px 0 0px var(--ButtonDkShadow, #fff),
-		2px -2px 0 0px var(--ButtonDkShadow, #fff);
+		-2px 0px 0 0px var(--ButtonDkShadow, #fff),
+		-2px -2px 0 0px var(--ButtonDkShadow, #fff);
 	
 	top: 10px;
 	left: var(--pagePaddingLeft);
@@ -151,17 +151,17 @@ input[type="color"]:not(.nohydrogen):focus {
 		-1px 0 0 var(--XWindowFrameRight, var(--WindowFrame, #0ae)) inset,
 		1px 0 0 var(--XWindowFrameLeft, var(--WindowFrame, #09d)) inset,
 		
-		0 1px 0 var(--XButtonTopHi, var(--ButtonHilight, #ffff)) inset,
-		0 -1px 0 var(--XButtonBottomHi, var(--ButtonDkShadow, #000f)) inset,
+		0 2px 0 var(--XButtonTopHi, var(--ButtonHilight, #ffff)) inset,
+		0 -2px 0 var(--XButtonBottomHi, var(--ButtonDkShadow, #000f)) inset,
 		
-		-1px 0 0 var(--XButtonRightHi, var(--ButtonHilight, #fffc)) inset,
-		1px 0 0 var(--XButtonLeftHi, var(--ButtonDkShadow, #000c)) inset,
+		-2px 0 0 var(--XButtonRightHi, var(--ButtonHilight, #fffc)) inset,
+		2px 0 0 var(--XButtonLeftHi, var(--ButtonDkShadow, #000c)) inset,
 		
-		0 2px 0 var(--XButtonTop, var(--ButtonLight, #fff8)) inset,
-		0 -2px 0 var(--XButtonBottom, var(--ButtonShadow, #0008)) inset,
+		0 3px 0 var(--XButtonTop, var(--ButtonLight, #fff8)) inset,
+		0 -3px 0 var(--XButtonBottom, var(--ButtonShadow, #0008)) inset,
 		
-		-2px 0 0 var(--XButtonRight, var(--ButtonLight, #fff4)) inset,
-		2px 0 0 var(--XButtonLeft, var(--ButtonShadow, #0004)) inset;
+		-3px 0 0 var(--XButtonRight, var(--ButtonLight, #fff4)) inset,
+		3px 0 0 var(--XButtonLeft, var(--ButtonShadow, #0004)) inset;
 	
 	background: var(--background);
 }
