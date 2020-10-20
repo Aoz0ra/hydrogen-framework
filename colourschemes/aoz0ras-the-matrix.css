@@ -5,7 +5,7 @@
 :root {
 	/******************
 	**  MAIN COLORS  **
-	*******************/
+	******************/
 
 	--background:        #000;
 	--backgroundHilight: #040;
@@ -23,6 +23,14 @@
 	--borderLeft:  #0f0;
 	--borderRight:                #0f0;
 	--borderBottom:        #0f0;
+	
+	--ButtonHilight: #070;
+	--ButtonLight: #000;
+	--ButtonFace: #000;
+	--ButtonShadow: #000;
+	--ButtonDkShadow: #000;
+	
+	
 
 
 
