@@ -107,17 +107,17 @@ div.navbar {
 button:not(.nohydrogen), input[type="color"]:not(.nohydrogen),
 input[type="checkbox"]:not(.nohydrogen){
 	box-shadow: 
-		0 1px 0 var(--XButtonTopHi, var(--ButtonHilight, #ffff)) inset,
-		0 -1px 0 var(--XButtonBottomHi, var(--ButtonDkShadow, #000f)) inset,
+		0 1px 0 var(--XButtonTopHi, #ffff) inset,
+		0 -1px 0 var(--XButtonBottomHi, #000f) inset,
 		
-		-1px 0 0 var(--XButtonRightHi, var(--ButtonHilight, #fffc)) inset,
-		1px 0 0 var(--XButtonLeftHi, var(--ButtonDkShadow, #000c)) inset,
+		-1px 0 0 var(--XButtonRightHi, #fffc) inset,
+		1px 0 0 var(--XButtonLeftHi, #000c) inset,
 		
-		0 2px 0 var(--XButtonTop, var(--ButtonLight, #fff8)) inset,
-		0 -2px 0 var(--XButtonBottom, var(--ButtonShadow, #0008)) inset,
+		0 2px 0 var(--XButtonTop, #fff8) inset,
+		0 -2px 0 var(--XButtonBottom, #0008) inset,
 		
-		-2px 0 0 var(--XButtonRight, var(--ButtonLight, #fff4)) inset,
-		2px 0 0 var(--XButtonLeft, var(--ButtonShadow, #0004)) inset;
+		-2px 0 0 var(--XButtonRight, #fff4) inset,
+		2px 0 0 var(--XButtonLeft, #0004) inset;
 	
 	background: var(--background);
 	border: none;
