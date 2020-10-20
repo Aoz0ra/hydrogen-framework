@@ -32,7 +32,7 @@ div.header {
 button:not(.nohydrogen), div.navbar,
 input[type=color]:not(.nohydrogen),
 input[type="checkbox"]:not(.nohydrogen){
-	background: linear-gradient(to bottom, var(--backgroundTop), 98%, var(--background) 50%, var(--background) 50%, 2%, var(--backgroundBottom) );
+	background: linear-gradient(to bottom, var(--backgroundTop), 48%, var(--background) 50%, var(--background) 50%, 52%, var(--backgroundBottom) );
 	box-shadow: 0px 0px 12px 2px var(--decoration), 0px 1px 2px 0px #0005, 0px 2px 2px -2px #0003;
 }
 
