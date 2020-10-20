@@ -34,13 +34,13 @@
 	--XButtonTopHi:                     #ffff;
 	
 	--XButtonTop:                      #fff8;
-	--XButtonLeftHi:   #000c;
-	--XButtonLeft:           #0004;
+	--XButtonLeftHi:   #000a;
+	--XButtonLeft:           #0003;
 	--XButtonRight:                            #fff4;
 	--XButtonRightHi:                                #fffc;
-	--XButtonBottom:                #0008;
+	--XButtonBottom:                #0007;
 	
-	--XButtonBottomHi:            #000f;
+	--XButtonBottomHi:            #000d;
 	--WindowFrame: var(--hilight);
 
 
