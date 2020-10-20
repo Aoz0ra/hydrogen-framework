@@ -30,6 +30,17 @@
 	--ButtonShadow: #0007;
 	--ButtonDkShadow: #000d;
 	--WindowFrame: var(--hilight);
+	
+	--XButtonTopHi:                     #fff8;
+	
+	--XButtonTop:                      #fff4;
+	--XButtonLeftHi:   #000c;
+	--XButtonLeft:           #0004;
+	--XButtonRight:                            #fff2;
+	--XButtonRightHi:                                #fff6;
+	--XButtonBottom:                #0008;
+	
+	--XButtonBottomHi:            #000f;
 
 
   --gray:      #aaa;
