@@ -1,0 +1,45 @@
+/* 
+Aoz0ra / TPenguinLTG - Aiee
+
+> aIEe... get it?
+   
+> Based off of IE 4-8's logo's colours.
+   
+Credit: Theme originally by TPenguinLTG on DeviantArt.  I have expanded this with a dark version.
+*/
+
+@import url("/hydrogen-framework/colourschemes/aoz0ras-windows-classic-general.css") screen;
+
+:root {
+  --ActiveBorder: rgb(227 238 251);
+  --ActiveTitle: rgb(4 118 180);
+  --AppWorkspace: rgb(232 239 249);
+  --Background: rgb(68 125 183);
+  --ButtonAlternateFace: rgb(181 181 181);
+  --ButtonDkShadow: rgb(65 187 241);
+  --ButtonFace: rgb(227 238 251);
+  --ButtonHilight: rgb(250 254 255);
+  --ButtonLight: rgb(238 244 252);
+  --ButtonShadow: rgb(211 214 217);
+  --ButtonText: rgb(0 62 109);
+  --GradientActiveTitle: rgb(251 211 61);
+  --GradientInactiveTitle: rgb(0 207 247);
+  --GrayText: rgb(88 152 231);
+  --Hilight: rgb(251 211 61);
+  --HilightText: rgb(0 62 109);
+  --HotTrackingColor: rgb(0 0 128);
+  --InactiveBorder: rgb(227 238 251);
+  --InactiveTitle: rgb(0 159 223);
+  --InactiveTitleText: rgb(0 62 109);
+  --InfoText: rgb(0 62 109);
+  --InfoWindow: rgb(255 243 185);
+  --Menu: rgb(227 238 251);
+  --MenuBar: rgb(227 238 251);
+  --MenuHilight: rgb(251 211 61);
+  --MenuText: rgb(0 62 109);
+  --Scrollbar: rgb(242 248 253);
+  --TitleText: rgb(255 255 255);
+  --Window: rgb(255 255 255);
+  --WindowFrame: rgb(0 0 0);
+  --WindowText: rgb(0 62 109);
+}
