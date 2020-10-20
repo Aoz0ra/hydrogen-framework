@@ -1,0 +1,43 @@
+/* 
+Aoz0ra - Aesthetic (Dark Remix)
+
+> *plays Sonic CD - Tital Tempest Zone, but only with a certain range of frequencies so it sounds cool*
+   
+> Dark, yet still light and airy
+*/
+
+@import url("/hydrogen-framework/colourschemes/aoz0ras-windows-classic-general.css") screen;
+
+:root {
+  --ButtonAlternateFace: rgb(64 64 64)
+  --ButtonDkShadow: rgb(128 128 128)
+  --ButtonFace: rgb(64 64 64)
+  --ButtonHilight: rgb(128 128 128)
+  --ButtonLight: rgb(128 128 128)
+  --ButtonShadow: rgb(128 128 128)
+  --ButtonText: rgb(233 233 233)
+  --ActiveBorder: rgb(64 64 64)
+  --AppWorkspace: rgb(64 64 64)
+  --Background: rgb(96 96 96)
+  --InactiveBorder: rgb(64 64 64)
+  --Scrollbar: rgb(64 64 64)
+  --Window: rgb(64 64 64)
+  --WindowFrame: rgb(128 128 128)
+  --WindowText: rgb(233 233 233)
+  --ActiveTitle: rgb(64 64 64)
+  --GradientActiveTitle: rgb(64 64 64)
+  --GradientInactiveTitle: rgb(128 128 128)
+  --InactiveTitle: rgb(128 128 128)
+  --InactiveTitleText: rgb(192 192 192)
+  --TitleText: rgb(233 233 233)
+  --Menu: rgb(64 64 64)
+  --MenuBar: rgb(64 64 64)
+  --MenuHilight: rgb(192 192 192)
+  --MenuText: rgb(233 233 233)
+  --GrayText: rgb(128 128 128)
+  --Hilight: rgb(128 128 128)
+  --HilightText: rgb(233 233 233)
+  --HotTrackingColor: rgb(88 143 199)
+  --InfoText: rgb(233 233 233)
+  --InfoWindow: rgb(64 64 64)
+}
