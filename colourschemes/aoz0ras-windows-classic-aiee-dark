@@ -1,0 +1,45 @@
+/* 
+Aoz0ra / TPenguinLTG - Aiee (Dark Remix)
+
+> aIEe... get it?
+   
+> Based off of IE 4-8's logo's colours.
+   
+Credit: Ligt version originally by TPenguinLTG on DeviantArt.  I have expanded it with this very dark version.
+*/
+
+@import url("/hydrogen-framework/colourschemes/aoz0ras-windows-classic-general.css") screen;
+
+:root {
+  --ButtonAlternateFace: rgb(36 60 89);
+  --ButtonDkShadow: rgb(11 48 63);
+  --ButtonFace: rgb(36 60 89);
+  --ButtonHilight: rgb(44 74 109);
+  --ButtonLight: rgb(39 65 96);
+  --ButtonShadow: rgb(29 48 71);
+  --ButtonText: rgb(155 212 255);
+  --ActiveBorder: rgb(36 60 89);
+  --AppWorkspace: rgb(11 35 68);
+  --Background: rgb(39 73 107);
+  --InactiveBorder: rgb(36 60 89);
+  --Scrollbar: rgb(54 90 133);
+  --Window: rgb(0 0 0);
+  --WindowFrame: rgb(0 0 0);
+  --WindowText: rgb(155 212 255);
+  --ActiveTitle: rgb(1 58 89);
+  --GradientActiveTitle: rgb(135 113 32);
+  --GradientInactiveTitle: rgb(0 74 89);
+  --InactiveTitle: rgb(0 65 91);
+  --InactiveTitleText: rgb(0 110 193);
+  --TitleText: rgb(255 255 255);
+  --Menu: rgb(36 60 89);
+  --MenuBar: rgb(36 60 89);
+  --MenuHilight: rgb(186 156 45);
+  --MenuText: rgb(155 212 255);
+  --GrayText: rgb(24 40 59);
+  --Hilight: rgb(186 156 45);
+  --HilightText: rgb(0 62 109);
+  --HotTrackingColor: rgb(0 0 128);
+  --InfoText: rgb(155 212 255);
+  --InfoWindow: rgb(76 72 55);
+}
