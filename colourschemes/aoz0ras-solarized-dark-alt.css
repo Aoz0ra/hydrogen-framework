@@ -139,17 +139,17 @@ div.navbar {
 	/* 	--backgroundTop:     #fff; */
 	/* 	--backgroundBottom:  #e0e0e0; */
 
-	--background: var(--base03);
-	--backgroundTop: var(--base02);
-	--backgroundBottom: var(--base03);
+	--background: var(--base02);
+	--backgroundTop: var(--base03);
+	--backgroundBottom: var(--base02);
 
 	--foreground: var(--base1);
 
-	--border: var(--base02);
-	--borderTop:             var(--base02);
-	--borderLeft:  var(--base02);
-	--borderRight:                var(--base02);
-	--borderBottom:        var(--base02);
+	--border: var(--base03);
+	--borderTop:             var(--base03);
+	--borderLeft:  var(--base03);
+	--borderRight:                var(--base03);
+	--borderBottom:        var(--base03);
 }
 
 .navbar a:link {
@@ -157,17 +157,17 @@ div.navbar {
 }
 
 .navbar .dropdown .dropdownbutton {
-	--background:              var(--base03);
-	--backgroundTop:           var(--base02);
-	--backgroundBottom:        var(--base03);
+	--background:              var(--base02);
+	--backgroundTop:           var(--base03);
+	--backgroundBottom:        var(--base02);
 
 	--foreground:        var(--base0);
 
-	--border: var(--base02);
-	--borderTop:             var(--base02);
-	--borderLeft:  var(--base02);
-	--borderRight:                var(--base02);
-	--borderBottom:        var(--base02);
+	--border: var(--base03);
+	--borderTop:             var(--base03);
+	--borderLeft:  var(--base03);
+	--borderRight:                var(--base03);
+	--borderBottom:        var(--base03);
 
 	--decoration: #0000;
 }
@@ -191,17 +191,17 @@ div.item:hover {
 
 button:not(.nohydrogen), input[type=color]:not(.nohydrogen),
 input[type="checkbox"]:not(.nohydrogen) {
-	--background:              var(--base03);
-	--backgroundTop:           var(--base02);
-	--backgroundBottom:        var(--base03);
+	--background:              var(--base02);
+	--backgroundTop:           var(--base03);
+	--backgroundBottom:        var(--base02);
 
 	--foreground:        var(--base0);
 
-	--border: var(--base02);
-	--borderTop:             var(--base02);
-	--borderLeft:  var(--base02);
-	--borderRight:                var(--base02);
-	--borderBottom:        var(--base02);
+	--border: var(--base03);
+	--borderTop:             var(--base03);
+	--borderLeft:  var(--base03);
+	--borderRight:                var(--base03);
+	--borderBottom:        var(--base03);
 
 
 	--decoration: #0000;
@@ -210,38 +210,32 @@ input[type="checkbox"]:not(.nohydrogen) {
 button:not(.nohydrogen):hover, button:not(.nohydrogen):focus,
 input[type=color]:not(.nohydrogen):hover, input[type=color]:not(.nohydrogen):focus,
 input[type="checkbox"]:not(.nohydrogen):hover, input[type="checkbox"]:not(.nohydrogen):focus {
-
-  --border: var(--hilight);
-	--borderTop:             var(--hilight);
-	--borderLeft:  var(--hilight);
-	--borderRight:                var(--hilight);
-	--borderBottom:        var(--hilight);
-
-	--decoration: var(--base2);
+	
+	--decoration: var(--hilight);
 }
 
 button:not(.nohydrogen):active, button.active,
 input[type=color]:not(.nohydrogen):active,
 input[type="checkbox"]:not(.nohydrogen):active {
-	--background:              var(--base02);
-	--backgroundTop:           var(--base03);
-	--backgroundBottom:        var(--base02);
+	--background:              var(--base03);
+	--backgroundTop:           var(--base02);
+	--backgroundBottom:        var(--base03);
 
 	--foreground:        var(--base0);
 
-	--border: var(--base02);
-	--borderTop:             var(--base02);
-	--borderLeft:  var(--base02);
-	--borderRight:                var(--base02);
-	--borderBottom:        var(--base02);
+	--border: var(--base03);
+	--borderTop:             var(--base03);
+	--borderLeft:  var(--base03);
+	--borderRight:                var(--base03);
+	--borderBottom:        var(--base03);
 }
 
 
 
 button.hilight:not(.nohydrogen) {
-	--background:              var(--base02);
-	--backgroundTop:           var(--base02);
-	--backgroundBottom:        var(--base03);
+	--background:              var(--base03);
+	--backgroundTop:           var(--base03);
+	--backgroundBottom:        var(--base02);
 
 	--foreground:        var(--base1);
 
@@ -254,19 +248,13 @@ button.hilight:not(.nohydrogen) {
 
 button.hilight:not(.nohydrogen):hover, button.hilight:not(.nohydrogen):focus {
 
-	--border: var(--hilightHilight);
-	--borderTop:             var(--hilightHilight);
-	--borderLeft:  var(--hilightHilight);
-	--borderRight:                var(--hilightHilight);
-	--borderBottom:        var(--hilightHilight);
-	
-	--decoration: var(--base02);
+	--decoration: var(--hilightHilight);
 }
 
 button.hilight:not(.nohydrogen):active, button.hilight.active {
-	--background:              var(--base03);
-	--backgroundTop:           var(--base03);
-	--backgroundBottom:        var(--base02);
+	--background:              var(--base02);
+	--backgroundTop:           var(--base02);
+	--backgroundBottom:        var(--base03);
 
 	--foreground:        var(--base1);
 
@@ -280,42 +268,36 @@ button.hilight:not(.nohydrogen):active, button.hilight.active {
 
 
 button.faint:not(.nohydrogen) {
-	--background:              var(--base03);
-	--backgroundTop:           var(--base03);
-	--backgroundBottom:        var(--base03);
-
-	--foreground:        var(--base01);
-
-	--border: var(--base02);
-	--borderTop:             var(--base02);
-	--borderLeft:  var(--base02);
-	--borderRight:                var(--base02);
-	--borderBottom:        var(--base02);
-}
-
-button.faint:not(.nohydrogen):hover, button.faint:not(.nohydrogen):focus {
-
-	--border: var(--hilightFaint);
-	--borderTop:             var(--hilightFaint);
-	--borderLeft:  var(--hilightFaint);
-	--borderRight:                var(--hilightFaint);
-	--borderBottom:        var(--hilightFaint);
-	
-	--decoration: #0000;
-}
-
-button.faint:not(.nohydrogen):active, button.faint.active {
-	--background:              var(--base03);
-	--backgroundTop:           var(--base03);
+	--background:              var(--base02);
+	--backgroundTop:           var(--base02);
 	--backgroundBottom:        var(--base02);
 
 	--foreground:        var(--base01);
 
-	--border: var(--base02);
-	--borderTop:             var(--base02);
-	--borderLeft:  var(--base02);
-	--borderRight:                var(--base02);
-	--borderBottom:        var(--base02);
+	--border: var(--base03);
+	--borderTop:             var(--base03);
+	--borderLeft:  var(--base03);
+	--borderRight:                var(--base03);
+	--borderBottom:        var(--base03);
+}
+
+button.faint:not(.nohydrogen):hover, button.faint:not(.nohydrogen):focus {
+
+	--decoration: var(--hilightFaint);
+}
+
+button.faint:not(.nohydrogen):active, button.faint.active {
+	--background:              var(--base02);
+	--backgroundTop:           var(--base02);
+	--backgroundBottom:        var(--base03);
+
+	--foreground:        var(--base01);
+
+	--border: var(--base03);
+	--borderTop:             var(--base03);
+	--borderLeft:  var(--base03);
+	--borderRight:                var(--base03);
+	--borderBottom:        var(--base03);
 }
 
 
@@ -332,7 +314,7 @@ button.default:not(.nohydrogen) {
 	--borderTop:             var(--base02);
 	--borderLeft:  var(--base02);
 	--borderRight:                var(--base02);
-	--borderBottom:        var(--base00);
+	--borderBottom:        var(--base01);
 }
 
 button.primary:not(.nohydrogen) {
