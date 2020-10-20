@@ -23,9 +23,26 @@
 	--borderLeft:  ThreeDShadow;
 	--borderRight:                ThreeDLightShadow;
 	--borderBottom:        ThreeDDarkShadow;
+	--WindowFrame: WindowFrame;
 
 
-	--borderRadius: 3px;
+	--ButtonHilight: ThreeDHighlight;
+	--ButtonLight: ThreeDLightShadow;
+	--ButtonFace: ButtonFace;
+	--ButtonShadow: ThreeDShadow;
+	--ButtonDkShadow: ThreeDDarkShadow;
+	
+	
+	--XButtonTopHi:                     ThreeDHighlight;
+	
+	--XButtonTop:                      ThreeDLightShadow;
+	--XButtonLeftHi:   ThreeDDarkShadow;
+	--XButtonLeft:           ThreeDShadow;
+	--XButtonRight:                            ThreeDLightShadow;
+	--XButtonRightHi:                                ThreeDHighlight;
+	--XButtonBottom:                ThreeDShadow;
+	
+	--XButtonBottomHi:            ThreeDDarkShadow;
 
 
 
