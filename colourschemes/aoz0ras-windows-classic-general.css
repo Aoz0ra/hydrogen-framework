@@ -26,6 +26,18 @@
 	--borderLeft:  var(--ButtonShadow);
 	--borderRight:                var(--ButtonLight);
 	--borderBottom:        var(--ButtonDkShadow);
+	
+	
+	--XButtonTopHi:                     var(--ButtonHilight);
+	
+	--XButtonTop:                      var(--ButtonLightShadow);
+	--XButtonLeftHi:   var(--ButtonDkShadow);
+	--XButtonLeft:           var(--ButtonShadow);
+	--XButtonRight:                            var(--ButtonLightShadow);
+	--XButtonRightHi:                                var(--ButtonHilight);
+	--XButtonBottom:                var(--ButtonShadow);
+	
+	--XButtonBottomHi:            var(--ButtonDkShadow);
 
 
 
