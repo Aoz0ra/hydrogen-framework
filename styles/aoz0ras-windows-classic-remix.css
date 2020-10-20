@@ -1,6 +1,17 @@
 :root {
 	--borderRadius: 0;
 	--borderWidth: 1px;
+	
+	--XButtonTopHi:                     var(--ButtonHilight);
+
+	--XButtonTop:                      var(--ButtonLight);
+	--XButtonLeftHi:   var(--ButtonDkShadow);
+	--XButtonLeft:           var(--ButtonShadow);
+	--XButtonRight:                            var(--ButtonLight);
+	--XButtonRightHi:                                var(--ButtonHilight);
+	--XButtonBottom:                var(--ButtonShadow);
+
+	--XButtonBottomHi:            var(--ButtonDkShadow);
 }
 
 body {
