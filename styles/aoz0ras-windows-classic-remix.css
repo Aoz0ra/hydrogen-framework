@@ -180,17 +180,17 @@ input[type="color"]:not(.nohydrogen):focus {
 button:not(.nohydrogen):active, input[type="color"]:not(.nohydrogen):active,
 input[type="checkbox"]:not(.nohydrogen):active{
 	box-shadow: 
-		0 1px 0 var(--XButtonTopHi, var(--ButtonHilight, #000f)) inset,
-		0 -1px 0 var(--XButtonBottomHi, var(--ButtonDkShadow, #ffff)) inset,
+		0 1px 0 var(--XButtonBottomHi, var(--ButtonDkShadow, #000f)) inset,
+		0 -1px 0 var(--XButtonTopHi, var(--ButtonHilight, #ffff)) inset,
 		
-		-1px 0 0 var(--XButtonRightHi, var(--ButtonHilight, #000c)) inset,
-		1px 0 0 var(--XButtonLeftHi, var(--ButtonDkShadow, #fffc)) inset,
+		-1px 0 0 var(--XButtonLeftHi, var(--ButtonDkShadow, #000c)) inset,
+		1px 0 0 var(--XButtonRightHi, var(--ButtonHilight, #fffc)) inset,
 		
-		0 2px 0 var(--XButtonTop, var(--ButtonLight, #0008)) inset,
-		0 -2px 0 var(--XButtonBottom, var(--ButtonShadow, #fff8)) inset,
+		0 2px 0 var(--XButtonBottom, var(--ButtonShadow, #0008)) inset,
+		0 -2px 0 var(--XButtonTop, var(--ButtonLight, #fff8)) inset,
 		
-		-2px 0 0 var(--XButtonRight, var(--ButtonLight, #0004)) inset,
-		2px 0 0 var(--XButtonLeft, var(--ButtonShadow, #fff4)) inset;
+		-2px 0 0 var(--XButtonLeft, var(--ButtonShadow, #0004)) inset,
+		2px 0 0 var(--XButtonRight, var(--ButtonLight, #fff4)) inset;
 	
 	background: var(--background);
 	
