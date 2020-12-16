@@ -1,0 +1,74 @@
+:root {
+	--sansSerifFont: Chicago, Silom, "Lucida Grande", "Luida Sans Unicode", "Lucida Sans", "Tahoma", "Verdana", sans-serif;
+	--borderRadius: 4px;
+}
+
+
+button:not(.nohydrogen), 
+input[type=color]:not(.nohydrogen) {
+	padding: 0px 10px;
+	box-shadow: none;
+	transition-duration: 0s !important;
+	background: var(--background);
+}
+
+input[type=checkbox]:not(.nohydrogen) {
+	box-shadow: none;
+	background: var(--background);
+}
+
+button:not(.nohydrogen):hover,
+input[type=color]:not(.nohydrogen):hover, input[type=checkbox]:not(.nohydrogen):hover {
+	box-shadow: none;
+}
+
+button:not(.nohydrogen):focus,
+input[type=color]:not(.nohydrogen):focus, input[type=checkbox]:not(.nohydrogen):focus {
+	box-shadow:
+		0 0 0 1px var(--background),
+		0 0 0 4px var(--foreground);
+}
+
+button:not(.nohydrogen):active {
+	background: var(--background);
+	box-shadow: none;
+}
+
+
+div.navbar {
+	box-shadow: none;
+	padding: 0 12px;
+	height: 24px;
+}
+
+span.website-title {
+	font-weight: 700;
+}
+
+.navbar .dropdown .dropdownbutton {
+	background: none;
+	border: none;
+	box-shadow: none;
+}
+
+div.drop-content {
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	top: 25px;
+	box-shadow: none;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+div.item {
+	margin: 0 !important;
+	transition: none !important;
+	padding: 1px 24px !important;
+}
+
+div.item:hover {
+	--background: var(--hilight) !important;
+	background: var(--background);
+	background: linear-gradient(0deg, var(--hilight), var(--hilightHilight)) !important;
+	--foreground: var(--backgroundHilight);
+}

@@ -1,0 +1,67 @@
+:root {
+	--sansSerifFont: "Segoe UI", "Segoe", "Tahoma", "Verdana", sans-serif;
+	--borderRadius: 4px;
+}
+
+
+button:not(.nohydrogen), 
+input[type=color]:not(.nohydrogen) {
+	padding: 0px 10px;
+	box-shadow: 0 0 1px 0 var(--backgroundTop) inset;
+	transition-duration: 0s !important;
+	background: linear-gradient(0deg, var(--backgroundBottom), 45%, var(--background), 55%, var(--backgroundTop))
+}
+
+input[type=checkbox]:not(.nohydrogen) {
+	box-shadow: 0 0 1px 0 var(--backgroundTop) inset;
+	background: linear-gradient(0deg, var(--backgroundBottom), 45%, var(--background), 55%, var(--backgroundTop))
+}
+
+button:not(.nohydrogen):hover,
+input[type=color]:not(.nohydrogen):hover, input[type=checkbox]:not(.nohydrogen):hover {
+	box-shadow: 0 0 1px 0 var(--backgroundTop) inset;
+}
+
+button:not(.nohydrogen):focus,
+input[type=color]:not(.nohydrogen):focus, input[type=checkbox]:not(.nohydrogen):focus {
+	box-shadow: 0 0 1px 0 var(--backgroundTop) inset;
+	transition: box-shadow var(--animationFunction) var(--animationDuration) !important;
+}
+
+
+div.navbar {
+	box-shadow: none;
+}
+
+.navbar .dropdown .dropdownbutton {
+	box-shadow: 0 0 1px 0 #fff9;
+	border-radius: 1000px;
+	width: 36px;
+	height: 36px;
+	line-height: 28px;
+	text-align: center;
+	padding: 9px 14px;
+	position: relative;
+	top: 2px;
+}
+
+div.drop-content {
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	top: 32px;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+div.item {
+	margin: 0 !important;
+	transition: none !important;
+	padding: 1px 24px !important;
+}
+
+div.item:hover {
+	--background: var(--hilight) !important;
+	background: var(--background);
+	background: linear-gradient(0deg, var(--hilight), var(--hilightHilight)) !important;
+	--foreground: var(--backgroundHilight);
+}

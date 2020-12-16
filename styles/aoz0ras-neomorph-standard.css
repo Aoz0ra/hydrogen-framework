@@ -1,0 +1,8 @@
+@import url("aoz0ras-neomorph-lite.css");
+
+h1.title, p.subtitle, span.website-title, a.website-title {
+	text-shadow: var(--neoText);
+	font-weight: 900 !important;
+	letter-spacing: 0.1em !important;
+	--foreground: var(--backgroundHilight) !important;
+}

@@ -1,0 +1,120 @@
+:root {
+	--sansSerifFont: "Lucida Grande", "Luida Sans Unicode", "Lucida Sans", "Tahoma", "Verdana", sans-serif;
+	--borderRadius: 1000px;
+	--borderWidth: 0px;
+}
+
+body, div.header {
+	background: repeating-linear-gradient(0deg, var(--background) 0px, var(--backgroundHilight) 2px, var(--background) 4px) fixed;
+}
+
+button:not(.nohydrogen), 
+input[type=color]:not(.nohydrogen) {
+	padding: 0px 10px;
+	box-shadow:
+		0px 3px 6px -2px #0007 inset,
+		0px calc(var(--fontSize) * 1.1) calc(var(--fontSize) * 0.6) calc(var(--fontSize) * -0.7) var(--background) inset, /* gradient at top */
+		0px calc(var(--fontSize) * -1.1) calc(var(--fontSize) * 0.8) calc(var(--fontSize) * -0.7) var(--backgroundTop) inset, /* gradient at bottom */
+		0px calc(var(--fontSize) * -0.9) 0px 0px var(--backgroundBottom) inset, /* cover all but top */
+		0px 2px 4px -2px #000, 
+		0px 0px 2.5px -2px #000, 
+		-2px 0px 3px -3px #000 inset, 
+		2px 0px 3px -3px #000 inset,
+		0 0 0 18px #0000;
+	transition-duration: 0s !important;
+	background: var(--background);
+	text-shadow: 0px 3px 2px #0004;
+}
+
+input[type=checkbox]:not(.nohydrogen) {
+	box-shadow:
+		0px 3px 6px -2px #0007 inset,
+		0px calc(var(--fontSize) * 1.1) calc(var(--fontSize) * 0.6) calc(var(--fontSize) * -0.7) var(--background) inset, /* gradient at top */
+		0px calc(var(--fontSize) * -1.1) calc(var(--fontSize) * 0.8) calc(var(--fontSize) * -0.7) var(--backgroundTop) inset, /* gradient at bottom */
+		0px calc(var(--fontSize) * -0.9) 0px 0px var(--backgroundBottom) inset, /* cover all but top */
+		0px 2px 4px -2px #000, 
+		0px 0px 2.5px -2px #000, 
+		-2px 0px 3px -3px #000 inset, 
+		2px 0px 3px -3px #000 inset,
+		0 0 0 18px #0000;
+	background: var(--background);
+}
+
+button:not(.nohydrogen):hover,
+input[type=color]:not(.nohydrogen):hover, input[type=checkbox]:not(.nohydrogen):hover {
+	box-shadow:
+		0px 3px 6px -2px #0007 inset,
+		0px calc(var(--fontSize) * 1.1) calc(var(--fontSize) * 0.6) calc(var(--fontSize) * -0.7) var(--background) inset, /* gradient at top */
+		0px calc(var(--fontSize) * -1.1) calc(var(--fontSize) * 0.8) calc(var(--fontSize) * -0.7) var(--backgroundTop) inset, /* gradient at bottom */
+		0px calc(var(--fontSize) * -0.9) 0px 0px var(--backgroundBottom) inset, /* cover all but top */
+		0px 2px 4px -2px #000, 
+		0px 0px 2.5px -2px #000, 
+		-2px 0px 3px -3px #000 inset, 
+		2px 0px 3px -3px #000 inset,
+		0 0 0 18px #0000;
+}
+
+button:not(.nohydrogen):focus,
+input[type=color]:not(.nohydrogen):focus, input[type=checkbox]:not(.nohydrogen):focus {
+	box-shadow:
+		0px 3px 6px -2px #0007 inset,
+		0px calc(var(--fontSize) * 1.1) calc(var(--fontSize) * 0.6) calc(var(--fontSize) * -0.7) var(--background) inset, /* gradient at top */
+		0px calc(var(--fontSize) * -1.1) calc(var(--fontSize) * 0.8) calc(var(--fontSize) * -0.7) var(--backgroundTop) inset, /* gradient at bottom */
+		0px calc(var(--fontSize) * -0.9) 0px 0px var(--backgroundBottom) inset, /* cover all but top */
+		0px 2px 4px -2px #000, 
+		0px 0px 2.5px -2px #000, 
+		-2px 0px 3px -3px #000 inset, 
+		2px 0px 3px -3px #000 inset,
+		0 0 3px 2px var(--hilight);
+	
+}
+
+button:not(.nohydrogen):active {
+	--backgroundTop: var(--hilightHilight) !important;
+	--backgroundBottom: var(--hilight) !important;
+}
+
+
+div.navbar {
+	box-shadow: 0px 2px 2.5px -2px #000, 
+		0px 0px 2.5px -2px #000;
+	background: repeating-linear-gradient(0deg, var(--backgroundBottom) 0px, var(--backgroundTop) 2px, var(--backgroundBottom) 4px);
+	text-shadow: 0px 3px 2px #0004;
+	border: none;
+	padding: 0 12px;
+	height: 24px;
+}
+
+span.website-title {
+	font-weight: 700;
+}
+
+.navbar .dropdown .dropdownbutton {
+	background: none;
+	border: none;
+	box-shadow: none;
+}
+
+div.drop-content {
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	top: 25px;
+	box-shadow: 0 12px 12px 0 #0002,
+		0 0px 1.5px 0 #0008;
+	border: none;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+div.item {
+	margin: 0 !important;
+	transition: none !important;
+	padding: 1px 24px !important;
+}
+
+div.item:hover {
+	--background: var(--hilight) !important;
+	background: var(--background);
+	background: linear-gradient(0deg, var(--hilight), var(--hilightHilight)) !important;
+	--foreground: var(--backgroundHilight);
+}

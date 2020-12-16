@@ -1,0 +1,6 @@
+@import url("aoz0ras-neomorph-extreme.css");
+
+p, table, pre {
+	text-shadow: 1px -1px 1px #0001,
+		-1px 1px 1px #fff4;
+}

@@ -1,0 +1,106 @@
+:root {
+	--borderWidth: 0px;
+	--borderRadius: 8px;
+	
+	--neoStandard: -4px 4px 12px -8px #0007,
+		0px 4px 12px -8px #0007,
+		
+		5px -5px 10px -5px #fff4,
+		0px -5px 10px -5px #fff4;
+	
+	--neoSmall: -2px 2px 6px -4px #000,
+		0px 2px 6px -4px #000,
+		
+		2.5px -2.5px 5px -3px #fff4,
+		0px -2.5px 5px -3px #fff4;
+	
+	--neoNavbar: -4px 4px 12px -12px #0008,
+		0px 4px 12px -12px #0008,
+		
+		6px -6px 10px -4px var(--backgroundHilight),
+		0px -6px 10px -4px var(--backgroundHilight);
+	
+	--neoText: -0.3rem 0.3rem 0.3rem #0002,
+		0px 0.3rem 0.3rem #0002,
+		
+		0.3rem -0.3rem 0.4rem #fff3,
+		0px -0.3rem 0.4rem #fff3;
+	
+	--neoHilight: -6px 6px 15px -8px #0005,
+		0px 6px 15px -8px #0005,
+		
+		9px -9px 12px -8px #fff5,
+		0px -9px 12px -8px #fff5;
+	
+	--neoPressed: -4px 4px 8px 0px #0001,
+		0px 4px 8px 0px #0001,
+		
+		5px -5px 12px -8px #fff3,
+		0px -5px 12px -8px #fff3,
+		
+		
+		-4px 4px 8px 0px #00000014 inset,
+		0px 4px 8px 0px #00000014 inset,
+		
+		5px -5px 8px -4px #fff4 inset,
+		0px -5px 8px -4px #fff4 inset;
+}
+
+
+div.navbar, div.drop-content {
+	background: var(--background);
+	background: linear-gradient(1deg, var(--backgroundBottom), var(--background));
+	box-shadow: var(--neoStandard);
+	z-index: 999999999999999999999999999999999999999999999999;
+}
+
+h1:not(.nohydrogen), h2:not(.nohydrogen), h3:not(.nohydrogen), h4:not(.nohydrogen), h5:not(.nohydrogen), h6:not(.nohydrogen) {
+	border-radius: var(--borderRadius);
+	padding: 0px 8px;
+	margin: 4px 0px;
+}
+
+h1:not(.nohydrogen):hover, h2:not(.nohydrogen):hover, h3:not(.nohydrogen):hover, h4:not(.nohydrogen):hover, h5:not(.nohydrogen):hover, h6:not(.nohydrogen):hover,
+div.item:hover {
+	box-shadow: var(--neoStandard);
+}
+
+button:not(.nohydrogen),
+input[type=checkbox]:not(.nohydrogen),
+input[type=color]:not(.nohydrogen),
+.navbar .dropdown .dropdownbutton {
+	background: var(--background);
+	background: linear-gradient(12deg, var(--backgroundBottom), var(--background));
+	box-shadow: var(--neoStandard);
+	margin: 8px;
+	padding: 6px 12px;
+}
+
+input[type=checkbox]:not(.nohydrogen) {
+	padding: 4px;
+	width: 30px;
+	height: 30px;
+}
+
+button:not(.nohydrogen):hover, button:not(.nohydrogen):focus,
+input[type=checkbox]:not(.nohydrogen):hover, input[type=checkbox]:not(.nohydrogen):focus,
+input[type=color]:not(.nohydrogen):hover, input[type=color]:not(.nohydrogen):focus {
+	background: var(--background);
+	background: linear-gradient(8deg, var(--backgroundBottom), var(--background));
+	box-shadow: var(--neoHilight);
+	transform: scale(1.02);
+}
+
+button:not(.nohydrogen):active,
+input[type=checkbox]:not(.nohydrogen):active,
+input[type=color]:not(.nohydrogen):active {
+	background: linear-gradient(8deg, var(--backgroundBottom), var(--background));
+	box-shadow: var(--neoPressed);
+	transform: scale(0.98);
+}
+
+
+code, pre {
+	box-shadow: var(--neoPressed);
+	background: linear-gradient(185deg, var(--background), var(--backgroundHilight)) !important;
+}

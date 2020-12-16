@@ -1,0 +1,23 @@
+@import url("aoz0ras-neomorph-standard.css");
+
+h1:not(.nohydrogen), 
+h2:not(.nohydrogen), 
+h3:not(.nohydrogen), 
+h4:not(.nohydrogen), 
+h5:not(.nohydrogen), 
+h6:not(.nohydrogen) {
+	text-shadow: var(--neoText);
+	font-weight: 900 !important;
+	letter-spacing: 0.1em !important;
+	--foreground: var(--backgroundHilight);
+}
+
+h1:not(.nohydrogen) *, 
+h2:not(.nohydrogen) *, 
+h3:not(.nohydrogen) *, 
+h4:not(.nohydrogen) *, 
+h5:not(.nohydrogen) *, 
+h6:not(.nohydrogen) * {
+	color: var(--backgroundHilight) !important;
+	letter-spacing: 0.1em !important;
+}

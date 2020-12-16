@@ -1,0 +1,51 @@
+:root {
+--fontSizeH1: 3em;
+--fontSizeH2: 2.5em;
+--fontSizeH3: 2em;
+--fontSizeH4: 1.72em;
+--fontSizeH5: 1.44em;
+--fontSizeH6: 1.2em;
+
+--borderWidth: 0px;
+}
+
+div.header {
+
+  background: radial-gradient(farthest-side at 50% 0%, var(--backgroundHilight), transparent) no-repeat, linear-gradient(to bottom, var(--backgroundHilight), transparent) no-repeat, var(--background);
+	background-size: 100vw 70px, 100vw 110px;
+	background-attachment: fixed;
+
+}
+
+h1:not(.nohydrogen) {
+  font-weight: 100;
+}
+
+h2:not(.nohydrogen) {
+  font-weight: 200;
+}
+
+h3:not(.nohydrogen) {
+  font-weight: 200;
+}
+
+h4:not(.nohydrogen) {
+  font-weight: 300;
+}
+
+h5:not(.nohydrogen) {
+  font-weight: 300;
+}
+
+h6:not(.nohydrogen) {
+  font-weight: 400;
+}
+
+
+
+
+
+
+div.floating-toc-m {
+	z-index: 0;
+}
