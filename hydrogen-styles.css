@@ -2,15 +2,15 @@
 **                                                                            **
 **    Hydrogen Framework - Styles                      hydrogen-styles.css    **
 **                                                                              
-      Contains all the necessary stuff to make Hydrogen Framework work in     **
-**    the first place, without including colours.                             **
+      Contains all the necessary stuff to make Hydrogen work in the first     **
+**          place.  Colours and styles are provided by other themes.          **
 **                                                                            **
 ******* ******* ******* ******* ******* ******* ******* ******* ******* *******/
 
 
 
 
-/* Debug mode: */
+/*                               'Debug mode':                                */
 /* *:hover {box-shadow: 0 0 0 1px #000,0 0 4px 0 #fff !important;} */
 
 
@@ -19,20 +19,22 @@
 *******************************************************************************/
 
 
-*:not(.nohydrogen) {
-	/* Why is this not standard?  Internet Explorer was the only one to do this. */
+
+*:not(.nohydrogen), *:not(.nohydrogen):before, *:not(.nohydrogen):after {
+	/* This isn't standard, but it should be.
+	 * Internet Explorer was the only one to do this. */
 	box-sizing: border-box;
 	
-	/* Allow for instant customization of foreground colors */
 	color: var(--foreground);
 
-/* for accessibility on my website */
-letter-spacing: var(--letterSpacing);
-line-height: var(--lineHeight);
-word-spacing: var(--wordSpacing);
+	letter-spacing: var(--letterSpacing);
+	line-height: var(--lineHeight);
+	word-spacing: var(--wordSpacing);
+
+	-webkit-tap-highlight-color: var(--hilight);
 }
 
-/* override the spacing normally set by browsers */
+/* Override the spacing normally set by user agents: */
 body {
 	margin: 0;
 	padding: 0;
@@ -43,7 +45,7 @@ html {
 }
 
 
-/* multi-column multi-row dynamic layout */
+/* Multi-column, multi-row dynamic layout */
 div.col-xs-1, div.col-xs-2, div.col-xs-3,
 div.col-xs-4, div.col-xs-5, div.col-xs-6,
 div.col-xs-7, div.col-xs-8, div.col-xs-9,
@@ -77,6 +79,7 @@ div.row {
 }
 
 
+
 ::-moz-selection {
 	background: var(--selectionBackground);
 	color: var(--selectionForeground);
@@ -88,10 +91,11 @@ div.row {
 }
 
 
+
+
 /* HEADERS */
 
 h1:not(.nohydrogen),h2:not(.nohydrogen),h3:not(.nohydrogen),h4:not(.nohydrogen),h5:not(.nohydrogen),h6:not(.nohydrogen) {
-	line-height: 1.5em;
 	padding: 0;
 	margin: 0;
 	transition: var(--animationDurationFade, 0.3s) var(--animationFunction, ease)
@@ -115,11 +119,12 @@ h6:not(.nohydrogen) {font-size: var(--fontSizeH6);}
 div.navbar * {
 	padding-top: 0;
 	padding-bottom: 0;
+
+	z-index: 9999;
 }
 
 div.navbar {
 	background: var(--background);
-
 	background: linear-gradient(to bottom, var(--backgroundTop) 0%, var(--backgroundBottom) 100%);
 
 	padding: var(--paddingTop) var(--paddingRight) var(--paddingBottom) var(--paddingLeft);
@@ -137,7 +142,7 @@ div.navbar {
 	display: inline;
 }
 
-.navbar .dropdown .dropdownbutton {
+.dropdownbutton {
 	transition: var(--animationDurationFade, 0.3s) var(--animationFunction, ease);
 
 	font-family: var(--sansSerifFont);
@@ -148,13 +153,11 @@ div.navbar {
 
 	border: var(--borderWidth) solid;
 	border-color: var(--borderTop) var(--borderRight) var(--borderBottom) var(--borderLeft);
-
 	border-radius: var(--borderRadius, 3px);
 
 	box-shadow: 0px 0px 10px 1px var(--decoration), 0px 1px 2px 0px #0005, 0px 2px 2px -2px #0003;
 
 	padding: var(--paddingTop) var(--paddingRight) var(--paddingBottom) var(--paddingLeft);
-
 }
 
 
@@ -175,7 +178,7 @@ div.navbar {
 /* Uncomment for a floating navbar */
 /* div.navbar{	top: 1.3vmin;left: 4vw;	width: calc(92vw);	border-radius: var(--borderRadius, 3px);	border: var(--borderWidth) solid;	border-color: var(--borderTop) var(--borderRight) var(--borderBottom) var(--borderLeft)} */
 
-/* Uncomment for a standard, fixed navbar */
+/* Uncomment for a fixed navbar */
 /* div.navbar{position: fixed;}body{margin-top: calc(2em);} */
 
 div.dropdown {
@@ -222,6 +225,7 @@ div.dropdown:hover div.drop-content {
 	
 	z-index: 999999999999999999999999999999999999999 !important;
 
+	/*	The backdrop-filter can cause some issues with rendering, so it's been commented out for now.*/
 	/* 	backdrop-filter: var(--backdropFilter); */
 	/* 	-webkit-backdrop-filter: var(--backdropFilter); */
 }
