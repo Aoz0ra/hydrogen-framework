@@ -3,6 +3,9 @@
 
 
 :root {
+	--ROOT2: 1.414213562373095048801688724209698078569671875376948073176679737990732478462107;
+	--PHI: 1.6180339887498948482045868343656381177203091798057628621354486227052604628189024;
+	
 	--borderRadius: 3px;
 
 
@@ -30,15 +33,45 @@
 	
 	--fontSize: 1rem;
 
-	--fontSizeH1: 2rem;
-	--fontSizeH2: 1.8rem;
-	--fontSizeH3: 1.6rem;
-	--fontSizeH4: 1.4rem;
-	--fontSizeH5: 1.3rem;
-	--fontSizeH6: 1.2rem;
 
---lineHeight: 1.5em;
---letterSpacing: 0em;
+	--harmonicRelationship: calc(6 / 5);
+	
+	/* USABLE EVERYWHERE:
+	 * 
+	 * Minor second: 16/15
+	 * Major second: 9/8
+	 * -> Minor third: 6/5
+	 * 
+	 * USABLE ON DESKTOP:
+	 * Major third: 5/4
+	 * Perfect fourth: 4/3
+	 * 
+	 * FOR DISPLAY PURPOSES ONLY:
+	 * Augmented fourth and diminished fifth: var(--ROOT2) / 1
+	 * Perfect fifth: 3/2
+	 * 
+	 * EXTREME:
+	 * Minor sixth: 8/5
+	 * Golden section: var(--PHI)/1
+	 * 
+	 * CAN YOU REALLY CALL THIS EXTREME?  IT'S GOING QUITE FAR.:
+	 * Major sixth: 5/3
+	 * Minor seventh: 16/9
+	 * 
+	 * REEEEEEEEEEEEEEEEE:
+	 * Major seventh: 15/8
+	 * Octave: 2/1
+	 */
+
+	--fontSizeH6: calc(var(--fontSize) * var(--harmonicRelationship));
+	--fontSizeH5: calc(var(--fontSizeH6) * var(--harmonicRelationship));
+	--fontSizeH4: calc(var(--fontSizeH5) * var(--harmonicRelationship));
+	--fontSizeH3: calc(var(--fontSizeH4) * var(--harmonicRelationship));
+	--fontSizeH2: calc(var(--fontSizeH3) * var(--harmonicRelationship));
+	--fontSizeH1: calc(var(--fontSizeH2) * var(--harmonicRelationship));
+
+	--lineHeight: 1.5em;
+	--letterSpacing: 0em;
 
 	--sansSerifFont: -apple-system, BlinkMacSystemFont, system-ui, menu, sans-serif;
 
