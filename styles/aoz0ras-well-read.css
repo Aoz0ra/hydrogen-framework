@@ -1,0 +1,84 @@
+:root {
+/* Prefer humanist typefaces. */
+
+  --sansSerifFont: "PhoenixSans", "Fira Sans", "Lato", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "Gill Sans", "Noto Sans CJK JP", "Arial", "FreeSans", "Arimo", "Liberation Sans", "DejaVu Sans", sans-serif;
+	
+/* Serif fonts are better suited to print media, such as in books.
+	 There may, however, come a time when they are just as good on the digital displays. */
+	
+	--sansSerifFont: "PhoenixSerif", "Hoefler Text", "Sitka Subhead", "PT Serif", "Lucida Bright", "Georgia", "Times New Roman", "Noto Serif CJK JP", "Times", "FreeSerif", "Tinos", "Liberation Serif", "DejaVu Serif", serif;
+}
+
+
+
+
+* {
+	font-variant-numeric: oldstyle-nums stacked-fractions ordinal;
+	font-feature-settings: "onum", "frac", "ords", "liga";
+}
+
+.col-main p:first-of-type {
+	font-size: 1.2em;
+}
+
+.col-main p:first-of-type:first-line {
+	font-size: 1.05em;
+	font-variant: small-caps;
+	font-feature-settings: "smcp";
+	
+/* Use the font's small caps if available, otherwise generate them. */
+}
+
+.col-main p:first-of-type:first-letter {
+	font-size: 1.2em;
+	font-weight: 700;
+}
+
+button, input[type="checkbox"], input[type="color"], input[type="text"], textarea, .dropdownbutton {
+	box-shadow: none !important;
+	background: #0000 !important;
+	
+/* 3d styling isn't really worth it when the primary focus is reading.  Flatten the third dimension. */
+	border-color: var(--border) !important;
+}
+
+button.hilight {
+	--borderWidth: 1.9px;
+}
+
+button:focus, input[type="checkbox"]:focus, input[type="color"]:focus, input[type="text"]:focus, textarea:focus {
+	border-color: var(--hilight) !important;
+}
+
+button:focus-visible, input[type="checkbox"]:focus-visible, input[type="color"]:focus-visible, input[type="text"]:focus-visible, textarea:focus-visible {
+	border-color: var(--accent) !important;
+}
+
+button:active, input[type="checkbox"]:active, input[type="color"]:active {
+	background: var(--foregroundFaint) !important;
+}
+
+
+.navbar {
+	background: var(--background) !important;
+	box-shadow: none !important;
+	border-color: var(--border) !important;
+}
+
+.drop-content {
+	box-shadow: none !important;
+	border-color: var(--border) !important;
+}
+
+p {
+	max-width: 70ch;
+/* 60-80 characters, or 30-40 in CJK scripts, is about the ideal range for body text. */
+	
+	margin-left: auto;
+	margin-right: auto;
+	text-align: justify;
+}
+
+code, pre {
+  background: none !important;
+}
