@@ -1,5 +1,5 @@
-/* HYDROGEN DEFAULTS */
-/* The default colors and stuff */
+/* HYDROGEN - LIGHT MODE COLORS */
+/* The overall default */
 
 
 :root {
@@ -11,7 +11,7 @@
 	--backgroundHilight: #eee;
 	--backgroundFaint:   #ccc;
 
-  --backgroundSecondary: #ccc;
+	--backgroundSecondary: #ccc;
 
 	--foreground:        #444;
 	--foregroundHilight: #111;
@@ -190,8 +190,8 @@ div.item:hover {
 
 
 
-button:not(.nohydrogen), input[type=color]:not(.nohydrogen),
-input[type="checkbox"]:not(.nohydrogen) {
+button, input[type=color],
+input[type="checkbox"] {
 	--background:              #eeec;
 	--backgroundTop:           #f8f8f8cc;
 	--backgroundBottom:        #cccc;
@@ -204,14 +204,14 @@ input[type="checkbox"]:not(.nohydrogen) {
 	--borderBottom:         #eee;
 }
 
-button:not(.nohydrogen):hover, button:not(.nohydrogen):focus,
-input[type=color]:not(.nohydrogen):hover, input[type=color]:not(.nohydrogen):focus,
-input[type="checkbox"]:not(.nohydrogen):hover, input[type="checkbox"]:not(.nohydrogen):focus {
+button:hover, button:focus,
+input[type=color]:hover, input[type=color]:focus,
+input[type="checkbox"]:hover, input[type="checkbox"]:focus {
 	--decoration: var(--hilight);
 }
 
-button:not(.nohydrogen):active, button.active,
-input[type=color]:not(.nohydrogen):active, input[type="checkbox"]:not(.nohydrogen):focus {
+button:active, button.active,
+input[type=color]:active, input[type="checkbox"]:focus {
 	--background:              #d8d8d8cc;
 	--backgroundTop:        #cccc;
 	--backgroundBottom:           #f8f8f8cc;
@@ -224,7 +224,7 @@ input[type=color]:not(.nohydrogen):active, input[type="checkbox"]:not(.nohydroge
 
 
 
-button:not(.nohydrogen).hilight {
+button.hilight {
 	--background:       #eee;
 	--backgroundTop:    #f8f8f8;
 	--backgroundBottom: #ccc;
@@ -232,11 +232,11 @@ button:not(.nohydrogen).hilight {
 	--foreground: #111;
 }
 
-button.hilight:not(.nohydrogen):hover, button.hilight:not(.nohydrogen):focus {
+button.hilight:hover, button.hilight:focus {
 	--decoration: var(--hilightHilight);
 }
 
-button.hilight:not(.nohydrogen):active, button.hilight.active {
+button.hilight:active, button.hilight.active {
 	--background:       #ccc;
 	--backgroundTop: #ccc;
 	--backgroundBottom:    #f8f8f8;
@@ -249,7 +249,7 @@ button.hilight:not(.nohydrogen):active, button.hilight.active {
 
 
 
-button.faint:not(.nohydrogen) {
+button.faint {
 	--background:         #eee8;
 	--backgroundTop:      #f8f8f888;
 	--backgroundBottom:   #ccc8;
@@ -260,11 +260,11 @@ button.faint:not(.nohydrogen) {
 	--borderBottom:        #eee8;
 }
 
-button.faint:not(.nohydrogen):hover, button.faint:not(.nohydrogen):focus {
+button.faint:hover, button.faint:focus {
 	--decoration: var(--hilightFaint);
 }
 
-button.faint:not(.nohydrogen):active, button.faint.active {
+button.faint:active, button.faint.active {
 	/*--backgroundBottom:      #f8f8f888;
 	--foreground:   #444c;
 	--borderTop:              #eee8;
@@ -291,154 +291,75 @@ button.faint:not(.nohydrogen):active, button.faint.active {
 
 /* Buttons */
 
-button.default:not(.nohydrogen) {
+button.default {
 	--borderTop:             #bdf;
 	--borderLeft:  #bedefe;
 	--borderRight:                #bedefe;
 	--borderBottom:        #ace;
 }
 
-button.primary:not(.nohydrogen) {
+button.primary {
 	--background:              var(--blue);
 	--backgroundTop:           var(--blueFaint);
 	--backgroundBottom:        var(--blue);
 
 	--foreground:        #eee;
 }
-button.primary:not(.nohydrogen):active {
+button.primary:active {
 	--background:              var(--blue);
 	--backgroundBottom:        var(--blueFaint);
 	--backgroundTop:           var(--blue);
 }
 
-button.success:not(.nohydrogen) {
+button.success {
 	--background:              var(--green);
 	--backgroundTop:           var(--greenFaint);
 	--backgroundBottom:        var(--green);
 
 	--foreground:        #eee;
 }
-button.success:not(.nohydrogen):active {
+button.success:active {
 	--background:              var(--green);
 	--backgroundBottom:        var(--greenFaint);
 	--backgroundTop:           var(--green);
 }
 
 
-button.info:not(.nohydrogen) {
+button.info {
 	--background:              var(--skyblue);
 	--backgroundTop:           var(--cyanFaint);
 	--backgroundBottom:        var(--cyan);
 
 	--foreground:        #444;
 }
-button.info:not(.nohydrogen):active {
+button.info:active {
 	--background:              var(--cyan);
 	--backgroundBottom:        var(--cyanFaint);
 	--backgroundTop:           var(--cyan);
 }
 
-button.warning:not(.nohydrogen) {
+button.warning {
 	--background:              var(--yellow);
 	--backgroundTop:           var(--yellowFaint);
 	--backgroundBottom:        var(--yellow);
 
 	--foreground:        #444;
 }
-button.warning:not(.nohydrogen):active {
+button.warning:active {
 	--background:              var(--yellow);
 	--backgroundBottom:        var(--yellowFaint);
 	--backgroundTop:           var(--yellow);
 }
 
-button.danger:not(.nohydrogen) {
+button.danger {
 	--background:              var(--red);
 	--backgroundTop:           var(--redFaint);
 	--backgroundBottom:        var(--red);
 
 	--foreground:        #eee;
 }
-button.danger:not(.nohydrogen):active {
+button.danger:active {
 	--background:              var(--red);
 	--backgroundBottom:        var(--redFaint);
 	--backgroundTop:           var(--red);
 }
-
-
-
-/* ##"""""""""""""""""""############### */
-/* ## RESPONSIVE DESIGN ############### */
-/* ##...................############### */
-
-
-
-/* Mobile users */
-
-@media screen and (any-pointer: coarse) {
-}
-
-
-
-
-
-
-/* eXtra Small screens */
-@media screen and (max-width: 600px) {
-}
-
-
-
-
-
-
-/* Small screens */
-@media screen and (min-width: 601px) and (max-width: 768px) {
-}
-
-
-
-
-
-
-/* Medium screens */
-@media screen and (min-width: 769px) and (max-width: 992px) {
-}
-
-
-
-
-
-
-
-
-/* Large screens */
-@media screen and (min-width: 993px) and (max-width: 1200px) {
-}
-
-
-
-
-
-
-
-
-
-/* eXtra-Large screens */
-@media screen and (min-width: 1201px) {
-}
-
-
-
-
-
-
-
-
-
-
-/* ###################################### */
-/* ## RESPONDING TO ACCESSIBILITY ####### */
-/* ###################################### */
-
-/* Empty for now. */
-
