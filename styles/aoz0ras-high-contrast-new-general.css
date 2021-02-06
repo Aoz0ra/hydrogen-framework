@@ -1,0 +1,127 @@
+:root {
+	
+	--hcBlack: #000;
+	--hcNavy: #123;
+	--hcDarkBlue: #014;
+	--hcOffBlack: #222219;
+	
+	--hcWhite: #fff;
+	--hcYellow: #fe0;
+	--hcGreen: #0f3;
+	--hcCream: #fec;
+	--hcOffWhite: #edc;
+	
+	--hcLight: var(--hcYellow);
+	--hcDark: var(--hcNavy);
+	
+	--red: #f00;
+	--orange: #fa0;
+	--yellow: #dc0;
+	--lime: #9e0;
+	--green: #0f0;
+	--aquagreen: #0d8;
+	--cyan: #0cd;
+	--skyblue: #0ae;
+	--blue: #44f;
+	--purple: #90f;
+	--pink: #f0d;
+	--hotpink: #f09;
+	
+	--redHilight: #f00;
+	--orangeHilight: #fa0;
+	--yellowHilight: #ff0;
+	--limeHilight: #af0;
+	--greenHilight: #0f0;
+	--aquagreenHilight: #0fa;
+	--cyanHilight: #0ff;
+	--skyblueHilight: #0af;
+	--blueHilight: #00f;
+	--purpleHilight: #a0f;
+	--pinkHilight: #f0f;
+	--hotpinkHilight: #f0a;
+	
+	--DEFAULT_ACCENT: var(--yellow);
+	--DEFAULT_ACCENT_HILIGHT: var(--yellowHilight);
+	--DEFAULT_HILIGHT: var(--yellow);
+}
+
+/* @media screen and (prefers-color-scheme: light) {
+	:root {
+		--foreground: var(--hcDark);
+		--foregroundFaint: var(--hcDark);
+		--background: var(--hcLight);
+		--backgroundHilight: var(--hcLight);
+		--backgroundSecondary: var(--hcWhite);
+	}
+} */
+
+button, input[type="checkbox"], input[type="color"] {
+  --background: var(--blue) !important;
+	--backgroundTop: var(--blue) !important;
+	--backgroundBottom: var(--blue) !important;
+	
+	--foreground: var(--hcLight);
+	--borderTop: var(--hcLight);
+	--borderLeft: var(--hcLight);
+	--borderRight: var(--hcLight);
+	--borderBottom: var(--hcLight);
+}
+
+button:hover, input[type="checkbox"]:hover, input[type="color"]:hover,
+button:focus, input[type="checkbox"]:focus, input[type="color"]:focus {
+  --background: var(--skyblue) !important;
+	--backgroundTop: var(--skyblue) !important;
+	--backgroundBottom: var(--skyblue) !important;
+	
+	--foreground: var(--hcWhite) !important;
+	--borderTop: var(--hcWhite) !important;
+	--borderLeft: var(--hcWhite) !important;
+	--borderRight: var(--hcWhite) !important;
+	--borderBottom: var(--hcWhite) !important;
+}
+
+button:active, input[type="checkbox"]:active, input[type="color"]:active {
+  --background: var(--orange) !important;
+	--backgroundTop: var(--orange) !important;
+	--backgroundBottom: var(--orange) !important;
+	
+	--foreground: var(--hcDark) !important;
+	--borderTop: var(--hcDark) !important;
+	--borderLeft: var(--hcDark) !important;
+	--borderRight: var(--hcDark) !important;
+	--borderBottom: var(--hcDark) !important;
+}
+
+button.hilight {
+  --background: var(--cyan) !important;
+	--backgroundTop: var(--cyan) !important;
+	--backgroundBottom: var(--cyan) !important;
+	--foreground: var(--hcBlack) !important;
+}
+
+button.hilight:hover, button.hilight:focus {
+  --background: var(--hcLight) !important;
+	--backgroundTop: var(--hcLight) !important;
+	--backgroundBottom: var(--hcLight) !important;
+	--foreground: var(--hcDark) !important;
+}
+
+button.hilight:active {
+  --background: var(--hcDark) !important;
+	--backgroundTop: var(--hcDark) !important;
+	--backgroundBottom: var(--hcDark) !important;
+	--foreground: var(--hcLight) !important;
+}
+
+div.navbar {
+  --background: var(--blue);
+	--backgroundTop: var(--blue);
+	--backgroundBottom: var(--blue);
+	--foreground: var(--hcLight);
+}
+
+.dropdownbutton {
+  --background: var(--skyblueHilight) !important;
+	--backgroundTop: var(--skyblueHilight) !important;
+	--backgroundBottom: var(--skyblueHilight) !important;
+}
