@@ -5,9 +5,10 @@
 ******* ******* ******* ******* ******* ******* ******* ******* ******* *******/
 
 
-/* Why is this not standard?!
-Internet Explorer was the only one to do this. */
-* {
+/* Why is this not standard?
+Internet Explorer was the only one to do this.
+And besides, this makes things a little more intuitive. */
+*, *:before, *:after {
 	box-sizing: border-box;
 }
 
@@ -53,17 +54,17 @@ div.row {
 
 /* HEADERS */
 
-h1:not(.nohydrogen),h2:not(.nohydrogen),h3:not(.nohydrogen),h4:not(.nohydrogen),h5:not(.nohydrogen),h6:not(.nohydrogen) {
+h1,h2,h3,h4,h5,h6 {
 	line-height: 1.5em;
 	padding: 0;
 	margin: 0;
 }
-h1:not(.nohydrogen) {font-size: var(--fontSizeH1);}
-h2:not(.nohydrogen) {font-size: var(--fontSizeH2);}
-h3:not(.nohydrogen) {font-size: var(--fontSizeH3);}
-h4:not(.nohydrogen) {font-size: var(--fontSizeH4);}
-h5:not(.nohydrogen) {font-size: var(--fontSizeH5);}
-h6:not(.nohydrogen) {font-size: var(--fontSizeH6);}
+h1 {font-size: var(--fontSizeH1);}
+h2 {font-size: var(--fontSizeH2);}
+h3 {font-size: var(--fontSizeH3);}
+h4 {font-size: var(--fontSizeH4);}
+h5 {font-size: var(--fontSizeH5);}
+h6 {font-size: var(--fontSizeH6);}
 
 
 
@@ -96,8 +97,14 @@ span.website-title {
 	left: 1rem;
 }
 
-.navbar .dropdown .dropdownbutton {
+.dropdownbutton {
 	display: none;
+}
+
+.drop-content .item a {
+	display: block;
+	color: inherit;
+	text-decoration: none;
 }
 
 
@@ -149,7 +156,7 @@ div.header {
 
 
 
-p:not(.nohydrogen) {
+p {
 	font-size: var(--fontSize, 1rem);
 }
 
@@ -157,7 +164,7 @@ p:not(.nohydrogen) {
 
 
 
-button:not(.nohydrogen) {
+button {
 	font-family: var(--sansSerifFont);
 	font-size: var(--fontSize, 1rem);
 
@@ -188,7 +195,7 @@ button.active {
 
 
 
-input[type="checkbox"]:not(.nohydrogen) {
+input[type="checkbox"] {
 	
 	-moz-appearance: none;
 	-webkit-appearance: none;
@@ -209,7 +216,7 @@ input[type="checkbox"]:not(.nohydrogen) {
 	margin: 0;
 }
 
-input[type="checkbox"]:not(.nohydrogen):before {
+input[type="checkbox"]:before {
 	white-space: pre-wrap;
 	position: relative;
 	content: " ";
@@ -225,7 +232,7 @@ input[type="checkbox"]:not(.nohydrogen):before {
   border-width: 0 3px 2px 0;
 }
 
-input[type="checkbox"]:not(.nohydrogen):checked:before {
+input[type="checkbox"]:checked:before {
 	opacity: 100%;
 }
 
@@ -235,7 +242,7 @@ input[type="checkbox"]:not(.nohydrogen):checked:before {
 
 /*  TABLES                            */
 
-table:not(.nohydrogen), th:not(.nohydrogen), td:not(.nohydrogen) {
+table, th, td {
 	border: var(--borderWidth) solid var(--border);
 	border-color: var(--borderTop) var(--borderLeft) var(--borderBottom) var(--borderRight);
 	border-spacing: 0px;
@@ -247,13 +254,13 @@ table:not(.nohydrogen), th:not(.nohydrogen), td:not(.nohydrogen) {
 
 
 
-h1.title:not(.nohydrogen) {
+h1.title {
 	font-size: var(--fontSizeTitle, calc(2rem + 1vmax));
 	text-align: center;
 	font-weight: 200;
 	letter-spacing: -0.1rem;
 }
-p.subtitle:not(.nohydrogen) {
+p.subtitle {
 	text-align: center;
 	letter-spacing: 0.1rem;
 }
@@ -272,6 +279,14 @@ p.subtitle:not(.nohydrogen) {
 
 
 
+pre {
+	overflow-x: auto;
+	max-width: 100%;
+}
+
+
+
+
 
 
 
@@ -286,71 +301,78 @@ p.subtitle:not(.nohydrogen) {
 
 /* Text and typography */
 
-h1 small:not(.nohydrogen),
-h2 small:not(.nohydrogen),
-h3 small:not(.nohydrogen),
-h4 small:not(.nohydrogen),
-h5 small:not(.nohydrogen),
-h6 small:not(.nohydrogen) {
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small {
 	font-size: 0.75em;
 	color: var(--foregroundFaint)
 }
 
 
-.small:not(.nohydrogen) {
+.small {
 	font-size: 0.85em;
 }
 
-.lead:not(.nohydrogen) {
+.lead {
 	font-size: 1.2em;
 }
 
-abbr:not(.nohydrogen) {
+abbr {
 	text-decoration: underline dotted var(--foregroundFaint);
 	cursor: help;
 }
 
-abbr.initialism:not(.nohydrogen) {
+abbr.initialism {
 	font-size: 0.9em;
 }
 
-blockquote:not(.nohydrogen) {
+blockquote {
 	border-left: var(--borderWidth) var(--borderLeft) solid;
 	margin: 0;
 	padding: 1em;
 }
-blockquote footer:not(.nohydrogen) {
+blockquote footer {
 	font-size: 0.9em;
 	color: var(--foregroundFaint)
 }
 
-blockquote.blockquote-reverse:not(.nohydrogen) {
+blockquote.blockquote-reverse {
 	border-left: none;
 	border-right: var(--borderWidth) var(--borderRight) solid;
 	text-align: right;
 }
 
-var:not(.nohydrogen) {
+var {
 	font-style: italic;
 }
 
-code:not(.nohydrogen), pre:not(.nohydrogen) {
+code, pre {
 	background: var(--backgroundHilight);
 	padding: 0.5em 1em;
 	border-radius: var(--borderRadius);
 }
 
-pre.pre-scrollable:not(.nohydrogen) {
+pre.pre-scrollable {
 	max-height: 350px;
 	overflow-y: scroll;
 }
 
-kbd:not(.nohydrogen) {
+kbd {
 	background: var(--foregroundHilight);
 	color: var(--background);
 	padding: 0.25em 0.6em;
 	border-radius: var(--borderRadius);
 }
+
+p.warning, span.warning {color: var(--yellow)}
+p.primary, span.primary {color: var(--blue)}
+p.info, span.info {color: var(--cyan)}
+p.success, span.success {color: var(--green)}
+p.danger, span.danger {color: var(--red)}
+p.critical, span.critical {color: var(--red); font-weight: 700;}
 
 
 
@@ -364,7 +386,7 @@ kbd:not(.nohydrogen) {
 
 
 
-.block:not(.nohydrogen) {
+.block {
 	display: block;
 	width: 100%;
 	margin-left: 2px;
@@ -375,19 +397,19 @@ kbd:not(.nohydrogen) {
 
 
 
-.btn-group button:not(.nohydrogen) {
+.btn-group button {
 	border-radius: 0;
 	margin-left: -1px;
 	margin-right: -1px;
 }
 
-.btn-group button:not(.nohydrogen):first-of-type {
+.btn-group button:first-of-type {
 	border-top-left-radius: var(--borderRadius);
 	border-bottom-left-radius: var(--borderRadius);
 	margin-left: 2px;
 }
 
-.btn-group button:not(.nohydrogen):last-of-type {
+.btn-group button:last-of-type {
 	border-top-right-radius: var(--borderRadius);
 	border-bottom-right-radius: var(--borderRadius);
 	margin-right: 2px;
@@ -395,12 +417,12 @@ kbd:not(.nohydrogen) {
 
 
 
-.btn-group.btn-group-justified:not(.nohydrogen) {
+.btn-group.btn-group-justified {
 	display: flex;
 	justify-content: space-between;
 }
 
-.btn-group.btn-group-justified button:not(.nohydrogen) {
+.btn-group.btn-group-justified button {
 	flex-grow: 1;
 	flex-basis: 0;
 	border-radius: 0;
@@ -408,13 +430,13 @@ kbd:not(.nohydrogen) {
 	margin-right: 1px;
 }
 
-.btn-group.btn-group-justified button:not(.nohydrogen):first-of-type {
+.btn-group.btn-group-justified button:first-of-type {
 	border-top-left-radius: var(--borderRadius);
 	border-bottom-left-radius: var(--borderRadius);
 	margin-left: 2px;
 }
 
-.btn-group.btn-group-justified button:not(.nohydrogen):last-of-type {
+.btn-group.btn-group-justified button:last-of-type {
 	border-top-right-radius: var(--borderRadius);
 	border-bottom-right-radius: var(--borderRadius);
 	margin-right: -1px;
@@ -447,7 +469,7 @@ div.fullscreen-round {
 
 /* eXtra Small screens */
 @media (max-width: 600px) {
-	h1.title:not(.nohydrogen) {font-size: var(--fontSizeH1)}
+	h1.title {font-size: var(--fontSizeH1)}
 	div.navbar {padding: calc(0.3vh + 0.3vw) calc(0.5vh + 0.5vw)}
 	div.dropdown {position: relative;display: inline-block;}
 	div.drop-content {
