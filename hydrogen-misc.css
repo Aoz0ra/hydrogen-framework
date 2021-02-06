@@ -37,7 +37,6 @@
 	--harmonicRelationship: calc(6 / 5);
 	
 	/* USABLE EVERYWHERE:
-	 * 
 	 * Minor second: 16/15
 	 * Major second: 9/8
 	 * -> Minor third: 6/5
@@ -54,7 +53,7 @@
 	 * Minor sixth: 8/5
 	 * Golden section: var(--PHI)/1
 	 * 
-	 * CAN YOU REALLY CALL THIS EXTREME?  IT'S GOING QUITE FAR.:
+	 * REALLY EXTREME:
 	 * Major sixth: 5/3
 	 * Minor seventh: 16/9
 	 * 
@@ -97,6 +96,16 @@
 	--ease-in-out-expo:   cubic-bezier(1, 0, 0, 1);
 	--ease-in-out-circ:   cubic-bezier(.785, .135, .15, .86);
 	
+	/* ease-out-in extension, for those who want it */
+	
+	--ease-out-in-quad:   cubic-bezier(.03, .455, .955, .515);
+	--ease-out-in-cubic:  cubic-bezier(.045, .645, 1, .355);
+	--ease-out-in-quart:  cubic-bezier(0, .77, 1, .175);
+	--ease-out-in-quint:  cubic-bezier(0, .86, 1, .07);
+	--ease-out-in-expo:   cubic-bezier(0, 1, 1, 0);
+	--ease-out-in-circ:   cubic-bezier(.135, .785, .86, .15);
+	
+	
 	--animationDuration: 0.3s;
 	--animationDurationSlide: 0.4s;
 	--animationDurationFade: 0.3s;
@@ -138,7 +147,7 @@ div.navbar {
 
 
 
-button:not(.nohydrogen) {
+button {
 	--paddingTop:          0.15rem;
 	--paddingLeft: 0.5rem;
 	--paddingRight:              0.5rem;
@@ -157,7 +166,7 @@ button:not(.nohydrogen) {
 /* Mobile users */
 
 @media screen and (any-pointer: coarse) {
-	button:not(.nohydrogen) {
+	button {
 		--paddingTop: 0.4rem;
 		--paddingLeft: 0.7rem;
 		--paddingRight: 0.7rem;
