@@ -101,31 +101,19 @@ span.website-title {
 	display: none;
 }
 
-.drop-content .item a {
-	display: block;
-	color: inherit;
-	text-decoration: none;
-}
 
 
 
 /* STICKY NAVIGATION BAR (default) */
 div.navbar { 
-/* 	position: absolute; use fixed if not sticky 
-	position: sticky; */
 	top: 0;
 	left: 0;
 	width: 100vw;
 
-	/* 	backdrop-filter: var(--backdropFilter); */
-	/* 	-webkit-backdrop-filter: var(--backdropFilter); */
-	cursor: default;
+	backdrop-filter: unset;
+	-webkit-backdrop-filter: unset;
 }
 
-/* Uncomment for a floating navbar */
-/* div.navbar{	top: 1.3vmin;left: 4vw;	width: calc(92vw);	border-radius: var(--borderRadius, 3px);	border: var(--borderWidth) solid;	border-color: var(--borderTop) var(--borderLeft) var(--borderBottom) var(--borderRight)} */
-
-/* Uncomment for a standard, fixed navbar */
 div.navbar{position: absolute;}body{margin-top: calc(2em);}
 
 div.dropdown {
@@ -279,11 +267,6 @@ p.subtitle {
 
 
 
-pre {
-	overflow-x: auto;
-	max-width: 100%;
-}
-
 
 
 
@@ -355,9 +338,14 @@ code, pre {
 	border-radius: var(--borderRadius);
 }
 
+pre {
+	overflow-x: unset;
+	white-space: pre-wrap;
+}
+
 pre.pre-scrollable {
-	max-height: 350px;
-	overflow-y: scroll;
+	max-height: unset;
+	overflow-y: unset;
 }
 
 kbd {
@@ -366,16 +354,6 @@ kbd {
 	padding: 0.25em 0.6em;
 	border-radius: var(--borderRadius);
 }
-
-p.warning, span.warning {color: var(--yellow)}
-p.primary, span.primary {color: var(--blue)}
-p.info, span.info {color: var(--cyan)}
-p.success, span.success {color: var(--green)}
-p.danger, span.danger {color: var(--red)}
-p.critical, span.critical {color: var(--red); font-weight: 700;}
-
-
-
 
 
 
