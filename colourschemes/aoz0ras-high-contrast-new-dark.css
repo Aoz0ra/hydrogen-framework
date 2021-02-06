@@ -1,0 +1,12 @@
+@import url("/hydrogen-framework/colourschemes/aoz0ras-high-contrast-new-general.css") screen;
+
+:root {
+	--foreground: var(--hcLight);
+	--foregroundFaint: var(--hcLight);
+  --foregroundHilight: var(--hcWhite);
+  
+	--background: var(--hcDark);
+	--backgroundHilight: var(--hcBlack);
+  --backgroundFaint: var(--hcDark);
+	--backgroundSecondary: var(--hcOffBlack);
+}
