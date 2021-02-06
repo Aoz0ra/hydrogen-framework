@@ -1,0 +1,75 @@
+:root {
+  /* Prefer relatively open, sans-serif typefaces. */
+	--sansSerifFont: "PhoenixSans", "Fira Sans", "Lato", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "Noto Sans CJK JP", "Verdana", "Tahoma", "DejaVu Sans", sans-serif;
+	
+  /* Don't go overboard with the font sizes */
+	--harmonicRelationship: calc(9 / 8); /* Major second */
+}
+
+@media screen and (max-width: 600px) {
+	:root {
+		--harmonicRelationship: calc(16 / 15); /* Minor second */
+	}
+}
+
+h1.title {
+	font-size: var(--fontSizeH1) !important;
+}
+
+.col-main p:first-of-type {
+	font-size: 1.1em;
+}
+
+.col-main p:first-of-type:first-line {
+	font-size: 1.05em;
+}
+
+.col-main p:first-of-type:first-letter {
+	font-size: 1.1em;
+	font-weight: 600;
+}
+
+button, input[type="checkbox"], input[type="color"], input[type="text"], textarea, .dropdownbutton {
+	box-shadow: none !important;
+	background: #0000 !important;
+	
+/* 3d styling isn't really worth it when the primary focus is reading.  Flatten the third dimension. */
+	border-color: var(--border) !important;
+}
+
+button.hilight {
+	--borderWidth: 1.9px;
+}
+
+button:focus, input[type="checkbox"]:focus, input[type="color"]:focus, input[type="text"]:focus, textarea:focus {
+	border-color: var(--hilight) !important;
+}
+
+button:focus-visible, input[type="checkbox"]:focus-visible, input[type="color"]:focus-visible, input[type="text"]:focus-visible, textarea:focus-visible {
+	border-color: var(--accent) !important;
+}
+
+button:active, input[type="checkbox"]:active, input[type="color"]:active {
+	background: var(--foregroundFaint) !important;
+}
+
+
+.navbar {
+	background: var(--background) !important;
+	box-shadow: none !important;
+	border-color: var(--border) !important;
+}
+
+.drop-content {
+	box-shadow: none !important;
+	border-color: var(--border) !important;
+}
+
+p {
+	max-width: 60ch;
+  /* 60-80 characters, or 30-40 in CJK scripts, is about the ideal range for body text.
+     And then lower that, and it'll be easier for dyslexics and the like. */
+	
+	margin-left: auto;
+	margin-right: auto;
+}
