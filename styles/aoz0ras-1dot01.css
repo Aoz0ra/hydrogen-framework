@@ -4,31 +4,31 @@
 }
 
 
-button:not(.nohydrogen), 
-input[type=color]:not(.nohydrogen) {
+button, 
+input[type=color] {
 	padding: 0px 10px;
 	box-shadow: none;
 	transition-duration: 0s !important;
 	background: var(--background);
 }
 
-input[type=checkbox]:not(.nohydrogen) {
+input[type=checkbox] {
 	box-shadow: none;
 	background: var(--background);
 }
 
-button:not(.nohydrogen):hover,
-input[type=color]:not(.nohydrogen):hover, input[type=checkbox]:not(.nohydrogen):hover {
+button:hover,
+input[type=color]:hover, input[type=checkbox]:hover {
 	box-shadow: none;
 }
 
-button:not(.nohydrogen):focus,
-input[type=color]:not(.nohydrogen):focus, input[type=checkbox]:not(.nohydrogen):focus {
+button:focus,
+input[type=color]:focus, input[type=checkbox]:focus {
 	box-shadow:
 		0 0 0 1px var(--borderBottom);
 }
 
-button:not(.nohydrogen):active {
+button:active {
 	background: var(--foreground);
 	color: var(--background);
 	box-shadow: none;
