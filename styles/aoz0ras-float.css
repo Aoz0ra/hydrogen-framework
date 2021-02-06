@@ -1,0 +1,57 @@
+:root {
+	--shadow: -4px 4px 0 var(--foregroundFaint);
+
+	--shadowSmall: -2px 2px 0 var(--foregroundFaint);
+
+	--borderWidth: 0px;
+	--borderRadius: 0px;
+}
+
+button,
+input[type="checkbox"],
+input[type="color"] {
+	box-shadow: var(--shadow) !important;
+	position: relative;
+	transition: box-shadow var(--animationDuration, 0.3s)
+			var(--animationFunction, ease),
+		right var(--animationDuration, 0.3s) var(--animationFunction, ease),
+		top var(--animationDuration, 0.3s) var(--animationFunction, ease) !important;
+
+	right: 0;
+	top: 0;
+
+	z-index: 0;
+}
+
+h1, h2, h3, h4, h5, h6,
+h1.title {
+	text-shadow: var(--shadow);
+	--foreground: var(--backgroundHilight);
+	font-weight: 900 !important;
+	letter-spacing: 0.1em !important;
+}
+
+button:active {
+	box-shadow: var(--shadowSmall) !important;
+	top: 2px;
+	right: 2px;
+}
+
+.dropdownbutton {
+	box-shadow: var(--shadow) !important;
+}
+
+.website-title,
+.website-title * {
+	text-shadow: var(--shadowSmall);
+}
+
+.navbar {
+	z-index: 99999999999999999999999999999;
+	box-shadow: var(--shadow) !important;
+}
+
+code,
+pre, input[type="text"], textarea {
+	box-shadow: var(--shadow);
+}
