@@ -15,15 +15,7 @@
 /*******************************************************************************
 *******************************************************************************/
 
-:root {
-    --fontSize: 1.1rem;
-    --fontSizeH1: 2em;
-	--fontSizeH2: 1.8em;
-	--fontSizeH3: 1.6em;
-	--fontSizeH4: 1.4em;
-	--fontSizeH5: 1.3em;
-	--fontSizeH6: 1.2em;
-    
+:root {    
     --borderWidth: 0.2em;
     --borderRadius: 0.8em;
 }
@@ -61,8 +53,8 @@ div.header {
 	background: var(--backgroundHilight);
 }
 
-button:not(.nohydrogen), input[type="checkbox"]:not(.nohydrogen),
-input[type=color]:not(.nohydrogen) {
+button, input[type="checkbox"],
+input[type=color] {
 	background: var(--background);
 
   box-shadow: 0px 0px 0px calc(var(--borderWidth) * 2) var(--decoration);
@@ -70,22 +62,22 @@ input[type=color]:not(.nohydrogen) {
     padding: 0.667rem;
 }
 
-input[type="checkbox"]:not(.nohydrogen),
-input[type=color]:not(.nohydrogen) {
+input[type="checkbox"],
+input[type=color] {
     --borderRadius: 0;
 }
 
 ::-moz-focus-inner {border:0;}
 
 
-button:not(.nohydrogen):hover, button:not(.nohydrogen):focus,
-input[type="checkbox"]:not(.nohydrogen):hover, input[type="checkbox"]:not(.nohydrogen):focus,
-input[type=color]:not(.nohydrogen):hover, input[type=color]:not(.nohydrogen):focus {
+button:hover, button:focus,
+input[type="checkbox"]:hover, input[type="checkbox"]:focus,
+input[type=color]:hover, input[type=color]:focus {
 	box-shadow: 0px 0px 0px var(--borderWidth) var(--decoration);
 }
 
-button:not(.nohydrogen):active, button.active, input[type="checkbox"]:not(.nohydrogen):active,
-input[type=color]:not(.nohydrogen):active {
+button:active, button.active, input[type="checkbox"]:active,
+input[type=color]:active {
 	background: var(--background);
 }
 
