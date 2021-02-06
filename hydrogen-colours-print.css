@@ -27,7 +27,7 @@
 
 
 
-  --gray:      #999;
+	--gray:      #999;
 	--red:       #f00;
 	--orange:    #ea0;
 	--yellow:    #cc0;
@@ -41,7 +41,7 @@
 	--pink:      #f0f;
 	--hotpink:   #f0a;
 
-  --grayMuted:      #aaa;
+	--grayMuted:      #aaa;
 	--redMuted:       #f22;
 	--orangeMuted:    #fc2;
 	--yellowMuted:    #ff2;
@@ -55,7 +55,7 @@
 	--pinkMuted:      #f2f;
 	--hotpinkMuted:   #f2b;
 
-  --grayHilight:      #888;
+	--grayHilight:      #888;
 	--redHilight:       #f00;
 	--orangeHilight:    #fa0;
 	--yellowHilight:    #ff0;
@@ -69,7 +69,7 @@
 	--pinkHilight:      #f0f;
 	--hotpinkHilight:   #f0a;
 
-  --grayFaint:      #999a;
+	--grayFaint:      #999a;
 	--redFaint:       #f00a;
 	--orangeFaint:    #ea0a;
 	--yellowFaint:    #cc0a;
@@ -141,8 +141,8 @@ div.item:hover {
 
 
 
-button:not(.nohydrogen), input[type=color]:not(.nohydrogen),
-input[type=checkbox]:not(.nohydrogen){
+button, input[type=color],
+input[type=checkbox]{
 	--background:              #dddc;
 	--backgroundTop:           #f8f8f8cc;
 	--backgroundBottom:        #cccc;
@@ -150,14 +150,14 @@ input[type=checkbox]:not(.nohydrogen){
 	--decoration: #0000;
 }
 
-button:not(.nohydrogen).hilight {
+button.hilight {
 	--background:       #ddd;
 	--backgroundTop:    #f8f8f8;
 	--backgroundBottom: #ccc;
 	--foreground: #111;
 }
 
-button.faint:not(.nohydrogen) {
+button.faint {
 	--background:         #ddd8;
 	--backgroundTop:      #f8f8f888;
 	--backgroundBottom:   #ccc8;
@@ -176,14 +176,14 @@ button.faint:not(.nohydrogen) {
 
 /* Buttons */
 
-button.default:not(.nohydrogen) {
+button.default {
 	--borderTop:             #bdf;
 	--borderLeft:  #bedefe;
 	--borderRight:                #bedefe;
 	--borderBottom:        #ace;
 }
 
-button.primary:not(.nohydrogen) {
+button.primary {
 	--background:              var(--blue);
 	--backgroundTop:           var(--blueFaint);
 	--backgroundBottom:        var(--blue);
@@ -191,7 +191,7 @@ button.primary:not(.nohydrogen) {
 	--foreground:        #eee;
 }
 
-button.success:not(.nohydrogen) {
+button.success {
 	--background:              var(--green);
 	--backgroundTop:           var(--greenFaint);
 	--backgroundBottom:        var(--green);
@@ -200,7 +200,7 @@ button.success:not(.nohydrogen) {
 }
 
 
-button.info:not(.nohydrogen) {
+button.info {
 	--background:              var(--skyblue);
 	--backgroundTop:           var(--cyanFaint);
 	--backgroundBottom:        var(--cyan);
@@ -208,7 +208,7 @@ button.info:not(.nohydrogen) {
 	--foreground:        #444;
 }
 
-button.warning:not(.nohydrogen) {
+button.warning {
 	--background:              var(--yellow);
 	--backgroundTop:           var(--yellowFaint);
 	--backgroundBottom:        var(--yellow);
@@ -216,11 +216,10 @@ button.warning:not(.nohydrogen) {
 	--foreground:        #444;
 }
 
-button.danger:not(.nohydrogen) {
+button.danger {
 	--background:              var(--red);
 	--backgroundTop:           var(--redFaint);
 	--backgroundBottom:        var(--red);
 
 	--foreground:        #eee;
 }
-
